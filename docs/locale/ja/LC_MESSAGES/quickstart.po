@@ -20,14 +20,17 @@ msgstr ""
 #: ../../quickstart.rst:2
 msgid "Quickstart"
 msgstr ""
+"クイックスタート"
 
 #: ../../quickstart.rst:4
 msgid "First, :doc:`Install pip <installing>`."
 msgstr ""
+"最初に, :doc:`pipをインストールします <installing>`。"
 
 #: ../../quickstart.rst:6
 msgid "Install a package from `PyPI`_:"
 msgstr ""
+"`PyPI`_　からパッケージをインストール:"
 
 #: ../../quickstart.rst:14
 msgid ""
