@@ -30,9 +30,10 @@ msgid ""
 "dev"
 msgstr ""
 
+
 #: ../../index.rst:11
 msgid ""
 "The `PyPA recommended <https://packaging.python.org/en/latest/current/>`_"
 " tool for installing Python packages."
 msgstr ""
-
+"pipは `PyPA推奨 <https://packaging.python.org/en/latest/current/>`_のPythonパッケージをインストールするためのツールです。"
