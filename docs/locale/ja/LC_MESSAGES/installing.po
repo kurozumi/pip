@@ -47,12 +47,14 @@ msgstr ""
 #: ../../installing.rst:21
 msgid "Installing with get-pip.py"
 msgstr ""
+"get-pip.pyでインストールする方法"
 
 #: ../../installing.rst:23
 msgid ""
 "To install pip, securely download `get-pip.py <https://bootstrap.pypa.io"
 "/get-pip.py>`_. [2]_"
 msgstr ""
+"pipをインストールするために,  `get-pip.py <https://bootstrap.pypa.io/get-pip.py>`_. [2]_ を安全にダウンロードしてください。"
 
 #: ../../installing.rst:26
 msgid "Then run the following:"
