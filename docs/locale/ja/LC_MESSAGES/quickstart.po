@@ -48,12 +48,14 @@ msgstr ""
 #: ../../quickstart.rst:35
 msgid "List what packages are outdated:"
 msgstr ""
+"古いパッケージを一覧表示する方法:"
 
 #: ../../quickstart.rst:42
 msgid "Upgrade a package:"
 msgstr ""
+"パッケージをアップグレードする方法:"
 
 #: ../../quickstart.rst:54
 msgid "Uninstall a package:"
 msgstr ""
-
+"パッケージのアンインストール方法:"
