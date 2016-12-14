@@ -43,6 +43,7 @@ msgstr ""
 #: ../../quickstart.rst:23
 msgid "Show what files were installed:"
 msgstr ""
+"インストールされているパッケージのファイル一覧を表示する方法："
 
 #: ../../quickstart.rst:35
 msgid "List what packages are outdated:"
