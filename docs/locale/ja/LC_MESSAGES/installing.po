@@ -44,7 +44,7 @@ msgid ""
 "<pypug:venv>`."
 msgstr ""
 ":ref:`pypug:virtualenv` または :ref:`pyvenv <pypug:venv>`　によって作成された　"
-":ref:`Virtual Environment <pypug:Creating and using Virtual Environments>`"
+":ref:`Virtual Environment <pypug:Creating and using Virtual Environments>`　"
 "で作業している場合、pipはすでにインストールされています。"
 
 #: ../../installing.rst:21
