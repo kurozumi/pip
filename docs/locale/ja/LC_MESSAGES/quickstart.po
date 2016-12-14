@@ -30,13 +30,15 @@ msgstr ""
 #: ../../quickstart.rst:6
 msgid "Install a package from `PyPI`_:"
 msgstr ""
-"`PyPI`_ からパッケージをインストール:"
+"`PyPI`_ からパッケージをインストールする方法:"
 
 #: ../../quickstart.rst:14
 msgid ""
 "Install a package already downloaded from `PyPI`_ or got elsewhere. This "
 "is useful if the target machine does not have a network connection:"
 msgstr ""
+"既に `PyPI`_ からダウンロードしたパッケージ、または他の場所から取得したパッケージをインストールする方法です。"
+"これはマシンがネットワークに接続していない場合に便利です。"
 
 #: ../../quickstart.rst:23
 msgid "Show what files were installed:"
