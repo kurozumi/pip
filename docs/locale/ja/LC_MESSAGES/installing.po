@@ -20,10 +20,12 @@ msgstr ""
 #: ../../installing.rst:4
 msgid "Installation"
 msgstr ""
+"インストール方法"
 
 #: ../../installing.rst:7
 msgid "Do I need to install pip?"
 msgstr ""
+"pipをインストールする必要がありますか？"
 
 #: ../../installing.rst:9
 msgid ""
@@ -31,6 +33,8 @@ msgid ""
 ">=3.4 binaries downloaded from `python.org <https://www.python.org>`_, "
 "but you'll need to :ref:`upgrade pip <Upgrading pip>`."
 msgstr ""
+"`python.org <https://www.python.org>`_ からダウンロードしたPython 2>= 2.7.9またはPython 3>= 3.4バイナリを使用している場合、"
+"pipを :ref:`upgrade pip <Upgrading pip>` する必要があります。"
 
 #: ../../installing.rst:13
 msgid ""
