@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008-2016, PyPA
+# This file is distributed under the same license as the pip package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pip 9.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../development.rst:3
+msgid "Development"
+msgstr ""
+
+#: ../../development.rst:6
+msgid "Pull Requests"
+msgstr ""
+
+#: ../../development.rst:8
+msgid "Submit Pull Requests against the `master` branch."
+msgstr ""
+
+#: ../../development.rst:9
+msgid "Provide a good description of what you're doing and why."
+msgstr ""
+
+#: ../../development.rst:10
+msgid ""
+"Provide tests that cover your changes and try to run the tests locally "
+"first."
+msgstr ""
+
+#: ../../development.rst:12
+msgid ""
+"**Example**. Assuming you set up GitHub account, forked pip repository "
+"from https://github.com/pypa/pip to your own page via web interface, and "
+"your fork is located at https://github.com/yourname/pip"
+msgstr ""
+
+#: ../../development.rst:26
+msgid ""
+"You may reference relevant issues in commit messages (like #1259) to make"
+" GitHub link issues and commits together, and with phrase like \"fixes "
+"#1259\" you can even close relevant issues automatically. Now push the "
+"changes to your fork::"
+msgstr ""
+
+#: ../../development.rst:33
+msgid ""
+"Open Pull Requests page at https://github.com/yourname/pip/pulls and "
+"click \"New pull request\". That's it."
+msgstr ""
+
+#: ../../development.rst:38
+msgid "Automated Testing"
+msgstr ""
+
+#: ../../development.rst:40
+msgid ""
+"All pull requests and merges to 'master' branch are tested in `Travis "
+"<https://travis-ci.org/>`_ based on our `.travis.yml file "
+"<https://github.com/pypa/pip/blob/master/.travis.yml>`_."
+msgstr ""
+
+#: ../../development.rst:43
+msgid ""
+"Usually, a link to your specific travis build appears in pull requests, "
+"but if not, you can find it on our `travis pull requests page <https"
+"://travis-ci.org/pypa/pip/pull_requests>`_"
+msgstr ""
+
+#: ../../development.rst:46
+msgid ""
+"The only way to trigger Travis to run again for a pull request, is to "
+"submit another change to the pull branch."
+msgstr ""
+
+#: ../../development.rst:48
+msgid ""
+"We also have Jenkins CI that runs regularly for certain python versions "
+"on windows and centos."
+msgstr ""
+
+#: ../../development.rst:51
+msgid "Running tests"
+msgstr ""
+
+#: ../../development.rst:53
+msgid "OS Requirements: subversion, bazaar, git, and mercurial."
+msgstr ""
+
+#: ../../development.rst:55
+msgid "Python Requirements: tox or pytest, virtualenv, scripttest, and mock"
+msgstr ""
+
+#: ../../development.rst:57
+msgid "Ways to run the tests locally:"
+msgstr ""
+
+#: ../../development.rst:68
+msgid ""
+"If you are missing one of the VCS tools, you can tell ``py.test`` to skip"
+" it:"
+msgstr ""
+
+#: ../../development.rst:77
+msgid "Getting Involved"
+msgstr ""
+
+#: ../../development.rst:79
+msgid "The pip project welcomes help in the following ways:"
+msgstr ""
+
+#: ../../development.rst:81
+msgid "Making Pull Requests for code, tests, or docs."
+msgstr ""
+
+#: ../../development.rst:82
+msgid "Commenting on open issues and pull requests."
+msgstr ""
+
+#: ../../development.rst:83
+msgid "Helping to answer questions on the mailing list."
+msgstr ""
+
+#: ../../development.rst:85
+msgid "If you want to become an official maintainer, start by helping out."
+msgstr ""
+
+#: ../../development.rst:87
+msgid ""
+"Later, when you think you're ready, get in touch with one of the "
+"maintainers, and they will initiate a vote."
+msgstr ""
+
+#: ../../development.rst:92
+msgid "Release Process"
+msgstr ""
+
+#: ../../development.rst:94
+msgid ""
+"On the current pip ``master`` branch, generate a new ``AUTHORS.txt`` by "
+"running ``invoke generate.authors`` and commit the results."
+msgstr ""
+
+#: ../../development.rst:96
+msgid ""
+"On the current pip ``master`` branch, make a new commit which bumps the "
+"version in ``pip/__init__.py`` to the release version and adjust the "
+"``CHANGES.txt`` file to reflect the current date."
+msgstr ""
+
+#: ../../development.rst:99
+msgid ""
+"Create a signed tag of the ``master`` branch of the form ``X.Y.Z`` using "
+"the command ``git tag -s X.Y.Z``."
+msgstr ""
+
+#: ../../development.rst:101
+msgid ""
+"Checkout the tag using ``git checkout X.Y.Z`` and create the distribution"
+" files using ``python setup.py sdist bdist_wheel``."
+msgstr ""
+
+#: ../../development.rst:103
+msgid ""
+"Upload the distribution files to PyPI using twine (``twine upload -s "
+"dist/*``). The upload should include GPG signatures of the distribution "
+"files."
+msgstr ""
+
+#: ../../development.rst:106
+msgid "Push all of the changes."
+msgstr ""
+
+#: ../../development.rst:107
+msgid ""
+"Regenerate the ``get-pip.py`` script by running ``invoke "
+"generate.installer`` in the get-pip repository, and committing the "
+"results."
+msgstr ""
+
+#: ../../development.rst:113
+msgid "Creating a Bugfix Release"
+msgstr ""
+
+#: ../../development.rst:115
+msgid ""
+"Sometimes we need to release a bugfix release of the form ``X.Y.Z+1``. In"
+" order to create one of these the changes should already be merged into "
+"the ``master`` branch."
+msgstr ""
+
+#: ../../development.rst:119
+msgid ""
+"Create a new ``release/X.Y.Z+1`` branch off of the ``X.Y.Z`` tag using "
+"the command ``git checkout -b release/X.Y.Z+1 X.Y.Z``."
+msgstr ""
+
+#: ../../development.rst:121
+msgid ""
+"Cherry pick the fixed commits off of the ``master`` branch, fixing any "
+"conflicts and moving any changelog entries from the development version's"
+" changelog section to the ``X.Y.Z+1`` section."
+msgstr ""
+
+#: ../../development.rst:124
+msgid ""
+"Push the ``release/X.Y.Z+1`` branch to github and submit a PR for it "
+"against the ``master`` branch and wait for the tests to run."
+msgstr ""
+
+#: ../../development.rst:126
+msgid ""
+"Once tests run, merge the ``release/X.Y.Z+1`` branch into master, and "
+"follow the above release process starting with step 4."
+msgstr ""
+

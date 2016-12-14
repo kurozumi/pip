@@ -1,0 +1,851 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008-2016, PyPA
+# This file is distributed under the same license as the pip package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pip 9.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../user_guide.rst:3
+msgid "User Guide"
+msgstr ""
+
+#: ../../user_guide.rst
+msgid "Contents"
+msgstr ""
+
+#: ../../user_guide.rst:8
+msgid "Installing Packages"
+msgstr ""
+
+#: ../../user_guide.rst:10
+msgid ""
+"pip supports installing from `PyPI`_, version control, local projects, "
+"and directly from distribution files."
+msgstr ""
+
+#: ../../user_guide.rst:14
+msgid ""
+"The most common scenario is to install from `PyPI`_ using "
+":ref:`Requirement Specifiers`"
+msgstr ""
+
+#: ../../user_guide.rst:24
+msgid "For more information and examples, see the :ref:`pip install` reference."
+msgstr ""
+
+#: ../../user_guide.rst:32
+msgid "Requirements Files"
+msgstr ""
+
+#: ../../user_guide.rst:34
+msgid ""
+"\"Requirements files\" are files containing a list of items to be "
+"installed using :ref:`pip install` like so:"
+msgstr ""
+
+#: ../../user_guide.rst:42
+msgid ""
+"Details on the format of the files are here: :ref:`Requirements File "
+"Format`."
+msgstr ""
+
+#: ../../user_guide.rst:44
+msgid ""
+"Logically, a Requirements file is just a list of :ref:`pip install` "
+"arguments placed in a file. Note that you should not rely on the items in"
+" the file being installed by pip in any particular order."
+msgstr ""
+
+#: ../../user_guide.rst:48
+msgid "In practice, there are 4 common uses of Requirements files:"
+msgstr ""
+
+#: ../../user_guide.rst:50
+msgid ""
+"Requirements files are used to hold the result from :ref:`pip freeze` for"
+" the purpose of achieving :ref:`repeatable installations "
+"<Repeatability>`.  In this case, your requirement file contains a pinned "
+"version of everything that was installed when `pip freeze` was run."
+msgstr ""
+
+#: ../../user_guide.rst:60
+msgid ""
+"Requirements files are used to force pip to properly resolve "
+"dependencies. As it is now, pip `doesn't have true dependency resolution "
+"<https://github.com/pypa/pip/issues/988>`_, but instead simply uses the "
+"first specification it finds for a project. E.g if `pkg1` requires "
+"`pkg3>=1.0` and `pkg2` requires `pkg3>=1.0,<=2.0`, and if `pkg1` is "
+"resolved first, pip will only use `pkg3>=1.0`, and could easily end up "
+"installing a version of `pkg3` that conflicts with the needs of `pkg2`.  "
+"To solve this problem, you can place `pkg3>=1.0,<=2.0` (i.e. the correct "
+"specification) into your requirements file directly along with the other "
+"top level requirements. Like so:"
+msgstr ""
+
+#: ../../user_guide.rst:77
+msgid ""
+"Requirements files are used to force pip to install an alternate version "
+"of a sub-dependency.  For example, suppose `ProjectA` in your "
+"requirements file requires `ProjectB`, but the latest version (v1.3) has "
+"a bug, you can force pip to accept earlier versions like so:"
+msgstr ""
+
+#: ../../user_guide.rst:87
+msgid ""
+"Requirements files are used to override a dependency with a local patch "
+"that lives in version control.  For example, suppose a dependency, "
+"`SomeDependency` from PyPI has a bug, and you can't wait for an upstream "
+"fix. You could clone/copy the src, make the fix, and place it in VCS with"
+" the tag `sometag`.  You'd reference it in your requirements file with a "
+"line like so:"
+msgstr ""
+
+#: ../../user_guide.rst:97
+msgid ""
+"If `SomeDependency` was previously a top-level requirement in your "
+"requirements file, then **replace** that line with the new line. If "
+"`SomeDependency` is a sub-dependency, then **add** the new line."
+msgstr ""
+
+#: ../../user_guide.rst:102
+msgid ""
+"It's important to be clear that pip determines package dependencies using"
+" `install_requires metadata "
+"<https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-"
+"dependencies>`_, not by discovering `requirements.txt` files embedded in "
+"projects."
+msgstr ""
+
+#: ../../user_guide.rst:107
+msgid "See also:"
+msgstr ""
+
+#: ../../user_guide.rst:109
+msgid ":ref:`Requirements File Format`"
+msgstr ""
+
+#: ../../user_guide.rst:110
+msgid ":ref:`pip freeze`"
+msgstr ""
+
+#: ../../user_guide.rst:111
+msgid ""
+"`\"setup.py vs requirements.txt\" (an article by Donald Stufft) "
+"<https://caremad.io/2013/07/setup-vs-requirement/>`_"
+msgstr ""
+
+#: ../../user_guide.rst:118
+msgid "Constraints Files"
+msgstr ""
+
+#: ../../user_guide.rst:120
+msgid ""
+"Constraints files are requirements files that only control which version "
+"of a requirement is installed, not whether it is installed or not. Their "
+"syntax and contents is nearly identical to :ref:`Requirements Files`. "
+"There is one key difference: Including a package in a constraints file "
+"does not trigger installation of the package."
+msgstr ""
+
+#: ../../user_guide.rst:126
+msgid "Use a constraints file like so:"
+msgstr ""
+
+#: ../../user_guide.rst:132
+msgid ""
+"Constraints files are used for exactly the same reason as requirements "
+"files when you don't know exactly what things you want to install. For "
+"instance, say that the \"helloworld\" package doesn't work in your "
+"environment, so you have a local patched version. Some things you install"
+" depend on \"helloworld\", and some don't."
+msgstr ""
+
+#: ../../user_guide.rst:138
+msgid ""
+"One way to ensure that the patched version is used consistently is to "
+"manually audit the dependencies of everything you install, and if "
+"\"helloworld\" is present, write a requirements file to use when "
+"installing that thing."
+msgstr ""
+
+#: ../../user_guide.rst:142
+msgid ""
+"Constraints files offer a better way: write a single constraints file for"
+" your organisation and use that everywhere. If the thing being installed "
+"requires \"helloworld\" to be installed, your fixed version specified in "
+"your constraints file will be used."
+msgstr ""
+
+#: ../../user_guide.rst:147
+msgid "Constraints file support was added in pip 7.1."
+msgstr ""
+
+#: ../../user_guide.rst:152
+msgid "Installing from Wheels"
+msgstr ""
+
+#: ../../user_guide.rst:154
+msgid ""
+"\"Wheel\" is a built, archive format that can greatly speed installation "
+"compared to building and installing from source archives. For more "
+"information, see the `Wheel docs <https://wheel.readthedocs.io>`_ , "
+"`PEP427 <http://www.python.org/dev/peps/pep-0427>`_, and `PEP425 "
+"<http://www.python.org/dev/peps/pep-0425>`_"
+msgstr ""
+
+#: ../../user_guide.rst:160
+msgid ""
+"Pip prefers Wheels where they are available. To disable this, use the "
+":ref:`--no-binary <install_--no-binary>` flag for :ref:`pip install`."
+msgstr ""
+
+#: ../../user_guide.rst:163
+msgid ""
+"If no satisfactory wheels are found, pip will default to finding source "
+"archives."
+msgstr ""
+
+#: ../../user_guide.rst:166
+msgid "To install directly from a wheel archive:"
+msgstr ""
+
+#: ../../user_guide.rst:173
+msgid ""
+"For the cases where wheels are not available, pip offers :ref:`pip wheel`"
+" as a convenience, to build wheels for all your requirements and "
+"dependencies."
+msgstr ""
+
+#: ../../user_guide.rst:176
+msgid ""
+":ref:`pip wheel` requires the `wheel package "
+"<https://pypi.python.org/pypi/wheel>`_ to be installed, which provides "
+"the \"bdist_wheel\" setuptools extension that it uses."
+msgstr ""
+
+#: ../../user_guide.rst:180
+msgid ""
+"To build wheels for your requirements and all their dependencies to a "
+"local directory:"
+msgstr ""
+
+#: ../../user_guide.rst:188
+msgid ""
+"And *then* to install those requirements just using your local directory "
+"of wheels (and not from PyPI):"
+msgstr ""
+
+#: ../../user_guide.rst:196
+msgid "Uninstalling Packages"
+msgstr ""
+
+#: ../../user_guide.rst:198
+msgid "pip is able to uninstall most packages like so:"
+msgstr ""
+
+#: ../../user_guide.rst:204
+msgid ""
+"pip also performs an automatic uninstall of an old version of a package "
+"before upgrading to a newer version."
+msgstr ""
+
+#: ../../user_guide.rst:207
+msgid "For more information and examples, see the :ref:`pip uninstall` reference."
+msgstr ""
+
+#: ../../user_guide.rst:211
+msgid "Listing Packages"
+msgstr ""
+
+#: ../../user_guide.rst:213
+msgid "To list installed packages:"
+msgstr ""
+
+#: ../../user_guide.rst:223
+msgid "To list outdated packages, and show the latest version available:"
+msgstr ""
+
+#: ../../user_guide.rst:232
+msgid "To show details about an installed package:"
+msgstr ""
+
+#: ../../user_guide.rst:244
+msgid ""
+"For more information and examples, see the :ref:`pip list` and :ref:`pip "
+"show` reference pages."
+msgstr ""
+
+#: ../../user_guide.rst:249
+msgid "Searching for Packages"
+msgstr ""
+
+#: ../../user_guide.rst:251
+msgid "pip can search `PyPI`_ for packages using the ``pip search`` command::"
+msgstr ""
+
+#: ../../user_guide.rst:256
+msgid "The query will be used to search the names and summaries of all packages."
+msgstr ""
+
+#: ../../user_guide.rst:259
+msgid "For more information and examples, see the :ref:`pip search` reference."
+msgstr ""
+
+#: ../../user_guide.rst:264
+msgid "Configuration"
+msgstr ""
+
+#: ../../user_guide.rst:269
+msgid "Config file"
+msgstr ""
+
+#: ../../user_guide.rst:271
+msgid ""
+"pip allows you to set all command line option defaults in a standard ini "
+"style config file."
+msgstr ""
+
+#: ../../user_guide.rst:274
+msgid ""
+"The names and locations of the configuration files vary slightly across "
+"platforms. You may have per-user, per-virtualenv or site-wide (shared "
+"amongst all users) configuration:"
+msgstr ""
+
+#: ../../user_guide.rst:278
+msgid "**Per-user**:"
+msgstr ""
+
+#: ../../user_guide.rst:280
+msgid ""
+"On Unix the default configuration file is: "
+":file:`$HOME/.config/pip/pip.conf` which respects the ``XDG_CONFIG_HOME``"
+" environment variable."
+msgstr ""
+
+#: ../../user_guide.rst:282
+msgid ""
+"On macOS the configuration file is :file:`$HOME/Library/Application "
+"Support/pip/pip.conf`."
+msgstr ""
+
+#: ../../user_guide.rst:284
+msgid "On Windows the configuration file is :file:`%APPDATA%\\\\pip\\\\pip.ini`."
+msgstr ""
+
+#: ../../user_guide.rst:286
+msgid ""
+"There are also a legacy per-user configuration file which is also "
+"respected, these are located at:"
+msgstr ""
+
+#: ../../user_guide.rst:289
+msgid "On Unix and macOS the configuration file is: :file:`$HOME/.pip/pip.conf`"
+msgstr ""
+
+#: ../../user_guide.rst:290
+msgid "On Windows the configuration file is: :file:`%HOME%\\\\pip\\\\pip.ini`"
+msgstr ""
+
+#: ../../user_guide.rst:292
+msgid ""
+"You can set a custom path location for this config file using the "
+"environment variable ``PIP_CONFIG_FILE``."
+msgstr ""
+
+#: ../../user_guide.rst:295
+msgid "**Inside a virtualenv**:"
+msgstr ""
+
+#: ../../user_guide.rst:297
+msgid "On Unix and macOS the file is :file:`$VIRTUAL_ENV/pip.conf`"
+msgstr ""
+
+#: ../../user_guide.rst:298
+msgid "On Windows the file is: :file:`%VIRTUAL_ENV%\\\\pip.ini`"
+msgstr ""
+
+#: ../../user_guide.rst:300
+msgid "**Site-wide**:"
+msgstr ""
+
+#: ../../user_guide.rst:302
+msgid ""
+"On Unix the file may be located in :file:`/etc/pip.conf`. Alternatively "
+"it may be in a \"pip\" subdirectory of any of the paths set in the "
+"environment variable ``XDG_CONFIG_DIRS`` (if it exists), for example "
+":file:`/etc/xdg/pip/pip.conf`."
+msgstr ""
+
+#: ../../user_guide.rst:306
+msgid "On macOS the file is: :file:`/Library/Application Support/pip/pip.conf`"
+msgstr ""
+
+#: ../../user_guide.rst:307
+msgid ""
+"On Windows XP the file is: :file:`C:\\\\Documents and Settings\\\\All "
+"Users\\\\Application Data\\\\pip\\\\pip.ini`"
+msgstr ""
+
+#: ../../user_guide.rst:309
+msgid ""
+"On Windows 7 and later the file is hidden, but writeable at "
+":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini`"
+msgstr ""
+
+#: ../../user_guide.rst:311
+msgid "Site-wide configuration is not supported on Windows Vista"
+msgstr ""
+
+#: ../../user_guide.rst:313
+msgid ""
+"If multiple configuration files are found by pip then they are combined "
+"in the following order:"
+msgstr ""
+
+#: ../../user_guide.rst:316
+msgid "Firstly the site-wide file is read, then"
+msgstr ""
+
+#: ../../user_guide.rst:317
+msgid "The per-user file is read, and finally"
+msgstr ""
+
+#: ../../user_guide.rst:318
+msgid "The virtualenv-specific file is read."
+msgstr ""
+
+#: ../../user_guide.rst:320
+msgid ""
+"Each file read overrides any values read from previous files, so if the "
+"global timeout is specified in both the site-wide file and the per-user "
+"file then the latter value is the one that will be used."
+msgstr ""
+
+#: ../../user_guide.rst:324
+msgid ""
+"The names of the settings are derived from the long command line option, "
+"e.g. if you want to use a different package index (``--index-url``) and "
+"set the HTTP timeout (``--default-timeout``) to 60 seconds your config "
+"file would look like this:"
+msgstr ""
+
+#: ../../user_guide.rst:335
+msgid ""
+"Each subcommand can be configured optionally in its own section so that "
+"every global setting with the same name will be overridden; e.g. "
+"decreasing the ``timeout`` to ``10`` seconds when running the `freeze` "
+"(`Freezing Requirements <./#freezing-requirements>`_) command and using "
+"``60`` seconds for all other commands is possible with:"
+msgstr ""
+
+#: ../../user_guide.rst:350
+msgid ""
+"Boolean options like ``--ignore-installed`` or ``--no-dependencies`` can "
+"be set like this:"
+msgstr ""
+
+#: ../../user_guide.rst:359
+msgid ""
+"To enable the boolean options ``--no-compile`` and ``--no-cache-dir``, "
+"falsy values have to be used:"
+msgstr ""
+
+#: ../../user_guide.rst:370
+msgid "Appending options like ``--find-links`` can be written on multiple lines:"
+msgstr ""
+
+#: ../../user_guide.rst:385
+msgid "Environment Variables"
+msgstr ""
+
+#: ../../user_guide.rst:387
+msgid ""
+"pip's command line options can be set with environment variables using "
+"the format ``PIP_<UPPER_LONG_NAME>`` . Dashes (``-``) have to be replaced"
+" with underscores (``_``)."
+msgstr ""
+
+#: ../../user_guide.rst:391
+msgid "For example, to set the default timeout::"
+msgstr ""
+
+#: ../../user_guide.rst:395
+msgid "This is the same as passing the option to pip directly::"
+msgstr ""
+
+#: ../../user_guide.rst:399
+msgid ""
+"To set options that can be set multiple times on the command line, just "
+"add spaces in between values. For example::"
+msgstr ""
+
+#: ../../user_guide.rst:404
+msgid "is the same as calling::"
+msgstr ""
+
+#: ../../user_guide.rst:410
+msgid "Config Precedence"
+msgstr ""
+
+#: ../../user_guide.rst:412
+msgid ""
+"Command line options have precedence over environment variables, which "
+"have precedence over the config file."
+msgstr ""
+
+#: ../../user_guide.rst:414
+msgid ""
+"Within the config file, command specific sections have precedence over "
+"the global section."
+msgstr ""
+
+#: ../../user_guide.rst:416
+msgid "Examples:"
+msgstr ""
+
+#: ../../user_guide.rst:418
+msgid "``--host=foo`` overrides ``PIP_HOST=foo``"
+msgstr ""
+
+#: ../../user_guide.rst:419
+msgid "``PIP_HOST=foo`` overrides a config file with ``[global] host = foo``"
+msgstr ""
+
+#: ../../user_guide.rst:420
+msgid ""
+"A command specific section in the config file ``[<command>] host = bar`` "
+"overrides the option with same name in the ``[global]`` config file "
+"section"
+msgstr ""
+
+#: ../../user_guide.rst:425
+msgid "Command Completion"
+msgstr ""
+
+#: ../../user_guide.rst:427
+msgid "pip comes with support for command line completion in bash, zsh and fish."
+msgstr ""
+
+#: ../../user_guide.rst:429
+msgid "To setup for bash::"
+msgstr ""
+
+#: ../../user_guide.rst:433
+msgid "To setup for zsh::"
+msgstr ""
+
+#: ../../user_guide.rst:437
+msgid "To setup for fish::"
+msgstr ""
+
+#: ../../user_guide.rst:441
+msgid ""
+"Alternatively, you can use the result of the ``completion`` command "
+"directly with the eval function of your shell, e.g. by adding the "
+"following to your startup file::"
+msgstr ""
+
+#: ../../user_guide.rst:451
+msgid "Installing from local packages"
+msgstr ""
+
+#: ../../user_guide.rst:453
+msgid ""
+"In some cases, you may want to install from local packages only, with no "
+"traffic to PyPI."
+msgstr ""
+
+#: ../../user_guide.rst:456
+msgid "First, download the archives that fulfill your requirements::"
+msgstr ""
+
+#: ../../user_guide.rst:461
+msgid ""
+"Note that ``pip install --download`` will look in your wheel cache first,"
+" before trying to download from PyPI.  If you've never installed your "
+"requirements before, you won't have a wheel cache for those items.  In "
+"that case, if some of your requirements don't come as wheels from PyPI, "
+"and you want wheels, then run this instead::"
+msgstr ""
+
+#: ../../user_guide.rst:470
+msgid ""
+"Then, to install from local only, you'll be using :ref:`--find-links "
+"<--find-links>` and :ref:`--no-index <--no-index>` like so::"
+msgstr ""
+
+#: ../../user_guide.rst:477
+msgid "\"Only if needed\" Recursive Upgrade"
+msgstr ""
+
+#: ../../user_guide.rst:479
+msgid ""
+"``pip install --upgrade`` is currently written to perform an eager "
+"recursive upgrade, i.e. it upgrades all dependencies regardless of "
+"whether they still satisfy the new parent requirements."
+msgstr ""
+
+#: ../../user_guide.rst:483
+msgid "E.g. supposing:"
+msgstr ""
+
+#: ../../user_guide.rst:485
+msgid "`SomePackage-1.0` requires `AnotherPackage>=1.0`"
+msgstr ""
+
+#: ../../user_guide.rst:486
+msgid "`SomePackage-2.0` requires `AnotherPackage>=1.0` and `OneMorePackage==1.0`"
+msgstr ""
+
+#: ../../user_guide.rst:487
+msgid "`SomePackage-1.0` and `AnotherPackage-1.0` are currently installed"
+msgstr ""
+
+#: ../../user_guide.rst:488
+msgid ""
+"`SomePackage-2.0` and `AnotherPackage-2.0` are the latest versions "
+"available on PyPI."
+msgstr ""
+
+#: ../../user_guide.rst:490
+msgid ""
+"Running ``pip install --upgrade SomePackage`` would upgrade `SomePackage`"
+" *and* `AnotherPackage` despite `AnotherPackage` already being satisfied."
+msgstr ""
+
+#: ../../user_guide.rst:493
+msgid ""
+"pip doesn't currently have an option to do an \"only if needed\" "
+"recursive upgrade, but you can achieve it using these 2 steps::"
+msgstr ""
+
+#: ../../user_guide.rst:499
+msgid ""
+"The first line will upgrade `SomePackage`, but not dependencies like "
+"`AnotherPackage`.  The 2nd line will fill in new dependencies like "
+"`OneMorePackage`."
+msgstr ""
+
+#: ../../user_guide.rst:503
+msgid ""
+"See :issue:`59` for a plan of making \"only if needed\" recursive the "
+"default behavior for a new ``pip upgrade`` command."
+msgstr ""
+
+#: ../../user_guide.rst:508
+msgid "User Installs"
+msgstr ""
+
+#: ../../user_guide.rst:510
+msgid ""
+"With Python 2.6 came the `\"user scheme\" for installation "
+"<http://docs.python.org/install/index.html#alternate-installation-the-"
+"user-scheme>`_, which means that all Python distributions support an "
+"alternative install location that is specific to a user.  The default "
+"location for each OS is explained in the python documentation for the "
+"`site.USER_BASE "
+"<http://docs.python.org/library/site.html#site.USER_BASE>`_ variable.  "
+"This mode of installation can be turned on by specifying the :ref:`--user"
+" <install_--user>` option to ``pip install``."
+msgstr ""
+
+#: ../../user_guide.rst:519
+msgid ""
+"Moreover, the \"user scheme\" can be customized by setting the "
+"``PYTHONUSERBASE`` environment variable, which updates the value of "
+"``site.USER_BASE``."
+msgstr ""
+
+#: ../../user_guide.rst:522
+msgid ""
+"To install \"SomePackage\" into an environment with site.USER_BASE "
+"customized to '/myappenv', do the following::"
+msgstr ""
+
+#: ../../user_guide.rst:528
+msgid "``pip install --user`` follows four rules:"
+msgstr ""
+
+#: ../../user_guide.rst:530
+msgid ""
+"When globally installed packages are on the python path, and they "
+"*conflict* with the installation requirements, they are ignored, and "
+"*not* uninstalled."
+msgstr ""
+
+#: ../../user_guide.rst:533
+msgid ""
+"When globally installed packages are on the python path, and they "
+"*satisfy* the installation requirements, pip does nothing, and reports "
+"that requirement is satisfied (similar to how global packages can satisfy"
+" requirements when installing packages in a ``--system-site-packages`` "
+"virtualenv)."
+msgstr ""
+
+#: ../../user_guide.rst:538
+msgid ""
+"pip will not perform a ``--user`` install in a ``--no-site-packages`` "
+"virtualenv (i.e. the default kind of virtualenv), due to the user site "
+"not being on the python path.  The installation would be pointless."
+msgstr ""
+
+#: ../../user_guide.rst:541
+msgid ""
+"In a ``--system-site-packages`` virtualenv, pip will not install a "
+"package that conflicts with a package in the virtualenv site-packages.  "
+"The --user installation would lack sys.path precedence and be pointless."
+msgstr ""
+
+#: ../../user_guide.rst:546
+msgid "To make the rules clearer, here are some examples:"
+msgstr ""
+
+#: ../../user_guide.rst:549
+msgid "From within a ``--no-site-packages`` virtualenv (i.e. the default kind)::"
+msgstr ""
+
+#: ../../user_guide.rst:555
+msgid ""
+"From within a ``--system-site-packages`` virtualenv where "
+"``SomePackage==0.3`` is already installed in the virtualenv::"
+msgstr ""
+
+#: ../../user_guide.rst:561
+msgid ""
+"From within a real python, where ``SomePackage`` is *not* installed "
+"globally::"
+msgstr ""
+
+#: ../../user_guide.rst:568
+msgid ""
+"From within a real python, where ``SomePackage`` *is* installed globally,"
+" but is *not* the latest version::"
+msgstr ""
+
+#: ../../user_guide.rst:579
+msgid ""
+"From within a real python, where ``SomePackage`` *is* installed globally,"
+" and is the latest version::"
+msgstr ""
+
+#: ../../user_guide.rst:598
+msgid "Ensuring Repeatability"
+msgstr ""
+
+#: ../../user_guide.rst:600
+msgid "pip can achieve various levels of repeatability:"
+msgstr ""
+
+#: ../../user_guide.rst:603
+msgid "Pinned Version Numbers"
+msgstr ""
+
+#: ../../user_guide.rst:605
+msgid ""
+"Pinning the versions of your dependencies in the requirements file "
+"protects you from bugs or incompatibilities in newly released versions::"
+msgstr ""
+
+#: ../../user_guide.rst:611
+msgid ""
+"Using :ref:`pip freeze` to generate the requirements file will ensure "
+"that not only the top-level dependencies are included but their sub-"
+"dependencies as well, and so on. Perform the installation using :ref"
+":`--no-deps <install_--no-deps>` for an extra dose of insurance against "
+"installing anything not explicitly listed."
+msgstr ""
+
+#: ../../user_guide.rst:617
+msgid ""
+"This strategy is easy to implement and works across OSes and "
+"architectures. However, it trusts PyPI and the certificate authority "
+"chain. It also relies on indices and find-links locations not allowing "
+"packages to change without a version increase. (PyPI does protect against"
+" this.)"
+msgstr ""
+
+#: ../../user_guide.rst:624
+msgid "Hash-checking Mode"
+msgstr ""
+
+#: ../../user_guide.rst:626
+msgid ""
+"Beyond pinning version numbers, you can add hashes against which to "
+"verify downloaded packages::"
+msgstr ""
+
+#: ../../user_guide.rst:631
+msgid ""
+"This protects against a compromise of PyPI or the HTTPS certificate "
+"chain. It also guards against a package changing without its version "
+"number changing (on indexes that allow this). This approach is a good fit"
+" for automated server deployments."
+msgstr ""
+
+#: ../../user_guide.rst:636
+msgid ""
+"Hash-checking mode is a labor-saving alternative to running a private "
+"index server containing approved packages: it removes the need to upload "
+"packages, maintain ACLs, and keep an audit trail (which a VCS gives you "
+"on the requirements file for free). It can also substitute for a vendor "
+"library, providing easier upgrades and less VCS noise. It does not, of "
+"course, provide the availability benefits of a private index or a vendor "
+"library."
+msgstr ""
+
+#: ../../user_guide.rst:643
+msgid ""
+"For more, see :ref:`pip install\\'s discussion of hash-checking mode "
+"<hash-checking mode>`."
+msgstr ""
+
+#: ../../user_guide.rst:648
+msgid "Installation Bundles"
+msgstr ""
+
+#: ../../user_guide.rst:650
+msgid ""
+"Using :ref:`pip wheel`, you can bundle up all of a project's "
+"dependencies, with any compilation done, into a single archive. This "
+"allows installation when index servers are unavailable and avoids time-"
+"consuming recompilation. Create an archive like this::"
+msgstr ""
+
+#: ../../user_guide.rst:660
+msgid "You can then install from the archive like this::"
+msgstr ""
+
+#: ../../user_guide.rst:666
+msgid ""
+"Note that compiled packages are typically OS- and architecture-specific, "
+"so these archives are not necessarily portable across machines."
+msgstr ""
+
+#: ../../user_guide.rst:669
+msgid ""
+"Hash-checking mode can be used along with this method to ensure that "
+"future archives are built with identical packages."
+msgstr ""
+
+#: ../../user_guide.rst:673
+msgid ""
+"Finally, beware of the ``setup_requires`` keyword arg in "
+":file:`setup.py`. The (rare) packages that use it will cause those "
+"dependencies to be downloaded by setuptools directly, skipping pip's "
+"protections. If you need to use such a package, see :ref:`Controlling "
+"setup_requires<controlling-setup-requires>`."
+msgstr ""
+
