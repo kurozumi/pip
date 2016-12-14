@@ -25,12 +25,12 @@ msgstr ""
 #: ../../quickstart.rst:4
 msgid "First, :doc:`Install pip <installing>`."
 msgstr ""
-"最初に, :doc:`pipをインストール <installing>`します。"
+"最初に, :doc:`pipをインストール <installing>` します。"
 
 #: ../../quickstart.rst:6
 msgid "Install a package from `PyPI`_:"
 msgstr ""
-"`PyPI`_からパッケージをインストール:"
+"`PyPI`_ からパッケージをインストール:"
 
 #: ../../quickstart.rst:14
 msgid ""
