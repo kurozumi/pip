@@ -43,7 +43,7 @@ msgid ""
 "Environments>` created by :ref:`pypug:virtualenv` or :ref:`pyvenv "
 "<pypug:venv>`."
 msgstr ""
-":ref:`pypug:virtualenv` または:ref:`pyvenv <pypug:venv>` によって作成された　"
+":ref:`pypug:virtualenv` または :ref:`pyvenv <pypug:venv>` によって作成された　"
 ":ref:`Virtual Environment <pypug:Creating and using Virtual Environments>`　"
 "で作業している場合、pipはすでにインストールされています。"
 
@@ -83,11 +83,11 @@ msgid ""
 ":ref:`Wheel cache` (which improves installation speed), although neither "
 "are required to install pre-built :term:`wheels <pypug:Wheel>`."
 msgstr ""
-"get-pip.pyは:ref:`pypug:setuptools` [3]_ と:ref:`pypug:wheel` もインストールします。"
+"get-pip.pyは :ref:`pypug:setuptools` [3]_ と :ref:`pypug:wheel` もインストールします。"
 ":term:`source distributions <pypug:Source　Distribution (or \"sdist\")>` を"
 "インストールするには、:ref:`pypug:setuptools` が必要です。"
 "どちらも :ref:`Wheel cache` （インストール速度を向上させる）を構築できることが求められていますが、"
-"あらかじめ構築された:term:`wheels <pypug:Wheel>` をインストールする必要はありません。"
+"あらかじめ構築された :term:`wheels <pypug:Wheel>` をインストールする必要はありません。"
 
 #: ../../installing.rst:48
 msgid ""
@@ -109,11 +109,12 @@ msgstr ""
 #: ../../installing.rst:60
 msgid "If set, don't attempt to install :ref:`pypug:setuptools`"
 msgstr ""
-"セットすると、:ref:`pypug:setuptools` をインストールしません"
+"設定すると :ref:`pypug:setuptools` をインストールしません"
 
 #: ../../installing.rst:64
 msgid "If set, don't attempt to install :ref:`pypug:wheel`"
 msgstr ""
+"設定すると、:ref:`pypug:wheel`　をインストールしません"
 
 #: ../../installing.rst:67
 msgid ""
