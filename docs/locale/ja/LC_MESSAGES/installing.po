@@ -20,12 +20,12 @@ msgstr ""
 #: ../../installing.rst:4
 msgid "Installation"
 msgstr ""
-"インストール方法"
+"インストール"
 
 #: ../../installing.rst:7
 msgid "Do I need to install pip?"
 msgstr ""
-"pipをインストールする必要がありますか？"
+"pipをインストールする必要はありますか？"
 
 #: ../../installing.rst:9
 msgid ""
@@ -57,11 +57,12 @@ msgid ""
 "To install pip, securely download `get-pip.py <https://bootstrap.pypa.io"
 "/get-pip.py>`_. [2]_"
 msgstr ""
-"pipをインストールするために,  `get-pip.py <https://bootstrap.pypa.io/get-pip.py>`_. [2]_ を安全にダウンロードしてください。"
+"pipをインストールするために,  `get-pip.py <https://bootstrap.pypa.io/get-pip.py>`_. [2]_ を安全にダウンロードして下さい。"
 
 #: ../../installing.rst:26
 msgid "Then run the following:"
 msgstr ""
+"次に以下を実行して下さい。"
 
 #: ../../installing.rst:35
 msgid ""
@@ -70,6 +71,8 @@ msgid ""
 "coordinate with those tools, and may leave your system in an inconsistent"
 " state."
 msgstr ""
+"OSまたは別のパッケージマネージャによって管理されているPythonを使用している場合は注意してください。"
+"get-pip.pyはこれらのツールと連携しないため、システムが不整合状態になる可能性があります。"
 
 #: ../../installing.rst:39
 msgid ""
