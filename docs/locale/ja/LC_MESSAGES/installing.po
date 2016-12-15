@@ -84,6 +84,10 @@ msgid ""
 "are required to install pre-built :term:`wheels <pypug:Wheel>`."
 msgstr ""
 "get-pip.pyは :ref:`pypug:setuptools` [3]_ と :ref:`pypug:wheel` もインストールします。"
+":term:`source distributions <pypug:Source　Distribution (or \"sdist\")>`　を"
+"インストールするには、　:ref:`pypug:setuptools`　が必要です。"
+"どちらも :ref:`Wheel cache` （インストール速度を向上させる）を構築できることが求められていますが、"
+"あらかじめ構築された :term:`wheels <pypug:Wheel>` をインストールする必要はありません。"
 
 #: ../../installing.rst:48
 msgid ""
