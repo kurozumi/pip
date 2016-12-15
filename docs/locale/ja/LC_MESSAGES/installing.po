@@ -173,10 +173,12 @@ msgstr ""
 #: ../../installing.rst:111
 msgid "Python and OS Compatibility"
 msgstr ""
+"PythonとOSの互換性"
 
 #: ../../installing.rst:113
 msgid "pip works with CPython versions 2.6, 2.7, 3.3, 3.4, 3.5 and also pypy."
 msgstr ""
+"pipは、CPythonのバージョン2.6,2.7,3.3,3.4,3.5、さらにはpypyで動作します。"
 
 #: ../../installing.rst:115
 msgid ""
@@ -184,10 +186,13 @@ msgid ""
 "versions (i.e. 2.6.9 for 2.6, etc). Previous patch versions are supported"
 " on a best effort approach."
 msgstr ""
+"これはマイナーバージョン（2.6の2.6.9など）の最新のパッチバージョンでpipが動作することを意味します。"
+"以前のパッチ・バージョンは、ベスト・エフォート・アプローチでサポートされています。"
 
 #: ../../installing.rst:119
 msgid "pip works on Unix/Linux, macOS, and Windows."
 msgstr ""
+"pipはUnix/Linux、macOS、Windowsで動作します。"
 
 #: ../../installing.rst:124
 msgid ""
