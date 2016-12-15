@@ -153,7 +153,7 @@ msgid ""
 "<https://packaging.python.org/en/latest/current/>`_."
 msgstr ""
 "`Python Packaging User Guide <https://packaging.python.org/en/latest/current/>`_ の"
-":ref:`pypug:Installing pip/setuptools/wheel with Linux Package Managers` を参照してください。"
+"　:ref:`pypug:Installing pip/setuptools/wheel with Linux Package Managers` を参照してください。"
 
 #: ../../installing.rst:94
 msgid "Upgrading pip"
