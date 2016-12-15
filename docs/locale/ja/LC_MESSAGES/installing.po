@@ -109,7 +109,7 @@ msgstr ""
 #: ../../installing.rst:60
 msgid "If set, don't attempt to install :ref:`pypug:setuptools`"
 msgstr ""
-"セットすると、:ref:`pypug:setuptools`をインストールしません"
+"セットすると、:ref:`pypug:setuptools`　をインストールしません"
 
 #: ../../installing.rst:64
 msgid "If set, don't attempt to install :ref:`pypug:wheel`"
