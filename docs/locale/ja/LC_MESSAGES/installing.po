@@ -114,7 +114,7 @@ msgstr ""
 #: ../../installing.rst:64
 msgid "If set, don't attempt to install :ref:`pypug:wheel`"
 msgstr ""
-"設定すると、:ref:`pypug:wheel`　をインストールしません"
+"設定すると、:ref:`pypug:wheel` をインストールしません"
 
 #: ../../installing.rst:67
 msgid ""
