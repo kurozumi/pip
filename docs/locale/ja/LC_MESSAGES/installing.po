@@ -122,8 +122,8 @@ msgid ""
 " <pip install Options>` and the :ref:`general options <General Options>`."
 " Below are some examples:"
 msgstr ""
-"さらに、``get-pip.py`` は :ref:`pipインストールオプション <pip install Options>`"
-"と :ref:`一般的なオプション <General Options>` もサポートしています。"
+"さらに、``get-pip.py`` は :ref:`pip install options <pip install Options>` と"
+":ref:`general options <General Options>` もサポートしています。"
 "以下はいくつかの例です:"
 
 #: ../../installing.rst:71
