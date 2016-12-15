@@ -98,8 +98,8 @@ msgid ""
 "<https://bootstrap.pypa.io/2.6/get-pip.py>`__."
 msgstr ""
 "get-pip.pyはpipと同じpythonバージョンでサポートされています。"
-"現在サポートされていないPython 3.2は、代わりのスクリプトが `ここ <https://bootstrap.pypa.io/3.2/get-pip.py>`__ にあります。"
-"pip 10.0でサポートされていないPython 2.6は、代わりのスクリプトが `ここ <https://bootstrap.pypa.io/2.6/get-pip.py>`__ にあります。"
+"現在サポートされていないPython 3.2は、代わりのスクリプトが`ここ <https://bootstrap.pypa.io/3.2/get-pip.py>`__ にあります。"
+"pip 10.0でサポートされていないPython 2.6は、代わりのスクリプトが`ここ <https://bootstrap.pypa.io/2.6/get-pip.py>`__ にあります。"
 
 #: ../../installing.rst:56
 msgid "get-pip.py options"
@@ -109,7 +109,7 @@ msgstr ""
 #: ../../installing.rst:60
 msgid "If set, don't attempt to install :ref:`pypug:setuptools`"
 msgstr ""
-"セットすると、:ref:`pypug:setuptools`　をインストールしません"
+"セットすると、:ref:`pypug:setuptools` をインストールしません"
 
 #: ../../installing.rst:64
 msgid "If set, don't attempt to install :ref:`pypug:wheel`"
