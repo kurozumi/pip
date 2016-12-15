@@ -34,7 +34,7 @@ msgid ""
 "but you'll need to :ref:`upgrade pip <Upgrading pip>`."
 msgstr ""
 "`python.org <https://www.python.org>`_ からダウンロードしたPython 2>= 2.7.9またはPython 3>= 3.4バイナリを使用している場合、"
-"pipを:ref:`upgrade pip <Upgrading pip>` する必要があります。"
+"pipを :ref:`upgrade pip <Upgrading pip>` する必要があります。"
 
 #: ../../installing.rst:13
 msgid ""
