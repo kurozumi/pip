@@ -122,6 +122,9 @@ msgid ""
 " <pip install Options>` and the :ref:`general options <General Options>`."
 " Below are some examples:"
 msgstr ""
+"さらに、``get-pip.py`` は:ref:`pipインストールオプション <pip install Options>`"
+"と:ref:`一般的なオプション <General Options>` もサポートしています。"
+"以下はいくつかの例です:"
 
 #: ../../installing.rst:71
 msgid "Install from local copies of pip and setuptools::"
