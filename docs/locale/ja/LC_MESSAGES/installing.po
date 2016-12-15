@@ -158,14 +158,17 @@ msgstr ""
 #: ../../installing.rst:94
 msgid "Upgrading pip"
 msgstr ""
+"pipをアップグレードする"
 
 #: ../../installing.rst:96
 msgid "On Linux or macOS:"
 msgstr ""
+"LinuxまたはmacOSの場合:"
 
 #: ../../installing.rst:103
 msgid "On Windows [5]_:"
 msgstr ""
+"Windowsの場合 [5]_:"
 
 #: ../../installing.rst:111
 msgid "Python and OS Compatibility"
