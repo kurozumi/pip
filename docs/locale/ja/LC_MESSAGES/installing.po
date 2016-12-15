@@ -83,6 +83,7 @@ msgid ""
 ":ref:`Wheel cache` (which improves installation speed), although neither "
 "are required to install pre-built :term:`wheels <pypug:Wheel>`."
 msgstr ""
+"get-pip.pyは :ref:`pypug:setuptools` [3]_ と :ref:`pypug:wheel`もインストールします。"
 
 #: ../../installing.rst:48
 msgid ""
