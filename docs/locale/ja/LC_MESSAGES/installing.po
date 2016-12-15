@@ -144,6 +144,7 @@ msgstr ""
 #: ../../installing.rst:85
 msgid "Using Linux Package Managers"
 msgstr ""
+"Linuxパッケージマネージャを使用する"
 
 #: ../../installing.rst:87
 msgid ""
@@ -151,6 +152,8 @@ msgid ""
 "Managers` in the `Python Packaging User Guide "
 "<https://packaging.python.org/en/latest/current/>`_."
 msgstr ""
+"`Python Packaging User Guide <https://packaging.python.org/en/latest/current/>`_ の"
+":ref:`pypug:Installing pip/setuptools/wheel with Linux Package Managers` を参照してください。"
 
 #: ../../installing.rst:94
 msgid "Upgrading pip"
