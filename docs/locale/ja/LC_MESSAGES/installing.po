@@ -122,21 +122,24 @@ msgid ""
 " <pip install Options>` and the :ref:`general options <General Options>`."
 " Below are some examples:"
 msgstr ""
-"さらに、``get-pip.py`` は:ref:`pipインストールオプション <pip install Options>`"
-"と:ref:`一般的なオプション <General Options>` もサポートしています。"
+"さらに、``get-pip.py`` は :ref:`pipインストールオプション <pip install Options>`"
+"と :ref:`一般的なオプション <General Options>` もサポートしています。"
 "以下はいくつかの例です:"
 
 #: ../../installing.rst:71
 msgid "Install from local copies of pip and setuptools::"
 msgstr ""
+"pipとsetuptoolsのローカルコピーからインストールする::"
 
 #: ../../installing.rst:75
 msgid "Install to the user site [4]_::"
 msgstr ""
+"ユーザーサイト [4]_ へインストールする::"
 
 #: ../../installing.rst:79
 msgid "Install behind a proxy::"
 msgstr ""
+"プロキシ経由でインストールする::"
 
 #: ../../installing.rst:85
 msgid "Using Linux Package Managers"
