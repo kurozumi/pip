@@ -189,6 +189,7 @@ msgstr ""
 #: ../../user_guide.rst:118
 msgid "Constraints Files"
 msgstr ""
+"Constraintsファイル"
 
 #: ../../user_guide.rst:120
 msgid ""
@@ -198,10 +199,16 @@ msgid ""
 "There is one key difference: Including a package in a constraints file "
 "does not trigger installation of the package."
 msgstr ""
+"Constraintsファイルは、インストールされているかどうかではなく、"
+"インストールされている要件のバージョンのみを制御するrequirementsファイルです。"
+"その構文と内容は :ref:`Requirements Files` とほぼ同じです。"
+"重要な違いが1つあります:constraintsファイルにパッケージを組み込んでも、"
+"パッケージのインストールが開始されません。"
 
 #: ../../user_guide.rst:126
 msgid "Use a constraints file like so:"
 msgstr ""
+"以下のように制約ファイルを使用して下さい:"
 
 #: ../../user_guide.rst:132
 msgid ""
