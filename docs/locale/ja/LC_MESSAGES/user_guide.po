@@ -55,6 +55,7 @@ msgstr ""
 #: ../../user_guide.rst:32
 msgid "Requirements Files"
 msgstr ""
+"Requirementsファイル"
 
 #: ../../user_guide.rst:34
 msgid ""
