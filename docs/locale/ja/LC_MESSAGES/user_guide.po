@@ -62,12 +62,14 @@ msgid ""
 "\"Requirements files\" are files containing a list of items to be "
 "installed using :ref:`pip install` like so:"
 msgstr ""
+"\"Requirementsファイル\"は、:ref:`pip install` でインストールするためのパッケージリストが記載されているファイルです。"
 
 #: ../../user_guide.rst:42
 msgid ""
 "Details on the format of the files are here: :ref:`Requirements File "
 "Format`."
 msgstr ""
+"ファイル形式に関する詳細は、ここにあります: :ref:`Requirements File Format`"
 
 #: ../../user_guide.rst:44
 msgid ""
@@ -75,10 +77,13 @@ msgid ""
 "arguments placed in a file. Note that you should not rely on the items in"
 " the file being installed by pip in any particular order."
 msgstr ""
+"論理的に言うと、Requirementsファイルはファイルに書かれた :ref:`pip install` 引数のリストに過ぎません。"
+"特定の順序でpipによってインストールされているファイル内のパッケージに頼るべきではないことに注意してください。"
 
 #: ../../user_guide.rst:48
 msgid "In practice, there are 4 common uses of Requirements files:"
 msgstr ""
+"実際には、Requirementsファイルには4つの一般的な用途があります。"
 
 #: ../../user_guide.rst:50
 msgid ""
