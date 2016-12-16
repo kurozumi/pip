@@ -128,6 +128,9 @@ msgid ""
 "requirements file requires `ProjectB`, but the latest version (v1.3) has "
 "a bug, you can force pip to accept earlier versions like so:"
 msgstr ""
+"Requirementsファイルは、pipにサブ依存関係の代替バージョンをインストールさせるために使用されます。"
+"たとえば、`ProjectB` を必須とするが、最新バージョン（v1.3）にバグがあるRequirementsファイル内の"
+"`ProjectA` を仮定すると、pipに以前のバージョンのを受け入れるよう強制することができます。以下のように。:"
 
 #: ../../user_guide.rst:87
 msgid ""
