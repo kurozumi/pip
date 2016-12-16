@@ -276,7 +276,7 @@ msgid ""
 ":ref:`--no-binary <install_--no-binary>` flag for :ref:`pip install`."
 msgstr ""
 "pipはWheelsが利用可能な環境を好みます。"
-"これを無効にするには、:ref:`pip install` に:ref:`--no-binary <install_--no-binary>` フラグを使用して下さい。"
+"これを無効にするには、:ref:`pip install`　に :ref:`--no-binary <install_--no-binary>` フラグを使用して下さい。"
 
 #: ../../user_guide.rst:163
 msgid ""
@@ -296,7 +296,7 @@ msgid ""
 " as a convenience, to build wheels for all your requirements and "
 "dependencies."
 msgstr ""
-"wheelsが利用できない場合、pipは利便性を高めるため:ref:`pip wheel` を勧め、"
+"wheelsが利用できない場合、pipは利便性を高めるため :ref:`pip wheel` を勧め、"
 "すべての要件と依存関係に対応するwheelsを構築します。"
 
 #: ../../user_guide.rst:176
