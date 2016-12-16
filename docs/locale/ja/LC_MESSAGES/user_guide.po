@@ -118,8 +118,7 @@ msgstr ""
 "`pkg1` が最初に解決された場合、pipは `pkg3>=1.0` のみを使用し、　"
 "`pkg2` で必要だけどコンフリクトする `pkg3` のバージョンをインストールします。"
 "この問題を解決するには、`pkg3>=1.0,<=2.0` （つまり、正しい仕様）を"
-"requirementsファイルに他の最上位要件とともに直接配置できます。"
-"以下のようにです。:"
+"requirementsファイルに他の最上位要件とともに直接配置できます。:"
 
 #: ../../user_guide.rst:77
 msgid ""
@@ -129,8 +128,8 @@ msgid ""
 "a bug, you can force pip to accept earlier versions like so:"
 msgstr ""
 "Requirementsファイルは、pipにサブ依存関係の代替バージョンをインストールさせるために使用されます。"
-"たとえば、`ProjectB` を必須とするが、最新バージョン（v1.3）にバグがあるRequirementsファイル内の"
-"`ProjectA` があるとを仮定した場合、pipに以前のバージョンのを受け入れるよう強制することができます。以下のように。:"
+"たとえば、最新バージョン（v1.3）にバグがあるが `ProjectB` を必須とするRequirementsファイル内の"
+"`ProjectA` を仮定した場合、pipに以前のバージョンのを受け入れるよう強制することができます。:"
 
 #: ../../user_guide.rst:87
 msgid ""
@@ -141,6 +140,10 @@ msgid ""
 " the tag `sometag`.  You'd reference it in your requirements file with a "
 "line like so:"
 msgstr ""
+"Requirementsファイルは、バージョンコントロールに存在するローカルパッチとの依存関係を上書きするために使用されます。"
+"たとえば、依存関係、PyPIの `SomeDependency` にバグがあり、上流の修正を待つことができないとします。"
+"ソースコードをクローン/コピーして修正を加え、いくつかのタグを付けてバージョン管理システムに配置することができます。"
+"以下のようなコマンドでrequirementsファイルで参照したいと思います。:"
 
 #: ../../user_guide.rst:97
 msgid ""
@@ -148,6 +151,9 @@ msgid ""
 "requirements file, then **replace** that line with the new line. If "
 "`SomeDependency` is a sub-dependency, then **add** the new line."
 msgstr ""
+"前もって `SomeDependency` がrequirementファイルにトップレベルの要件であった場合は、"
+"その行を新しい行に **置き換え** ます。"
+"`SomeDependency` が従属依存である場合、新しい行を **追加** します。"
 
 #: ../../user_guide.rst:102
 msgid ""
