@@ -242,10 +242,15 @@ msgid ""
 "requires \"helloworld\" to be installed, your fixed version specified in "
 "your constraints file will be used."
 msgstr ""
+"Constraintsファイルはより良い方法を提供します:"
+"組織のための単一のconstraintsファイルを作成し、あらゆる場所で使用します。"
+"インストールするものに\"helloworld\"をインストールする必要がある場合、"
+"あなたのconstraintsファイルで指定された固定バージョンが使用されます。"
 
 #: ../../user_guide.rst:147
 msgid "Constraints file support was added in pip 7.1."
 msgstr ""
+"Constraintsファイルのサポートはpip7.1で追加されました。"
 
 #: ../../user_guide.rst:152
 msgid "Installing from Wheels"
