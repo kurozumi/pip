@@ -296,7 +296,7 @@ msgid ""
 " as a convenience, to build wheels for all your requirements and "
 "dependencies."
 msgstr ""
-"wheelsが利用できない場合、pipは利便性を高めるため:ref:`pip wheel`　を勧め、"
+"wheelsが利用できない場合、pipは利便性を高めるため:ref:`pip wheel` を勧め、"
 "すべての要件と依存関係に対応するwheelsを構築します。"
 
 #: ../../user_guide.rst:176
@@ -305,7 +305,7 @@ msgid ""
 "<https://pypi.python.org/pypi/wheel>`_ to be installed, which provides "
 "the \"bdist_wheel\" setuptools extension that it uses."
 msgstr ""
-":ref:`pip wheel` は`wheel package <https://pypi.python.org/pypi/wheel>`_が"
+":ref:`pip wheel` は`wheel package <https://pypi.python.org/pypi/wheel>`_ が"
 "インストールされている必要があります。"
 "これはwheel packageが使用する \"bdist_wheel\" setuptoolsの拡張機能を提供します。"
 
