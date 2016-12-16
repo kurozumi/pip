@@ -93,7 +93,7 @@ msgid ""
 "version of everything that was installed when `pip freeze` was run."
 msgstr ""
 "Requirementsファイルは、:ref:`repeatable installations <Repeatability>` を実現するため、"
-:ref:`pip freeze` からの結果を保持するために使用されます。"
+":ref:`pip freeze` からの結果を保持するために使用されます。"
 "この場合、`pip freeze` が実行されたとき、requirementファイルには"
 "インストールされたすべての固定バージョンのリストが記載されています。"
 
