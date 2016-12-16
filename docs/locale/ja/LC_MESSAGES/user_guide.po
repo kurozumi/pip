@@ -218,6 +218,11 @@ msgid ""
 "environment, so you have a local patched version. Some things you install"
 " depend on \"helloworld\", and some don't."
 msgstr ""
+"Constraintsファイルは、インストールするものが正確にわからないときに、"
+"requirementsファイルとまったく同じ理由で使用されます。"
+"例えば、あなたの環境では\"helloworld\"パッケージが動作しないので、"
+"あなたはローカルパッチバージョンを持っているとします。"
+"あなたがインストールするものは\"helloworld\"に依存しているものもあれば、そうでないものもあります。"
 
 #: ../../user_guide.rst:138
 msgid ""
@@ -226,6 +231,9 @@ msgid ""
 "\"helloworld\" is present, write a requirements file to use when "
 "installing that thing."
 msgstr ""
+"パッチバージョンが一貫して使用されることを保証する1つの方法は、"
+"インストールするすべての依存関係を手動で監査することです。"
+"そして\"helloworld\"が存在する場合は、そのものをインストールするときに使用するrequirementsファイルを書きます。"
 
 #: ../../user_guide.rst:142
 msgid ""
