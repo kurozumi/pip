@@ -255,6 +255,7 @@ msgstr ""
 #: ../../user_guide.rst:152
 msgid "Installing from Wheels"
 msgstr ""
+"Wheelsからインストール"
 
 #: ../../user_guide.rst:154
 msgid ""
@@ -264,6 +265,10 @@ msgid ""
 "`PEP427 <http://www.python.org/dev/peps/pep-0427>`_, and `PEP425 "
 "<http://www.python.org/dev/peps/pep-0425>`_"
 msgstr ""
+"\"Wheel\"は、ソースアーカイブからのビルドやインストールと比較して、"
+"インストールを大幅に高速化できるビルドされたアーカイブ形式です。"
+"詳細は、`Wheel docs <https://wheel.readthedocs.io>`_ 、`PEP427 <http://www.python.org/dev/peps/pep-0427>`_、"
+"および `PEP425 <http://www.python.org/dev/peps/pep-0425>`_ を参照してください。"
 
 #: ../../user_guide.rst:160
 msgid ""
