@@ -163,10 +163,14 @@ msgid ""
 "dependencies>`_, not by discovering `requirements.txt` files embedded in "
 "projects."
 msgstr ""
+"pipは、プロジェクトに埋め込まれた `requirements.txt` ファイルを検出するのではなく、"
+"`install_requires metadata <https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-dependencies>`_"
+"を使用してパッケージの依存関係を判断することが重要です。"
 
 #: ../../user_guide.rst:107
 msgid "See also:"
 msgstr ""
+"こちらも参照下さい:"
 
 #: ../../user_guide.rst:109
 msgid ":ref:`Requirements File Format`"
