@@ -45,7 +45,7 @@ msgid ""
 "The most common scenario is to install from `PyPI`_ using "
 ":ref:`Requirement Specifiers`"
 msgstr ""
-"最も一般的なシナリオは、`PyPI`_　から　:ref:`Requirement Specifiers`　を使用してインストールすることです。"
+"最も一般的なシナリオは、`PyPI`_ から :ref:`Requirement Specifiers` を使用してインストールすることです。"
 
 #: ../../user_guide.rst:24
 msgid "For more information and examples, see the :ref:`pip install` reference."
