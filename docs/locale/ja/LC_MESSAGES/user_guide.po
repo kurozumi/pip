@@ -275,16 +275,20 @@ msgid ""
 "Pip prefers Wheels where they are available. To disable this, use the "
 ":ref:`--no-binary <install_--no-binary>` flag for :ref:`pip install`."
 msgstr ""
+"pipはWheelsが利用可能な環境を好みます。"
+"これを無効にするには、:ref:`pip install` に:ref:`--no-binary <install_--no-binary>` フラグを使用して下さい。"
 
 #: ../../user_guide.rst:163
 msgid ""
 "If no satisfactory wheels are found, pip will default to finding source "
 "archives."
 msgstr ""
+"満足できるwheelsが見つからない場合、pipはデフォルトでソースアーカイブを検索します。"
 
 #: ../../user_guide.rst:166
 msgid "To install directly from a wheel archive:"
 msgstr ""
+"wheelアーカイブから直接インストールするには:"
 
 #: ../../user_guide.rst:173
 msgid ""
@@ -292,6 +296,8 @@ msgid ""
 " as a convenience, to build wheels for all your requirements and "
 "dependencies."
 msgstr ""
+"wheelsが利用できない場合、pipは利便性を高めるため:ref:`pip wheel`　を勧め、"
+"すべての要件と依存関係に対応するwheelsを構築します。"
 
 #: ../../user_guide.rst:176
 msgid ""
@@ -299,18 +305,23 @@ msgid ""
 "<https://pypi.python.org/pypi/wheel>`_ to be installed, which provides "
 "the \"bdist_wheel\" setuptools extension that it uses."
 msgstr ""
+":ref:`pip wheel` は`wheel package <https://pypi.python.org/pypi/wheel>`_が"
+"インストールされている必要があります。"
+"これはwheel packageが使用する \"bdist_wheel\" setuptoolsの拡張機能を提供します。"
 
 #: ../../user_guide.rst:180
 msgid ""
 "To build wheels for your requirements and all their dependencies to a "
 "local directory:"
 msgstr ""
+"要件とそのすべての依存関係のwheelsをローカルディレクトリに構築するには:"
 
 #: ../../user_guide.rst:188
 msgid ""
 "And *then* to install those requirements just using your local directory "
 "of wheels (and not from PyPI):"
 msgstr ""
+"*then*、wheelsのローカルディレクトリ（PyPIからではなく）を使用してこれらの要件をインストールします。"
 
 #: ../../user_guide.rst:196
 msgid "Uninstalling Packages"
