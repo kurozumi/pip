@@ -24,18 +24,22 @@ msgstr ""
 #: ../../reference/pip_hash.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_hash.rst:9
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_hash.rst:15
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_hash.rst:21
 msgid "Overview"
 msgstr ""
+"概要"
 
 #: ../../reference/pip_hash.rst:22
 msgid ""
@@ -52,10 +56,12 @@ msgstr ""
 #: ../../reference/pip_hash.rst:32
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_hash.rst:38
 msgid "Example"
 msgstr ""
+"例"
 
 #: ../../reference/pip_hash.rst:40
 msgid "Compute the hash of a downloaded archive::"
