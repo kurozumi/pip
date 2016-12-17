@@ -580,7 +580,7 @@ msgid ""
 msgstr ""
 "各サブコマンドは、同じ名前ですべてのグローバル設定が上書きされるように、"
 "オプションで独自のセクションで設定できます。"
-"例えば、`freeze`(`Freezing Requirements <./#freezing-requirements>`_) コマンドを"
+"例えば、`freeze` (`Freezing Requirements <./#freezing-requirements>`_) コマンドを"
 "実行しているときの ``timeout`` を ``10`` 秒に減らし、"
 "他のすべてのコマンドは ``60`` 秒にすることも可能です:"
 
@@ -589,20 +589,25 @@ msgid ""
 "Boolean options like ``--ignore-installed`` or ``--no-dependencies`` can "
 "be set like this:"
 msgstr ""
+"``--ignore-installed`` や ``--no-dependencies`` などのBooleanオプションは次のように設定できます:"
 
 #: ../../user_guide.rst:359
 msgid ""
 "To enable the boolean options ``--no-compile`` and ``--no-cache-dir``, "
 "falsy values have to be used:"
 msgstr ""
+"booleanオプション ``--no-compile`` と ``--no-cache-dir`` を有効にするには、"
+"falsy値を使用する必要があります:"
 
 #: ../../user_guide.rst:370
 msgid "Appending options like ``--find-links`` can be written on multiple lines:"
 msgstr ""
+"``--find-links`` のようなオプションを複数行に書くことができます:"
 
 #: ../../user_guide.rst:385
 msgid "Environment Variables"
 msgstr ""
+"環境変数"
 
 #: ../../user_guide.rst:387
 msgid ""
@@ -610,24 +615,30 @@ msgid ""
 "the format ``PIP_<UPPER_LONG_NAME>`` . Dashes (``-``) have to be replaced"
 " with underscores (``_``)."
 msgstr ""
+"pipのコマンドラインオプションは、``PIP_<UPPER_LONG_NAME>`` の形式で環境変数を設定することができます。"
+"ダッシュ(``-``)はアンダースコア(``_``)で置き換える必要があります。"
 
 #: ../../user_guide.rst:391
 msgid "For example, to set the default timeout::"
 msgstr ""
+"例えば、デフォルトのタイムアウトを設定するには、次のようにします::"
 
 #: ../../user_guide.rst:395
 msgid "This is the same as passing the option to pip directly::"
 msgstr ""
+"これはpipに直接オプションを渡すのと同じです::"
 
 #: ../../user_guide.rst:399
 msgid ""
 "To set options that can be set multiple times on the command line, just "
 "add spaces in between values. For example::"
 msgstr ""
+"コマンドラインで複数回設定できるオプションを設定するには、値の間にスペースを追加します。例えば::"
 
 #: ../../user_guide.rst:404
 msgid "is the same as calling::"
 msgstr ""
+"呼び出しと同じです::"
 
 #: ../../user_guide.rst:410
 msgid "Config Precedence"
