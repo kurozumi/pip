@@ -20,22 +20,27 @@ msgstr ""
 #: ../../reference/pip_install.rst:4
 msgid "pip install"
 msgstr ""
+"pipをインストール"
 
 #: ../../reference/pip_install.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_install.rst:9
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_install.rst:14
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_install.rst:20
 msgid "Overview"
 msgstr ""
+"概要"
 
 #: ../../reference/pip_install.rst:22
 msgid "Pip install has several stages:"
