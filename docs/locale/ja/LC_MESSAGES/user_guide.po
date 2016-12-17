@@ -927,30 +927,36 @@ msgstr ""
 #: ../../user_guide.rst:549
 msgid "From within a ``--no-site-packages`` virtualenv (i.e. the default kind)::"
 msgstr ""
+"``--no-site-packages`` virtualenv（デフォルトの種類）内から::"
 
 #: ../../user_guide.rst:555
 msgid ""
 "From within a ``--system-site-packages`` virtualenv where "
 "``SomePackage==0.3`` is already installed in the virtualenv::"
 msgstr ""
+"``SomePackage==0.3`` が既にvirtualenvにインストールされている"
+"``--system-site-packages`` virtualenv内から::"
 
 #: ../../user_guide.rst:561
 msgid ""
 "From within a real python, where ``SomePackage`` is *not* installed "
 "globally::"
 msgstr ""
+"``SomePackage`` がグローバルにインストール *されていない* 実際のPythonの中から::"
 
 #: ../../user_guide.rst:568
 msgid ""
 "From within a real python, where ``SomePackage`` *is* installed globally,"
 " but is *not* the latest version::"
 msgstr ""
+"``SomePackage`` がグローバルにインストール *されている* が、最新バージョン *ではない* 実際のPython内から"
 
 #: ../../user_guide.rst:579
 msgid ""
 "From within a real python, where ``SomePackage`` *is* installed globally,"
 " and is the latest version::"
 msgstr ""
+"``SomePackage`` がグローバルにインストールされていて、最新のバージョンの実際のPythonの中から::"
 
 #: ../../user_guide.rst:598
 msgid "Ensuring Repeatability"
