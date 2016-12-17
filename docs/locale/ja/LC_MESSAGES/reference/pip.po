@@ -228,4 +228,5 @@ msgstr ""
 #: ../../reference/pip.rst:127
 msgid "General Options"
 msgstr ""
+"一般オプション"
 
