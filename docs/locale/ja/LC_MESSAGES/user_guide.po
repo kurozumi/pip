@@ -971,7 +971,7 @@ msgstr ""
 #: ../../user_guide.rst:603
 msgid "Pinned Version Numbers"
 msgstr ""
-"定されたバージョン番号"
+"固定されたバージョン番号"
 
 #: ../../user_guide.rst:605
 msgid ""
@@ -989,6 +989,10 @@ msgid ""
 ":`--no-deps <install_--no-deps>` for an extra dose of insurance against "
 "installing anything not explicitly listed."
 msgstr ""
+":ref:`pip freeze` をrequirementsファイルを生成すると、"
+"トップレベルの依存関係だけでなくそのサブ依存関係も確実に含まれます。"
+"明示的に記載されていないものをインストールしないようにするには、"
+":ref:`--no-deps <install_--no-deps>` を使用してインストールを実行します。"
 
 #: ../../user_guide.rst:617
 msgid ""
@@ -998,16 +1002,21 @@ msgid ""
 "packages to change without a version increase. (PyPI does protect against"
 " this.)"
 msgstr ""
+"この戦略は実装が容易で、OSやアーキテクチャ全体で機能します。"
+"ただし、PyPIと認証局チェーンを信頼します。"
+"また、バージョンを増やすことなくパッケージを変更できないインデックスや検索リンクの場所にも依存しています。(PyPIはこれを防ぎます。)"
 
 #: ../../user_guide.rst:624
 msgid "Hash-checking Mode"
 msgstr ""
+"ハッシュチェックモード"
 
 #: ../../user_guide.rst:626
 msgid ""
 "Beyond pinning version numbers, you can add hashes against which to "
 "verify downloaded packages::"
 msgstr ""
+"バージョン番号を固定する以外に、ダウンロードされたパッケージを検証するためのハッシュを追加することができます::"
 
 #: ../../user_guide.rst:631
 msgid ""
@@ -1016,6 +1025,9 @@ msgid ""
 "number changing (on indexes that allow this). This approach is a good fit"
 " for automated server deployments."
 msgstr ""
+"これにより、PyPIまたはHTTPS証明書チェーンの侵害から保護されます。"
+"また、バージョン番号を変更することなくパッケージを変更することもできます（これを可能にするインデックス上で）。"
+"このアプローチは、自動化されたサーバーの配置に適しています。"
 
 #: ../../user_guide.rst:636
 msgid ""
@@ -1027,12 +1039,19 @@ msgid ""
 "course, provide the availability benefits of a private index or a vendor "
 "library."
 msgstr ""
+"ハッシュチェックモードは、承認されたパッケージを含むプライベートインデックスサーバーを"
+"実行するための省力化の代替方法です:"
+"パッケージのアップロード、ACLの管理、監査証跡（VCSが要件ファイルに無料で提供する）を保持する必要がなくなります。"
+"また、ベンダーライブラリを代用することもできます。これにより、アップグレードが容易になり、VCSノイズが少なくなります"
+"もちろん、プライベートインデックスやベンダーライブラリの可用性のメリットはありません。"
 
 #: ../../user_guide.rst:643
 msgid ""
 "For more, see :ref:`pip install\\'s discussion of hash-checking mode "
 "<hash-checking mode>`."
 msgstr ""
+"詳細については、:ref:`pip install\\'s discussion of hash-checking mode "
+"<hash-checking mode>` を参照してください。"
 
 #: ../../user_guide.rst:648
 msgid "Installation Bundles"
