@@ -20,28 +20,35 @@ msgstr ""
 #: ../../reference/pip_uninstall.rst:4
 msgid "pip uninstall"
 msgstr ""
+"pipのアンインストール"
 
 #: ../../reference/pip_uninstall.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_uninstall.rst:9
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_uninstall.rst:14
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_uninstall.rst:19
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_uninstall.rst:25
 msgid "Examples"
 msgstr ""
+"例"
 
 #: ../../reference/pip_uninstall.rst:27
 msgid "Uninstall a package."
 msgstr ""
+"パッケージをアンインストールする"
 
