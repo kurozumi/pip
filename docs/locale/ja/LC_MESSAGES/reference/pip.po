@@ -57,6 +57,7 @@ msgstr ""
 #: ../../reference/pip.rst:33
 msgid "File logging"
 msgstr ""
+"ファイルロギング"
 
 #: ../../reference/pip.rst:35
 msgid ""
@@ -64,6 +65,8 @@ msgid ""
 "maximum verbosity log will be kept.  This option is empty by default. "
 "This log appends to previous logging."
 msgstr ""
+"pipは冗長ログを最大限に保存するファイルを指定するための :ref:`--log <--log>` オプションを提供します。"
+"このオプションはデフォルトでは空です。このログは以前のログに追加されます。"
 
 #: ../../reference/pip.rst:39
 msgid ""
@@ -71,6 +74,9 @@ msgid ""
 "variable, or placed into the pip config file.  See the "
 ":ref:`Configuration` section."
 msgstr ""
+"すべてのpipオプションと同様に、``--log`` は環境変数として設定することも、"
+"pip設定ファイルに配置することもできます。"
+":ref:`Configuration` セクションを参照してください。"
 
 #: ../../reference/pip.rst:45
 msgid "--exists-action option"
