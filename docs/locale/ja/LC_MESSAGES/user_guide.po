@@ -1056,6 +1056,7 @@ msgstr ""
 #: ../../user_guide.rst:648
 msgid "Installation Bundles"
 msgstr ""
+"インストールバンドル"
 
 #: ../../user_guide.rst:650
 msgid ""
@@ -1064,22 +1065,32 @@ msgid ""
 "allows installation when index servers are unavailable and avoids time-"
 "consuming recompilation. Create an archive like this::"
 msgstr ""
+":ref:`pip wheel` を使用すると、コンパイルが完了したすべてのプロジェクトの依存関係を"
+"1つのアーカイブにまとめることができます。"
+"これにより、インデックスサーバーが使用できなくなり、"
+"時間のかかる再コンパイルが行われない場合のインストールが可能になります。"
+"次のようなアーカイブを作成します::"
 
 #: ../../user_guide.rst:660
 msgid "You can then install from the archive like this::"
 msgstr ""
+"このようにアーカイブからインストールすることができます::"
 
 #: ../../user_guide.rst:666
 msgid ""
 "Note that compiled packages are typically OS- and architecture-specific, "
 "so these archives are not necessarily portable across machines."
 msgstr ""
+"コンパイルされたパッケージは、通常、OS固有およびアーキテクチャ固有であるため、"
+"これらのアーカイブは必ずしもマシン間で移植可能であるとは限りません。"
 
 #: ../../user_guide.rst:669
 msgid ""
 "Hash-checking mode can be used along with this method to ensure that "
 "future archives are built with identical packages."
 msgstr ""
+"この方法と一緒に、ハッシュチェックモードを使用して、"
+"将来のアーカイブが同一のパッケージで構築されるようにすることができます。"
 
 #: ../../user_guide.rst:673
 msgid ""
@@ -1089,4 +1100,9 @@ msgid ""
 "protections. If you need to use such a package, see :ref:`Controlling "
 "setup_requires<controlling-setup-requires>`."
 msgstr ""
+"最後に、:file:`setup.py` の ``setup_requires`` キーワード引数に注意してください。"
+"それを使用する（まれな）パッケージは、その依存関係をsetuptoolsによって直接ダウンロードし、"
+"pipの保護をスキップします。"
+"このようなパッケージを使用する必要がある場合は、:ref:`Controlling "
+"setup_requires<controlling-setup-requires>` を参照してください。"
 
