@@ -20,7 +20,6 @@ msgstr ""
 #: ../../reference/pip_uninstall.rst:4
 msgid "pip uninstall"
 msgstr ""
-"pipのアンインストール"
 
 #: ../../reference/pip_uninstall.rst
 msgid "Contents"
