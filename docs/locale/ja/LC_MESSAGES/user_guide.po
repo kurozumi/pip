@@ -853,7 +853,7 @@ msgstr ""
 "各OSのデフォルトの場所は、`site.USER_BASE "
 "<http://docs.python.org/library/site.html#site.USER_BASE>`_ variable.  "
 "のpythonのドキュメントで説明しています。"
-"このインストールモードは、``pip install`` に:ref:`--user"
+"このインストールモードは、``pip install`` に :ref:`--user"
 " <install_--user>` オプションを指定することで有効にすることができます。"
 
 #: ../../user_guide.rst:519
