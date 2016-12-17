@@ -24,28 +24,35 @@ msgstr ""
 #: ../../reference/pip.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip.rst:7
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip.rst:15
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip.rst:21
 msgid "Logging"
 msgstr ""
+"ロギング"
 
 #: ../../reference/pip.rst:24
 msgid "Console logging"
 msgstr ""
+"コンソールロギング"
 
 #: ../../reference/pip.rst:26
 msgid ""
 "pip offers :ref:`-v, --verbose <--verbose>` and :ref:`-q, --quiet "
 "<--quiet>` to control the console log level."
 msgstr ""
+"pipはコンソールログレベルを制御する :ref:`-v, --verbose <--verbose>`、と :ref:`-q, --quiet "
+"<--quiet>` を提供します。"
 
 #: ../../reference/pip.rst:33
 msgid "File logging"
