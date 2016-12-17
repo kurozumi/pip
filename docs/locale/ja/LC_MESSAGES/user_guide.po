@@ -862,16 +862,21 @@ msgid ""
 "``PYTHONUSERBASE`` environment variable, which updates the value of "
 "``site.USER_BASE``."
 msgstr ""
+"さらに、 \"user scheme\"は、``site.USER_BASE`` の値を更新する"
+"``PYTHONUSERBASE`` 環境変数を設定することでカスタマイズできます。"
 
 #: ../../user_guide.rst:522
 msgid ""
 "To install \"SomePackage\" into an environment with site.USER_BASE "
 "customized to '/myappenv', do the following::"
 msgstr ""
+"'/ myappenv'にカスタマイズされたsite.USER_BASEを持つ環境に"
+"\"SomePackage\"をインストールするには、次のようにします::"
 
 #: ../../user_guide.rst:528
 msgid "``pip install --user`` follows four rules:"
 msgstr ""
+"``pip install --user`` は次の4つのルールに従います:"
 
 #: ../../user_guide.rst:530
 msgid ""
@@ -879,6 +884,8 @@ msgid ""
 "*conflict* with the installation requirements, they are ignored, and "
 "*not* uninstalled."
 msgstr ""
+"グローバルにインストールされたパッケージがpythonパス上にあり、"
+"インストール要件と **コンフリクト** する場合、パッケージは無視され、アンインストール *されません。*"
 
 #: ../../user_guide.rst:533
 msgid ""
