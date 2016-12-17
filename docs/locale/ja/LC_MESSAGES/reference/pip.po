@@ -81,6 +81,7 @@ msgstr ""
 #: ../../reference/pip.rst:45
 msgid "--exists-action option"
 msgstr ""
+"--exists-actionオプション"
 
 #: ../../reference/pip.rst:47
 msgid ""
@@ -89,6 +90,9 @@ msgid ""
 "creating archives. If ``--exists-action`` is not defined, pip will prompt"
 " when decision is needed."
 msgstr ""
+"このオプションは、パスがすでに存在する場合のデフォルトの動作を指定します。"
+"可能な場合：ファイルをダウンロードするか、インストール用のリポジトリをチェックアウトしてアーカイブを作成します。"
+"``--exists-action`` が定義されていない場合、pipは決定が必要なときにプロンプトを表示します。"
 
 #: ../../reference/pip.rst:53
 msgid "*(s)witch*"
