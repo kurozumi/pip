@@ -752,7 +752,7 @@ msgid ""
 "<--find-links>` and :ref:`--no-index <--no-index>` like so::"
 msgstr ""
 "次に、ローカルからのみインストールするには、:ref:`--find-links <--find-links>` と"
-":ref:`--no-index <--no-index>` を使用します::"
+" :ref:`--no-index <--no-index>` を使用します::"
 
 #: ../../user_guide.rst:477
 msgid "\"Only if needed\" Recursive Upgrade"
