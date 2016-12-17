@@ -67,6 +67,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:31
 msgid "Argument Handling"
 msgstr ""
+"引数の処理"
 
 #: ../../reference/pip_install.rst:33
 msgid ""
@@ -103,6 +104,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:47
 msgid "Working Out the Name and Version"
 msgstr ""
+"名前とバージョンの作業"
 
 #: ../../reference/pip_install.rst:49
 msgid ""
@@ -125,6 +127,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:62
 msgid "Satisfying Requirements"
 msgstr ""
+"要件を満たす"
 
 #: ../../reference/pip_install.rst:64
 msgid ""
@@ -140,6 +143,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:72
 msgid "Installation Order"
 msgstr ""
+"インストール順序"
 
 #: ../../reference/pip_install.rst:74
 msgid ""
@@ -216,6 +220,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:123
 msgid "Requirements File Format"
 msgstr ""
+"Requirementsファイル形式"
 
 #: ../../reference/pip_install.rst:125
 msgid ""
@@ -302,6 +307,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:177
 msgid "Example Requirements File"
 msgstr ""
+"要件ファイルの例"
 
 #: ../../reference/pip_install.rst:179
 msgid "Use ``pip install -r example-requirements.txt`` to install::"
@@ -310,6 +316,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:213
 msgid "Requirement Specifiers"
 msgstr ""
+"要件指定子"
 
 #: ../../reference/pip_install.rst:215
 msgid ""
@@ -348,6 +355,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:251
 msgid "Per-requirement Overrides"
 msgstr ""
+"要件ごとのオーバーライド"
 
 #: ../../reference/pip_install.rst:253
 msgid ""
@@ -381,6 +389,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:289
 msgid "Pre-release Versions"
 msgstr ""
+"プレリリースバージョン"
 
 #: ../../reference/pip_install.rst:291
 msgid ""
@@ -405,6 +414,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:309
 msgid "VCS Support"
 msgstr ""
+"VCSのサポート"
 
 #: ../../reference/pip_install.rst:311
 msgid ""
@@ -561,6 +571,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:429
 msgid "Finding Packages"
 msgstr ""
+"パッケージの検索"
 
 #: ../../reference/pip_install.rst:431
 msgid ""
@@ -593,6 +604,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:451
 msgid "SSL Certificate Verification"
 msgstr ""
+"SSL証明書の検証"
 
 #: ../../reference/pip_install.rst:453
 msgid ""
@@ -603,6 +615,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:460
 msgid "Caching"
 msgstr ""
+"キャッシュ"
 
 #: ../../reference/pip_install.rst:462
 msgid ""
@@ -679,6 +692,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:499
 msgid "Wheel Cache"
 msgstr ""
+"Wheel キャッシュ"
 
 #: ../../reference/pip_install.rst:501
 msgid ""
@@ -710,6 +724,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:521
 msgid "Hash-Checking Mode"
 msgstr ""
+"ハッシュチェックモード"
 
 #: ../../reference/pip_install.rst:523
 msgid ""
@@ -847,6 +862,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:626
 msgid "Hashes from PyPI"
 msgstr ""
+"PyPIからのハッシュ"
 
 #: ../../reference/pip_install.rst:628
 msgid ""
@@ -862,6 +878,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:640
 msgid "\"Editable\" Installs"
 msgstr ""
+"\"編集可能な\"インストール"
 
 #: ../../reference/pip_install.rst:642
 msgid ""
@@ -891,6 +908,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:661
 msgid "Controlling setup_requires"
 msgstr ""
+"setup_requiresの制御"
 
 #: ../../reference/pip_install.rst:663
 msgid ""
@@ -929,6 +947,7 @@ msgstr ""
 #: ../../reference/pip_install.rst:694
 msgid "Build System Interface"
 msgstr ""
+"ビルドシステムインターフェイス"
 
 #: ../../reference/pip_install.rst:696
 msgid ""
@@ -987,10 +1006,12 @@ msgstr ""
 #: ../../reference/pip_install.rst:740
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_install.rst:750
 msgid "Examples"
 msgstr ""
+"例"
 
 #: ../../reference/pip_install.rst:752
 msgid ""
