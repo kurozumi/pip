@@ -518,7 +518,7 @@ msgid ""
 ":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini`"
 msgstr ""
 "Windows7以降では、ファイルは非表示になっていますが、"
-":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini`"
+":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini` "
 "に書き込むことができます"
 
 #: ../../user_guide.rst:311
