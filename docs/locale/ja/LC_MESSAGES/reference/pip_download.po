@@ -20,22 +20,27 @@ msgstr ""
 #: ../../reference/pip_download.rst:5
 msgid "pip download"
 msgstr ""
+"pipのダウンロード"
 
 #: ../../reference/pip_download.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_download.rst:10
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_download.rst:16
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_download.rst:22
 msgid "Overview"
 msgstr ""
+"概要"
 
 #: ../../reference/pip_download.rst:23
 msgid ""
@@ -73,10 +78,12 @@ msgstr ""
 #: ../../reference/pip_download.rst:48
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_download.rst:56
 msgid "Examples"
 msgstr ""
+"例"
 
 #: ../../reference/pip_download.rst:58
 msgid "Download a package and all of its dependencies"
