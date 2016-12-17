@@ -370,7 +370,7 @@ msgid ""
 "For more information and examples, see the :ref:`pip list` and :ref:`pip "
 "show` reference pages."
 msgstr ""
-"詳細および例については、:ref:`pip list` および :ref:`pip show`のリファレンスページを参照してください。"
+"詳細および例については、:ref:`pip list` および :ref:`pip show` のリファレンスページを参照してください。"
 
 #: ../../user_guide.rst:249
 msgid "Searching for Packages"
