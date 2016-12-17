@@ -832,6 +832,7 @@ msgstr ""
 #: ../../user_guide.rst:508
 msgid "User Installs"
 msgstr ""
+"ユーザーインストール"
 
 #: ../../user_guide.rst:510
 msgid ""
@@ -845,6 +846,15 @@ msgid ""
 "This mode of installation can be turned on by specifying the :ref:`--user"
 " <install_--user>` option to ``pip install``."
 msgstr ""
+"Python 2.6では、インストールのための `\"user scheme\" for installation "
+"<http://docs.python.org/install/index.html#alternate-installation-the-"
+"user-scheme>`_が提供されました。"
+"つまり、すべてのPythonディストリビューションは、ユーザーに固有の代替インストール場所をサポートしています。"
+"各OSのデフォルトの場所は、`site.USER_BASE "
+"<http://docs.python.org/library/site.html#site.USER_BASE>`_ variable.  "
+"のpythonのドキュメントで説明しています。"
+"このインストールモードは、``pip install`` に:ref:`--user"
+" <install_--user>` オプションを指定することで有効にすることができます。"
 
 #: ../../user_guide.rst:519
 msgid ""
