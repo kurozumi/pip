@@ -24,22 +24,27 @@ msgstr ""
 #: ../../reference/pip_freeze.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_freeze.rst:10
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_freeze.rst:16
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_freeze.rst:22
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_freeze.rst:28
 msgid "Examples"
 msgstr ""
+"例"
 
 #: ../../reference/pip_freeze.rst:30
 msgid "Generate output suitable for a requirements file."
