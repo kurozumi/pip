@@ -421,7 +421,7 @@ msgstr ""
 #: ../../user_guide.rst:278
 msgid "**Per-user**:"
 msgstr ""
-""**ユーザー単位**"
+"**ユーザー単位**"
 
 #: ../../user_guide.rst:280
 msgid ""
@@ -471,14 +471,17 @@ msgstr ""
 #: ../../user_guide.rst:295
 msgid "**Inside a virtualenv**:"
 msgstr ""
+"**virtualenv内**"
 
 #: ../../user_guide.rst:297
 msgid "On Unix and macOS the file is :file:`$VIRTUAL_ENV/pip.conf`"
 msgstr ""
+"UnixとmacOSのファイルは :file:`$VIRTUAL_ENV/pip.conf` です。"
 
 #: ../../user_guide.rst:298
 msgid "On Windows the file is: :file:`%VIRTUAL_ENV%\\\\pip.ini`"
 msgstr ""
+"Windowsではファイルは :file:`%VIRTUAL_ENV%\\\\pip.ini` です。"
 
 #: ../../user_guide.rst:300
 msgid "**Site-wide**:"
