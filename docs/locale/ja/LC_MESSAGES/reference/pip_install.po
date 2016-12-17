@@ -20,7 +20,6 @@ msgstr ""
 #: ../../reference/pip_install.rst:4
 msgid "pip install"
 msgstr ""
-"pipをインストール"
 
 #: ../../reference/pip_install.rst
 msgid "Contents"
