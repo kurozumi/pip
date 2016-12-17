@@ -751,7 +751,7 @@ msgid ""
 "Then, to install from local only, you'll be using :ref:`--find-links "
 "<--find-links>` and :ref:`--no-index <--no-index>` like so::"
 msgstr ""
-"次に、ローカルからのみインストールするには、:ref:`--find-links <--find-links>`と"
+"次に、ローカルからのみインストールするには、:ref:`--find-links <--find-links>` と"
 ":ref:`--no-index <--no-index>` を使用します::"
 
 #: ../../user_guide.rst:477
