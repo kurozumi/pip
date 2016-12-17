@@ -486,6 +486,7 @@ msgstr ""
 #: ../../user_guide.rst:300
 msgid "**Site-wide**:"
 msgstr ""
+"**サイト全体**"
 
 #: ../../user_guide.rst:302
 msgid ""
@@ -494,26 +495,36 @@ msgid ""
 "environment variable ``XDG_CONFIG_DIRS`` (if it exists), for example "
 ":file:`/etc/xdg/pip/pip.conf`."
 msgstr ""
+"Unixでは、ファイルは :file:`/etc/pip.conf` にあります。"
+"代わりに、:file:`/etc/xdg/pip/pip.conf` のように、環境変数 ``XDG_CONFIG_DIRS`` （存在する場合）に"
+"設定されているパスのいずれかの \"pip\"サブディレクトリに存在する可能性があります。"
 
 #: ../../user_guide.rst:306
 msgid "On macOS the file is: :file:`/Library/Application Support/pip/pip.conf`"
 msgstr ""
+"macOSではファイルは :file:`/Library/Application Support/pip/pip.conf` です。"
 
 #: ../../user_guide.rst:307
 msgid ""
 "On Windows XP the file is: :file:`C:\\\\Documents and Settings\\\\All "
 "Users\\\\Application Data\\\\pip\\\\pip.ini`"
 msgstr ""
+"Windows XPの場合、ファイルは :file:`C:\\\\Documents and Settings\\\\All "
+"Users\\\\Application Data\\\\pip\\\\pip.ini` です。"
 
 #: ../../user_guide.rst:309
 msgid ""
 "On Windows 7 and later the file is hidden, but writeable at "
 ":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini`"
 msgstr ""
+"Windows7以降では、ファイルは非表示になっていますが、"
+":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini`"
+"に書き込むことができます"
 
 #: ../../user_guide.rst:311
 msgid "Site-wide configuration is not supported on Windows Vista"
 msgstr ""
+"サイト全体の設定はWindows Vistaではサポートされていません"
 
 #: ../../user_guide.rst:313
 msgid ""
