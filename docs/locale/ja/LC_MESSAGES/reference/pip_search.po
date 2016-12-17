@@ -24,22 +24,27 @@ msgstr ""
 #: ../../reference/pip_search.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_search.rst:9
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_search.rst:15
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_search.rst:20
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_search.rst:26
 msgid "Examples"
 msgstr ""
+"例"
 
 #: ../../reference/pip_search.rst:28
 msgid "Search for \"peppercorn\""
