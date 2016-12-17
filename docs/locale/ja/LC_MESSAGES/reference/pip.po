@@ -147,6 +147,7 @@ msgstr ""
 #: ../../reference/pip.rst:70
 msgid "Build System Interface"
 msgstr ""
+"ビルドシステムインターフェイス"
 
 #: ../../reference/pip.rst:72
 msgid ""
@@ -167,6 +168,7 @@ msgstr ""
 #: ../../reference/pip.rst:83
 msgid "Setuptools Injection"
 msgstr ""
+"Setuptoolsインジェクション"
 
 #: ../../reference/pip.rst:85
 msgid ""
@@ -182,6 +184,7 @@ msgstr ""
 #: ../../reference/pip.rst:94
 msgid "Future Developments"
 msgstr ""
+"今後の展開"
 
 #: ../../reference/pip.rst:96
 msgid ""
@@ -203,6 +206,7 @@ msgstr ""
 #: ../../reference/pip.rst:109
 msgid "Build Options"
 msgstr ""
+"ビルドオプション"
 
 #: ../../reference/pip.rst:111
 msgid ""
