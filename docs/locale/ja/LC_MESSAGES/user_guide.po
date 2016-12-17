@@ -448,20 +448,25 @@ msgid ""
 "There are also a legacy per-user configuration file which is also "
 "respected, these are located at:"
 msgstr ""
+"また、従来のユーザーごとの設定ファイルもありますがこれも尊重されています。"
+"これらは以下の場所に位置します。"
 
 #: ../../user_guide.rst:289
 msgid "On Unix and macOS the configuration file is: :file:`$HOME/.pip/pip.conf`"
 msgstr ""
+"UnixやmacOSでは、設定ファイルは :file:`$HOME/.pip/pip.conf` です。"
 
 #: ../../user_guide.rst:290
 msgid "On Windows the configuration file is: :file:`%HOME%\\\\pip\\\\pip.ini`"
 msgstr ""
+"Windowsでは、設定ファイルは :file:`%HOME%\\\\pip\\\\pip.ini` です。"
 
 #: ../../user_guide.rst:292
 msgid ""
 "You can set a custom path location for this config file using the "
 "environment variable ``PIP_CONFIG_FILE``."
 msgstr ""
+"環境変数 ``PIP_CONFIG_FILE`` を使用して、この設定ファイルのカスタムパスの場所を設定できます。"
 
 #: ../../user_guide.rst:295
 msgid "**Inside a virtualenv**:"
