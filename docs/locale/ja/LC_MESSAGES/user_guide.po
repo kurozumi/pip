@@ -643,30 +643,36 @@ msgstr ""
 #: ../../user_guide.rst:410
 msgid "Config Precedence"
 msgstr ""
+"設定の優先順位"
 
 #: ../../user_guide.rst:412
 msgid ""
 "Command line options have precedence over environment variables, which "
 "have precedence over the config file."
 msgstr ""
+"コマンドラインオプションは環境変数よりも優先されます。環境変数は設定ファイルよりも優先されます。"
 
 #: ../../user_guide.rst:414
 msgid ""
 "Within the config file, command specific sections have precedence over "
 "the global section."
 msgstr ""
+"設定ファイル内では、コマンド固有セクションがグローバルセクションよりも優先されます。"
 
 #: ../../user_guide.rst:416
 msgid "Examples:"
 msgstr ""
+"例:"
 
 #: ../../user_guide.rst:418
 msgid "``--host=foo`` overrides ``PIP_HOST=foo``"
 msgstr ""
+"``--host=foo`` は ``PIP_HOST=foo`` を上書きします。"
 
 #: ../../user_guide.rst:419
 msgid "``PIP_HOST=foo`` overrides a config file with ``[global] host = foo``"
 msgstr ""
+"``PIP_HOST=foo`` は ``[global] host = foo`` で設定ファイルを上書きします。"
 
 #: ../../user_guide.rst:420
 msgid ""
@@ -674,26 +680,33 @@ msgid ""
 "overrides the option with same name in the ``[global]`` config file "
 "section"
 msgstr ""
+"設定ファイル ``[<command>] host = bar`` のコマンド固有のセクションは、"
+"``[global]`` 設定ファイルセクションに同じ名前のオプションを上書きします。"
 
 #: ../../user_guide.rst:425
 msgid "Command Completion"
 msgstr ""
+"コマンドの完了"
 
 #: ../../user_guide.rst:427
 msgid "pip comes with support for command line completion in bash, zsh and fish."
 msgstr ""
+"pipは、bash、zsh、およびfishのコマンドライン補完をサポートしています。"
 
 #: ../../user_guide.rst:429
 msgid "To setup for bash::"
 msgstr ""
+"bashを設定するには::"
 
 #: ../../user_guide.rst:433
 msgid "To setup for zsh::"
 msgstr ""
+"zshを設定するには::"
 
 #: ../../user_guide.rst:437
 msgid "To setup for fish::"
 msgstr ""
+"fishの設定"
 
 #: ../../user_guide.rst:441
 msgid ""
@@ -701,6 +714,8 @@ msgid ""
 "directly with the eval function of your shell, e.g. by adding the "
 "following to your startup file::"
 msgstr ""
+"あるいは、``completion`` コマンドの結果をシェルのeval関数で直接使用することもできます。"
+"例えば、スタートアップファイルに以下を追加します::"
 
 #: ../../user_guide.rst:451
 msgid "Installing from local packages"
