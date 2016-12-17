@@ -961,20 +961,25 @@ msgstr ""
 #: ../../user_guide.rst:598
 msgid "Ensuring Repeatability"
 msgstr ""
+"繰り返し性の確保"
 
 #: ../../user_guide.rst:600
 msgid "pip can achieve various levels of repeatability:"
 msgstr ""
+"pipは様々なレベルの再現性を達成することができます"
 
 #: ../../user_guide.rst:603
 msgid "Pinned Version Numbers"
 msgstr ""
+"定されたバージョン番号"
 
 #: ../../user_guide.rst:605
 msgid ""
 "Pinning the versions of your dependencies in the requirements file "
 "protects you from bugs or incompatibilities in newly released versions::"
 msgstr ""
+"requirementsファイル内の依存関係のバージョンを固定することで、"
+"新しくリリースされたバージョンのバグや非互換性から守ることができます::"
 
 #: ../../user_guide.rst:611
 msgid ""
