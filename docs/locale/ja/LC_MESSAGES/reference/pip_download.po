@@ -20,7 +20,6 @@ msgstr ""
 #: ../../reference/pip_download.rst:5
 msgid "pip download"
 msgstr ""
-"pipのダウンロード"
 
 #: ../../reference/pip_download.rst
 msgid "Contents"
