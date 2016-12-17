@@ -531,18 +531,22 @@ msgid ""
 "If multiple configuration files are found by pip then they are combined "
 "in the following order:"
 msgstr ""
+"複数の設定ファイルがpipによって見つかった場合、それらは次の順序で結合されます"
 
 #: ../../user_guide.rst:316
 msgid "Firstly the site-wide file is read, then"
 msgstr ""
+"まずサイト全体のファイルを読み込み、次に"
 
 #: ../../user_guide.rst:317
 msgid "The per-user file is read, and finally"
 msgstr ""
+"ユーザーごとのファイルが読み込まれ、最後に"
 
 #: ../../user_guide.rst:318
 msgid "The virtualenv-specific file is read."
 msgstr ""
+"virtualenv固有のファイルが読み込まれます。"
 
 #: ../../user_guide.rst:320
 msgid ""
@@ -550,6 +554,9 @@ msgid ""
 "global timeout is specified in both the site-wide file and the per-user "
 "file then the latter value is the one that will be used."
 msgstr ""
+"以前のファイルから読み取られた値は、読み込まれた各ファイルを上書きするので、"
+"サイト全体のファイルとユーザー単位のファイルの両方でグローバルタイムアウトが指定されている場合は、"
+"後者の値が使用されます。"
 
 #: ../../user_guide.rst:324
 msgid ""
@@ -558,6 +565,10 @@ msgid ""
 "set the HTTP timeout (``--default-timeout``) to 60 seconds your config "
 "file would look like this:"
 msgstr ""
+"設定の名前は長いコマンドラインのオプションから導かれます。"
+"例えば、別のパッケージインデックス(``--index-url``)を使用し、"
+"HTTPタイムアウト(``--default-timeout``)を60秒に設定すると、"
+"設定ファイルは次のようになります"
 
 #: ../../user_guide.rst:335
 msgid ""
@@ -567,6 +578,11 @@ msgid ""
 "(`Freezing Requirements <./#freezing-requirements>`_) command and using "
 "``60`` seconds for all other commands is possible with:"
 msgstr ""
+"各サブコマンドは、同じ名前ですべてのグローバル設定が上書きされるように、"
+"オプションで独自のセクションで設定できます。"
+"例えば、`freeze`(`Freezing Requirements <./#freezing-requirements>`_) コマンドを"
+"実行しているときの ``timeout`` を ``10`` 秒に減らし、"
+"他のすべてのコマンドは ``60`` 秒にすることも可能です:"
 
 #: ../../user_guide.rst:350
 msgid ""
