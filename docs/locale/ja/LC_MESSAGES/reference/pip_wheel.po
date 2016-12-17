@@ -24,18 +24,22 @@ msgstr ""
 #: ../../reference/pip_wheel.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_wheel.rst:10
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_wheel.rst:16
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_wheel.rst:22
 msgid "Build System Interface"
 msgstr ""
+"ビルドシステムインターフェイス"
 
 #: ../../reference/pip_wheel.rst:24
 msgid ""
@@ -56,6 +60,7 @@ msgstr ""
 #: ../../reference/pip_wheel.rst:35
 msgid "Customising the build"
 msgstr ""
+"ビルドのカスタマイズ"
 
 #: ../../reference/pip_wheel.rst:37
 msgid ""
@@ -82,10 +87,12 @@ msgstr ""
 #: ../../reference/pip_wheel.rst:58
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_wheel.rst:66
 msgid "Examples"
 msgstr ""
+"例"
 
 #: ../../reference/pip_wheel.rst:68
 msgid ""
