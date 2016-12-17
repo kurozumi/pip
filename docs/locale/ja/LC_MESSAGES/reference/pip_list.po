@@ -24,22 +24,27 @@ msgstr ""
 #: ../../reference/pip_list.rst
 msgid "Contents"
 msgstr ""
+"コンテンツ"
 
 #: ../../reference/pip_list.rst:9
 msgid "Usage"
 msgstr ""
+"使い方"
 
 #: ../../reference/pip_list.rst:14
 msgid "Description"
 msgstr ""
+"説明"
 
 #: ../../reference/pip_list.rst:19
 msgid "Options"
 msgstr ""
+"オプション"
 
 #: ../../reference/pip_list.rst:27
 msgid "Examples"
 msgstr ""
+"例"
 
 #: ../../reference/pip_list.rst:29
 msgid "List installed packages."
