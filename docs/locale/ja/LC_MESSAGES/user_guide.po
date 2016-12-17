@@ -375,18 +375,22 @@ msgstr ""
 #: ../../user_guide.rst:249
 msgid "Searching for Packages"
 msgstr ""
+"パッケージの検索"
 
 #: ../../user_guide.rst:251
 msgid "pip can search `PyPI`_ for packages using the ``pip search`` command::"
 msgstr ""
+"pipは、``pip search`` コマンドを使用してパッケージの `PyPI`_ を検索できます:"
 
 #: ../../user_guide.rst:256
 msgid "The query will be used to search the names and summaries of all packages."
 msgstr ""
+"queryは、すべてのパッケージの名前とサマリーを検索するために使用されます。"
 
 #: ../../user_guide.rst:259
 msgid "For more information and examples, see the :ref:`pip search` reference."
 msgstr ""
+"詳細および例については、:ref:`pip search` のリファレンスを参照してください。"
 
 #: ../../user_guide.rst:264
 msgid "Configuration"
