@@ -20,4 +20,5 @@ msgstr ""
 #: ../../reference/index.rst:3
 msgid "Reference Guide"
 msgstr ""
+"リファレンスガイド"
 
