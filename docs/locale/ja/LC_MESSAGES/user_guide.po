@@ -395,16 +395,19 @@ msgstr ""
 #: ../../user_guide.rst:264
 msgid "Configuration"
 msgstr ""
+"コンフィグレーション"
 
 #: ../../user_guide.rst:269
 msgid "Config file"
 msgstr ""
+"設定ファイル"
 
 #: ../../user_guide.rst:271
 msgid ""
 "pip allows you to set all command line option defaults in a standard ini "
 "style config file."
 msgstr ""
+"pipでは標準のiniスタイルの設定ファイルにすべてのコマンドラインオプションのデフォルトを設定することができます。"
 
 #: ../../user_guide.rst:274
 msgid ""
@@ -412,10 +415,13 @@ msgid ""
 "platforms. You may have per-user, per-virtualenv or site-wide (shared "
 "amongst all users) configuration:"
 msgstr ""
+"設定ファイルの名前と場所は、プラットフォームによって多少異なります。"
+"ユーザー単位、vertualenv単位、またはサイト全体（すべてのユーザーで共有）の設定が可能です。"
 
 #: ../../user_guide.rst:278
 msgid "**Per-user**:"
 msgstr ""
+""**ユーザー単位**"
 
 #: ../../user_guide.rst:280
 msgid ""
@@ -423,16 +429,19 @@ msgid ""
 ":file:`$HOME/.config/pip/pip.conf` which respects the ``XDG_CONFIG_HOME``"
 " environment variable."
 msgstr ""
+"Unixでは、デフォルトの設定ファイルは、``XDG_CONFIG_HOME`` 環境変数を重んじる :file:`$HOME/.config/pip/pip.conf` です。"
 
 #: ../../user_guide.rst:282
 msgid ""
 "On macOS the configuration file is :file:`$HOME/Library/Application "
 "Support/pip/pip.conf`."
 msgstr ""
+"macOSでは、設定ファイルは :file:`$HOME/Library/Application Support/pip/pip.conf` です。"
 
 #: ../../user_guide.rst:284
 msgid "On Windows the configuration file is :file:`%APPDATA%\\\\pip\\\\pip.ini`."
 msgstr ""
+"Windowsでは、設定ファイルは :file:`%APPDATA%\\\\pip\\\\pip.ini` です。"
 
 #: ../../user_guide.rst:286
 msgid ""
