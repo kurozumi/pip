@@ -720,16 +720,19 @@ msgstr ""
 #: ../../user_guide.rst:451
 msgid "Installing from local packages"
 msgstr ""
+"ローカルパッケージからのインストール"
 
 #: ../../user_guide.rst:453
 msgid ""
 "In some cases, you may want to install from local packages only, with no "
 "traffic to PyPI."
 msgstr ""
+"場合によっては、PyPIへアクセスせず、ローカルパッケージからのみインストールすることもできます。"
 
 #: ../../user_guide.rst:456
 msgid "First, download the archives that fulfill your requirements::"
 msgstr ""
+"まず、要件を満たすアーカイブをダウンロードします::"
 
 #: ../../user_guide.rst:461
 msgid ""
@@ -739,12 +742,17 @@ msgid ""
 "that case, if some of your requirements don't come as wheels from PyPI, "
 "and you want wheels, then run this instead::"
 msgstr ""
+"PyPIからダウンロードしようとする前に、まず ``pip install --download`` がwheelキャッシュを見に行くことに注意してください。"
+"前もって要件をインストールしていない場合は、それらのwheelキャッシュはありません。"
+"その場合、PyPIからwheelsを取得していない要件がいくつかあり、wheelsが必要な場合は代わりに次のように実行します::"
 
 #: ../../user_guide.rst:470
 msgid ""
 "Then, to install from local only, you'll be using :ref:`--find-links "
 "<--find-links>` and :ref:`--no-index <--no-index>` like so::"
 msgstr ""
+"次に、ローカルからのみインストールするには、:ref:`--find-links <--find-links>`と"
+":ref:`--no-index <--no-index>` を使用します::"
 
 #: ../../user_guide.rst:477
 msgid "\"Only if needed\" Recursive Upgrade"
