@@ -103,7 +103,7 @@ msgid ""
 "Only relevant to VCS checkout. Attempt to switch the checkout to the "
 "appropriate url and/or revision."
 msgstr ""
-"VCSのチェックアウトにのみ関連します。"
+"VCS（バージョン管理システム）のチェックアウトにのみ関連します。"
 "チェックアウトを適切なURLまたはリビジョンに切り替えようとしています。"
 
 #: ../../reference/pip.rst:56
@@ -127,7 +127,7 @@ msgid ""
 "checkout a new one."
 msgstr ""
 "新しいファイルを作成、ダウンロード、またはチェックアウトする前に、"
-"ファイルまたはVCSのチェックアウトを削除してください。"
+"ファイルまたはVCS（バージョン管理システム）のチェックアウトを削除してください。"
 
 #: ../../reference/pip.rst:62
 msgid "*(b)ackup*"
@@ -140,7 +140,7 @@ msgid ""
 "point. So the most recent backup will be the one with the largest number "
 "after ``.bak``."
 msgstr ""
-"ファイルまたはチェックアウトを ``{name}{'.bak' * n}`` に変更します。
+"ファイルまたはチェックアウトを ``{name}{'.bak' * n}`` に変更します。"
 "nは、ファイルはある時点に存在しないような ``.bak`` 拡張子の数です。"
 "したがって、最新のバックアップは ``.bak`` の後で最大の番号になります。"
 
@@ -166,6 +166,10 @@ msgid ""
 " build systems.  As well as package building, the build system is also "
 "invoked to install packages direct from source."
 msgstr ""
+"Pipはビルドシステムを起動してパッケージをビルドします。"
+"現在、唯一サポートされているビルドシステムは ``setuptools`` ですが、"
+"Pythonパッケージのインフラの今後の開発には、他のビルドシステムのサポートが含まれる予定です。"
+"パッケージビルドと同様に、ビルドシステムはソースから直接パッケージをインストールするときも呼び出されます。"
 
 #: ../../reference/pip.rst:78
 msgid ""
@@ -173,6 +177,8 @@ msgid ""
 "script - all build actions are defined in terms of the specific "
 "``setup.py`` command line that will be run to invoke the required action."
 msgstr ""
+"ビルドシステムへのインターフェイスは、``setup.py`` コマンドラインスクリプトを介して行われます。"
+"すべてのビルドアクションは、必要なアクションを呼び出すために実行される特定の ``setup.py`` コマンドラインによって定義されます。"
 
 #: ../../reference/pip.rst:83
 msgid "Setuptools Injection"
@@ -189,6 +195,13 @@ msgid ""
 "wishing to provide a ``setup.py`` emulating the commands pip requires may"
 " need to be aware that it takes place."
 msgstr ""
+"上記のように、サポートされているビルドシステムは ``setuptools`` です。"
+"ただし、すべてのパッケージがビルドスクリプトで ``setuptools`` を使用するわけではありません。"
+"\"pure ``distutils``\" を使用するプロジェクトをサポートするため、"
+"pipは ``setup.py`` を呼び出す前に ``setuptools`` を ``sys.modules`` に注入（インジェクション）します。"
+"インジェクションは ``distutils`` ベースのプロジェクトに対して透過的でなければなりませんが、"
+"pipが必要なコマンドをエミュレートする ``setup.py`` を提供したいサードパーティ製のビルドツールは、"
+"インジェクションを実行することを意識する必要があります。"
 
 #: ../../reference/pip.rst:94
 msgid "Future Developments"
@@ -224,6 +237,10 @@ msgid ""
 "``setup.py`` command (``--build-option`` is only available in ``pip "
 "wheel``).  These arguments are included in the command as follows::"
 msgstr ""
+"``pip install`` と ``pip wheel`` の ``--global-option`` 引数と ``--build-option`` 引数は、"
+"`setup.py`` コマンドに追加引数を挿入します。"
+"（``--build-option`` は ``pip wheel`` でのみ使用できます）"
+"これらの引数は、次のようにコマンドに含まれています。::"
 
 #: ../../reference/pip.rst:118
 msgid ""
@@ -233,6 +250,9 @@ msgid ""
 "supported in the current form if support for alternative build systems is"
 " added to pip."
 msgstr ""
+"オプションは変更されずに渡され、現在はdistutilsのコマンドラインに直接アクセスできます。"
+"``--global-option`` と `--build-option`` の使用は、ビルドシステムに依存している必要があります。"
+"pipに別のビルドシステムのサポートが追加されていれば、現在の形式ではサポートされていない可能性があります。"
 
 #: ../../reference/pip.rst:127
 msgid "General Options"
