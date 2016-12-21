@@ -103,6 +103,8 @@ msgid ""
 "Only relevant to VCS checkout. Attempt to switch the checkout to the "
 "appropriate url and/or revision."
 msgstr ""
+"VCSのチェックアウトにのみ関連します。"
+"チェックアウトを適切なURLまたはリビジョンに切り替えようとしています。"
 
 #: ../../reference/pip.rst:56
 msgid "*(i)gnore*"
@@ -113,6 +115,7 @@ msgid ""
 "Abort current operation (e.g. don't copy file, don't create archive, "
 "don't modify a checkout)."
 msgstr ""
+"現在の操作を中止する（例：ファイルをコピーしない、アーカイブを作成しない、チェックアウトを変更しない）"
 
 #: ../../reference/pip.rst:58
 msgid "*(w)ipe*"
@@ -123,6 +126,8 @@ msgid ""
 "Delete the file or VCS checkout before trying to create, download, or "
 "checkout a new one."
 msgstr ""
+"新しいファイルを作成、ダウンロード、またはチェックアウトする前に、"
+"ファイルまたはVCSのチェックアウトを削除してください。"
 
 #: ../../reference/pip.rst:62
 msgid "*(b)ackup*"
@@ -135,6 +140,9 @@ msgid ""
 "point. So the most recent backup will be the one with the largest number "
 "after ``.bak``."
 msgstr ""
+"ファイルまたはチェックアウトを ``{name}{'.bak' * n}`` に変更します。
+"nは、ファイルはある時点に存在しないような ``.bak`` 拡張子の数です。"
+"したがって、最新のバックアップは ``.bak`` の後で最大の番号になります。"
 
 #: ../../reference/pip.rst:65
 msgid "*(a)abort*"
@@ -143,6 +151,7 @@ msgstr ""
 #: ../../reference/pip.rst:65
 msgid "Abort pip and return non-zero exit status."
 msgstr ""
+"pipを中止し、ゼロ以外の終了ステータスを返します。"
 
 #: ../../reference/pip.rst:70
 msgid "Build System Interface"
