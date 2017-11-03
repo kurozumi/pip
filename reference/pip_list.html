@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pip list &mdash; pip 9.1.0.dev0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="pip 9.1.0.dev0 ドキュメント" href="../index.html"/>
+        <link rel="up" title="リファレンスガイド" href="index.html"/>
+        <link rel="next" title="pip show" href="pip_show.html"/>
+        <link rel="prev" title="pip freeze" href="pip_freeze.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pip
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                9.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">クイックスタート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installing.html">インストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">ユーザーガイド</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">リファレンスガイド</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pip.html">pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_install.html">pip install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_download.html">pip download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_uninstall.html">pip uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_freeze.html">pip freeze</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pip list</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">使い方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">説明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options">オプション</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_show.html">pip show</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_search.html">pip search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_wheel.html">pip wheel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_hash.html">pip hash</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pip</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">リファレンスガイド</a> &raquo;</li>
+        
+      <li>pip list</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<div class="note" style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- microbit -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6843356127740583"
+     data-ad-slot="1467708818"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="section" id="pip-list">
+<span id="id1"></span><h1><a class="toc-backref" href="#id3">pip list</a><a class="headerlink" href="#pip-list" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="contents topic" id="id2">
+<p class="topic-title first">目次</p>
+<ul class="simple">
+<li><a class="reference internal" href="#pip-list" id="id3">pip list</a><ul>
+<li><a class="reference internal" href="#usage" id="id4">使い方</a></li>
+<li><a class="reference internal" href="#description" id="id5">説明</a></li>
+<li><a class="reference internal" href="#options" id="id6">オプション</a></li>
+<li><a class="reference internal" href="#examples" id="id7">例</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2><a class="toc-backref" href="#id4">使い方</a><a class="headerlink" href="#usage" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span>
+<span class="n">pip</span> <span class="nb">list</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="description">
+<h2><a class="toc-backref" href="#id5">説明</a><a class="headerlink" href="#description" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><p>List installed packages, including editables.</p>
+<p>Packages are listed in a case-insensitive sorted order.</p>
+</p>
+</div>
+<div class="section" id="options">
+<h2><a class="toc-backref" href="#id6">オプション</a><a class="headerlink" href="#options" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><span class="target" id="list-outdated"></span><dl class="option">
+<dt id="cmdoption-o">
+<code class="descname">-o</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--outdated</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-o" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>List outdated packages</p>
+</dd></dl>
+
+<span class="target" id="list-uptodate"></span><dl class="option">
+<dt id="cmdoption-u">
+<code class="descname">-u</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--uptodate</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-u" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>List uptodate packages</p>
+</dd></dl>
+
+<span class="target" id="list-editable"></span><dl class="option">
+<dt id="cmdoption-e">
+<code class="descname">-e</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--editable</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-e" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>List editable projects.</p>
+</dd></dl>
+
+<span class="target" id="list-local"></span><dl class="option">
+<dt id="cmdoption-l">
+<code class="descname">-l</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--local</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-l" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>If in a virtualenv that has global access, do not list globally-installed packages.</p>
+</dd></dl>
+
+<span class="target" id="list-user"></span><dl class="option">
+<dt id="cmdoption-user">
+<code class="descname">--user</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-user" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Only output packages installed in user-site.</p>
+</dd></dl>
+
+<span class="target" id="list-pre"></span><dl class="option">
+<dt id="cmdoption-pre">
+<code class="descname">--pre</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-pre" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Include pre-release and development versions. By default, pip only finds stable versions.</p>
+</dd></dl>
+
+<span class="target" id="list-format"></span><dl class="option">
+<dt id="cmdoption-format">
+<code class="descname">--format</code><code class="descclassname"> &lt;list_format&gt;</code><a class="headerlink" href="#cmdoption-format" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Select the output format among: legacy (default), columns, freeze or json.</p>
+</dd></dl>
+
+<span class="target" id="list-not-required"></span><dl class="option">
+<dt id="cmdoption-not-required">
+<code class="descname">--not-required</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-not-required" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>List packages that are not dependencies of installed packages.</p>
+</dd></dl>
+
+</p>
+<p><span class="target" id="index-url"></span><dl class="option">
+<dt id="cmdoption-i">
+<code class="descname">-i</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--index-url</code><code class="descclassname"> &lt;url&gt;</code><a class="headerlink" href="#cmdoption-i" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Base URL of Python Package Index (default <a class="reference external" href="https://pypi.python.org/simple">https://pypi.python.org/simple</a>). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format.</p>
+</dd></dl>
+
+<span class="target" id="extra-index-url"></span><dl class="option">
+<dt id="cmdoption-extra-index-url">
+<code class="descname">--extra-index-url</code><code class="descclassname"> &lt;url&gt;</code><a class="headerlink" href="#cmdoption-extra-index-url" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Extra URLs of package indexes to use in addition to --index-url. Should follow the same rules as --index-url.</p>
+</dd></dl>
+
+<span class="target" id="no-index"></span><dl class="option">
+<dt id="cmdoption-no-index">
+<code class="descname">--no-index</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-no-index" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Ignore package index (only looking at --find-links URLs instead).</p>
+</dd></dl>
+
+<span class="target" id="find-links"></span><dl class="option">
+<dt id="cmdoption-f">
+<code class="descname">-f</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--find-links</code><code class="descclassname"> &lt;url&gt;</code><a class="headerlink" href="#cmdoption-f" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>If a url or path to an html file, then parse for links to archives. If a local path or <a class="reference external" href="file://">file://</a> url that's a directory, then look for archives in the directory listing.</p>
+</dd></dl>
+
+<span class="target" id="process-dependency-links"></span><dl class="option">
+<dt id="cmdoption-process-dependency-links">
+<code class="descname">--process-dependency-links</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-process-dependency-links" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Enable the processing of dependency links.</p>
+</dd></dl>
+
+</p>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id7">例</a><a class="headerlink" href="#examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">List installed packages.</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list
+docutils (0.10)
+Jinja2 (2.7.2)
+MarkupSafe (0.18)
+Pygments (1.6)
+Sphinx (1.2.1)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">List outdated packages (excluding editables), and the latest version available.</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --outdated
+docutils (Current: 0.10 Latest: 0.11)
+Sphinx (Current: 1.2.1 Latest: 1.2.2)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">List installed packages with column formatting.</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format columns
+Package Version
+------- -------
+docopt  0.6.2
+idlex   1.13
+jedi    0.9.0
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">List outdated packages with column formatting.</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list -o --format columns
+Package    Version Latest Type
+---------- ------- ------ -----
+retry      0.8.1   0.9.1  wheel
+setuptools 20.6.7  21.0.0 wheel
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">List packages that are not dependencies of other packages. Can be combined with
+other options.</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --outdated --not-required
+docutils (Current: 0.10 Latest: 0.11)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Use legacy formatting</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format=legacy
+colorama (0.3.7)
+docopt (0.6.2)
+idlex (1.13)
+jedi (0.9.0)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Use json formatting</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format=json
+[{&#39;name&#39;: &#39;colorama&#39;, &#39;version&#39;: &#39;0.3.7&#39;}, {&#39;name&#39;: &#39;docopt&#39;, &#39;version&#39;: &#39;0.6.2&#39;}, ...
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Use freeze formatting</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format=freeze
+colorama==0.3.7
+docopt==0.6.2
+idlex==1.13
+jedi==0.9.0
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pip_show.html" class="btn btn-neutral float-right" title="pip show" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pip_freeze.html" class="btn btn-neutral" title="pip freeze" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2008-2016, PyPA.
+      最終更新: 11月 04, 2017
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+ 
+
+<div role="contentinfo">
+<p>このサイトは<a href="http://a-zumi.net">あずみ.net</a>が翻訳しております。</p>
+<p>サイトを利用したことによる直接的、付随的、結果的、間接的、あるいは懲罰的な損害、経費、損失、または
+債務について、いかなる責任も負いかねます。</p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'9.1.0.dev0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23705195-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23705195-42');
+</script>
+
+
+</body>
+</html>

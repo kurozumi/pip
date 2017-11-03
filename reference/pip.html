@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pip &mdash; pip 9.1.0.dev0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="pip 9.1.0.dev0 ドキュメント" href="../index.html"/>
+        <link rel="up" title="リファレンスガイド" href="index.html"/>
+        <link rel="next" title="pip install" href="pip_install.html"/>
+        <link rel="prev" title="リファレンスガイド" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pip
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                9.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">クイックスタート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installing.html">インストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">ユーザーガイド</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">リファレンスガイド</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pip</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">使い方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">説明</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#logging">ロギング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exists-action-option">--exists-actionオプション</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-system-interface">ビルドシステムインターフェイス</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#general-options">一般オプション</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pip_install.html">pip install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_download.html">pip download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_uninstall.html">pip uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_freeze.html">pip freeze</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_list.html">pip list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_show.html">pip show</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_search.html">pip search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_wheel.html">pip wheel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pip_hash.html">pip hash</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pip</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">リファレンスガイド</a> &raquo;</li>
+        
+      <li>pip</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<div class="note" style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- microbit -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6843356127740583"
+     data-ad-slot="1467708818"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="section" id="pip">
+<h1><a class="toc-backref" href="#id5">pip</a><a class="headerlink" href="#pip" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目次</p>
+<ul class="simple">
+<li><a class="reference internal" href="#pip" id="id5">pip</a><ul>
+<li><a class="reference internal" href="#usage" id="id6">使い方</a></li>
+<li><a class="reference internal" href="#description" id="id7">説明</a><ul>
+<li><a class="reference internal" href="#logging" id="id8">ロギング</a><ul>
+<li><a class="reference internal" href="#console-logging" id="id9">コンソールロギング</a></li>
+<li><a class="reference internal" href="#file-logging" id="id10">ファイルロギング</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exists-action-option" id="id11">--exists-actionオプション</a></li>
+<li><a class="reference internal" href="#build-system-interface" id="id12">ビルドシステムインターフェイス</a><ul>
+<li><a class="reference internal" href="#setuptools-injection" id="id13">Setuptoolsインジェクション</a></li>
+<li><a class="reference internal" href="#future-developments" id="id14">今後の展開</a></li>
+<li><a class="reference internal" href="#build-options" id="id15">ビルドオプション</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#general-options" id="id16">一般オプション</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2><a class="toc-backref" href="#id6">使い方</a><a class="headerlink" href="#usage" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="description">
+<h2><a class="toc-backref" href="#id7">説明</a><a class="headerlink" href="#description" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="logging">
+<span id="id2"></span><h3><a class="toc-backref" href="#id8">ロギング</a><a class="headerlink" href="#logging" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="console-logging">
+<h4><a class="toc-backref" href="#id9">コンソールロギング</a><a class="headerlink" href="#console-logging" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>pipはコンソールログレベルを制御する <a class="reference internal" href="#verbose"><span class="std std-ref">-v, --verbose</span></a>、と <a class="reference internal" href="#quiet"><span class="std std-ref">-q, --quiet</span></a> を提供します。</p>
+</div>
+<div class="section" id="file-logging">
+<span id="filelogging"></span><h4><a class="toc-backref" href="#id10">ファイルロギング</a><a class="headerlink" href="#file-logging" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>pipは冗長ログを最大限に保存するファイルを指定するための <a class="reference internal" href="#log"><span class="std std-ref">--log</span></a> オプションを提供します。このオプションはデフォルトでは空です。このログは以前のログに追加されます。</p>
+<p>すべてのpipオプションと同様に、<code class="docutils literal"><span class="pre">--log</span></code> は環境変数として設定することも、pip設定ファイルに配置することもできます。<a class="reference internal" href="../user_guide.html#configuration"><span class="std std-ref">コンフィグレーション</span></a> セクションを参照してください。</p>
+</div>
+</div>
+<div class="section" id="exists-action-option">
+<span id="exists-action"></span><h3><a class="toc-backref" href="#id11">--exists-actionオプション</a><a class="headerlink" href="#exists-action-option" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>このオプションは、パスがすでに存在する場合のデフォルトの動作を指定します。可能な場合：ファイルをダウンロードするか、インストール用のリポジトリをチェックアウトしてアーカイブを作成します。<code class="docutils literal"><span class="pre">--exists-action</span></code> が定義されていない場合、pipは決定が必要なときにプロンプトを表示します。</p>
+<dl class="docutils">
+<dt><em>(s)witch</em></dt>
+<dd>VCS（バージョン管理システム）のチェックアウトにのみ関連します。チェックアウトを適切なURLまたはリビジョンに切り替えようとしています。</dd>
+<dt><em>(i)gnore</em></dt>
+<dd>現在の操作を中止する（例：ファイルをコピーしない、アーカイブを作成しない、チェックアウトを変更しない）</dd>
+<dt><em>(w)ipe</em></dt>
+<dd>新しいファイルを作成、ダウンロード、またはチェックアウトする前に、ファイルまたはVCS（バージョン管理システム）のチェックアウトを削除してください。</dd>
+<dt><em>(b)ackup</em></dt>
+<dd>ファイルまたはチェックアウトを <code class="docutils literal"><span class="pre">{name}{'.bak'</span> <span class="pre">*</span> <span class="pre">n}</span></code> に変更します。nは、ファイルはある時点に存在しないような <code class="docutils literal"><span class="pre">.bak</span></code> 拡張子の数です。したがって、最新のバックアップは <code class="docutils literal"><span class="pre">.bak</span></code> の後で最大の番号になります。</dd>
+<dt><em>(a)abort</em></dt>
+<dd>pipを中止し、ゼロ以外の終了ステータスを返します。</dd>
+</dl>
+</div>
+<div class="section" id="build-system-interface">
+<span id="build-interface"></span><h3><a class="toc-backref" href="#id12">ビルドシステムインターフェイス</a><a class="headerlink" href="#build-system-interface" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Pipはビルドシステムを起動してパッケージをビルドします。現在、唯一サポートされているビルドシステムは <code class="docutils literal"><span class="pre">setuptools</span></code> ですが、Pythonパッケージのインフラの今後の開発には、他のビルドシステムのサポートが含まれる予定です。パッケージビルドと同様に、ビルドシステムはソースから直接パッケージをインストールするときも呼び出されます。</p>
+<p>ビルドシステムへのインターフェイスは、<code class="docutils literal"><span class="pre">setup.py</span></code> コマンドラインスクリプトを介して行われます。すべてのビルドアクションは、必要なアクションを呼び出すために実行される特定の <code class="docutils literal"><span class="pre">setup.py</span></code> コマンドラインによって定義されます。</p>
+<div class="section" id="setuptools-injection">
+<h4><a class="toc-backref" href="#id13">Setuptoolsインジェクション</a><a class="headerlink" href="#setuptools-injection" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>上記のように、サポートされているビルドシステムは <code class="docutils literal"><span class="pre">setuptools</span></code> です。ただし、すべてのパッケージがビルドスクリプトで <code class="docutils literal"><span class="pre">setuptools</span></code> を使用するわけではありません。&quot;pure <code class="docutils literal"><span class="pre">distutils</span></code>&quot; を使用するプロジェクトをサポートするため、pipは <code class="docutils literal"><span class="pre">setup.py</span></code> を呼び出す前に <code class="docutils literal"><span class="pre">setuptools</span></code> を <code class="docutils literal"><span class="pre">sys.modules</span></code> に注入（インジェクション）します。インジェクションは <code class="docutils literal"><span class="pre">distutils</span></code> ベースのプロジェクトに対して透過的でなければなりませんが、pipが必要なコマンドをエミュレートする <code class="docutils literal"><span class="pre">setup.py</span></code> を提供したいサードパーティ製のビルドツールは、インジェクションを実行することを意識する必要があります。</p>
+</div>
+<div class="section" id="future-developments">
+<h4><a class="toc-backref" href="#id14">今後の展開</a><a class="headerlink" href="#future-developments" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p><a class="reference external" href="http://www.python.org/dev/peps/pep-0426/#metabuild-system">PEP426</a> notes that the intention is to add hooks to project metadata in
+version 2.1 of the metadata spec, to explicitly define how to build a project
+from its source. Once this version of the metadata spec is final, pip will
+migrate to using that interface. At that point, the <code class="docutils literal"><span class="pre">setup.py</span></code> interface
+documented here will be retained solely for legacy purposes, until projects
+have migrated.</p>
+<p>Specifically, applications should <em>not</em> expect to rely on there being any form
+of backward compatibility guarantees around the <code class="docutils literal"><span class="pre">setup.py</span></code> interface.</p>
+</div>
+<div class="section" id="build-options">
+<h4><a class="toc-backref" href="#id15">ビルドオプション</a><a class="headerlink" href="#build-options" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span></code> と <code class="docutils literal"><span class="pre">pip</span> <span class="pre">wheel</span></code> の <code class="docutils literal"><span class="pre">--global-option</span></code> 引数と <code class="docutils literal"><span class="pre">--build-option</span></code> 引数は、<cite>setup.py`</cite> コマンドに追加引数を挿入します。（<code class="docutils literal"><span class="pre">--build-option</span></code> は <code class="docutils literal"><span class="pre">pip</span> <span class="pre">wheel</span></code> でのみ使用できます）これらの引数は、次のようにコマンドに含まれています。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">global_options</span><span class="o">&gt;</span> <span class="n">BUILD</span> <span class="n">COMMAND</span> <span class="o">&lt;</span><span class="n">build_options</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>オプションは変更されずに渡され、現在はdistutilsのコマンドラインに直接アクセスできます。<code class="docutils literal"><span class="pre">--global-option</span></code> と <cite>--build-option`</cite> の使用は、ビルドシステムに依存している必要があります。pipに別のビルドシステムのサポートが追加されていれば、現在の形式ではサポートされていない可能性があります。</p>
+</div>
+</div>
+</div>
+<div class="section" id="general-options">
+<span id="id3"></span><h2><a class="toc-backref" href="#id16">一般オプション</a><a class="headerlink" href="#general-options" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><span class="target" id="help"></span><dl class="option">
+<dt id="cmdoption-h">
+<code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-h" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Show help.</p>
+</dd></dl>
+
+<span class="target" id="isolated"></span><dl class="option">
+<dt id="cmdoption-isolated">
+<code class="descname">--isolated</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-isolated" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Run pip in an isolated mode, ignoring environment variables and user configuration.</p>
+</dd></dl>
+
+<span class="target" id="verbose"></span><dl class="option">
+<dt id="cmdoption-v">
+<code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--verbose</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-v" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Give more output. Option is additive, and can be used up to 3 times.</p>
+</dd></dl>
+
+<span class="target" id="version"></span><dl class="option">
+<dt id="cmdoption-version">
+<code class="descname">-V</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--version</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-version" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Show version and exit.</p>
+</dd></dl>
+
+<span class="target" id="quiet"></span><dl class="option">
+<dt id="cmdoption-q">
+<code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-q" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and CRITICAL logging levels).</p>
+</dd></dl>
+
+<span class="target" id="log"></span><dl class="option">
+<dt id="cmdoption-log">
+<code class="descname">--log</code><code class="descclassname"> &lt;path&gt;</code><a class="headerlink" href="#cmdoption-log" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Path to a verbose appending log.</p>
+</dd></dl>
+
+<span class="target" id="proxy"></span><dl class="option">
+<dt id="cmdoption-proxy">
+<code class="descname">--proxy</code><code class="descclassname"> &lt;proxy&gt;</code><a class="headerlink" href="#cmdoption-proxy" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Specify a proxy in the form [user:passwd&#64;]proxy.server:port.</p>
+</dd></dl>
+
+<span class="target" id="retries"></span><dl class="option">
+<dt id="cmdoption-retries">
+<code class="descname">--retries</code><code class="descclassname"> &lt;retries&gt;</code><a class="headerlink" href="#cmdoption-retries" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Maximum number of retries each connection should attempt (default 5 times).</p>
+</dd></dl>
+
+<span class="target" id="timeout"></span><dl class="option">
+<dt id="cmdoption-timeout">
+<code class="descname">--timeout</code><code class="descclassname"> &lt;sec&gt;</code><a class="headerlink" href="#cmdoption-timeout" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Set the socket timeout (default 15 seconds).</p>
+</dd></dl>
+
+<span class="target" id="id4"></span><dl class="option">
+<dt id="cmdoption-exists-action">
+<code class="descname">--exists-action</code><code class="descclassname"> &lt;action&gt;</code><a class="headerlink" href="#cmdoption-exists-action" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.</p>
+</dd></dl>
+
+<span class="target" id="trusted-host"></span><dl class="option">
+<dt id="cmdoption-trusted-host">
+<code class="descname">--trusted-host</code><code class="descclassname"> &lt;hostname&gt;</code><a class="headerlink" href="#cmdoption-trusted-host" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Mark this host as trusted, even though it does not have valid or any HTTPS.</p>
+</dd></dl>
+
+<span class="target" id="cert"></span><dl class="option">
+<dt id="cmdoption-cert">
+<code class="descname">--cert</code><code class="descclassname"> &lt;path&gt;</code><a class="headerlink" href="#cmdoption-cert" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Path to alternate CA bundle.</p>
+</dd></dl>
+
+<span class="target" id="client-cert"></span><dl class="option">
+<dt id="cmdoption-client-cert">
+<code class="descname">--client-cert</code><code class="descclassname"> &lt;path&gt;</code><a class="headerlink" href="#cmdoption-client-cert" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Path to SSL client certificate, a single file containing the private key and the certificate in PEM format.</p>
+</dd></dl>
+
+<span class="target" id="cache-dir"></span><dl class="option">
+<dt id="cmdoption-cache-dir">
+<code class="descname">--cache-dir</code><code class="descclassname"> &lt;dir&gt;</code><a class="headerlink" href="#cmdoption-cache-dir" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Store the cache data in &lt;dir&gt;.</p>
+</dd></dl>
+
+<span class="target" id="no-cache-dir"></span><dl class="option">
+<dt id="cmdoption-no-cache-dir">
+<code class="descname">--no-cache-dir</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-no-cache-dir" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Disable the cache.</p>
+</dd></dl>
+
+<span class="target" id="disable-pip-version-check"></span><dl class="option">
+<dt id="cmdoption-disable-pip-version-check">
+<code class="descname">--disable-pip-version-check</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-disable-pip-version-check" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>Don't periodically check PyPI to determine whether a new version of pip is available for download. Implied with --no-index.</p>
+</dd></dl>
+
+</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pip_install.html" class="btn btn-neutral float-right" title="pip install" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="リファレンスガイド" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2008-2016, PyPA.
+      最終更新: 11月 04, 2017
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+ 
+
+<div role="contentinfo">
+<p>このサイトは<a href="http://a-zumi.net">あずみ.net</a>が翻訳しております。</p>
+<p>サイトを利用したことによる直接的、付随的、結果的、間接的、あるいは懲罰的な損害、経費、損失、または
+債務について、いかなる責任も負いかねます。</p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'9.1.0.dev0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23705195-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23705195-42');
+</script>
+
+
+</body>
+</html>

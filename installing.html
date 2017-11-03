@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>インストール &mdash; pip 9.1.0.dev0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="search" title="検索" href="search.html"/>
+    <link rel="top" title="pip 9.1.0.dev0 ドキュメント" href="index.html"/>
+        <link rel="next" title="ユーザーガイド" href="user_guide.html"/>
+        <link rel="prev" title="クイックスタート" href="quickstart.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pip
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                9.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">クイックスタート</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">インストール</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#do-i-need-to-install-pip">pipをインストールする必要はありますか？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-with-get-pip-py">get-pip.pyでインストールする方法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-pip-py-options">get-pip.pyオプション</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-linux-package-managers">Linuxパッケージマネージャを使用する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upgrading-pip">pipをアップグレードする</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-and-os-compatibility">PythonとOSの互換性</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">ユーザーガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">リファレンスガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pip</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>インストール</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<div class="note" style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- microbit -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6843356127740583"
+     data-ad-slot="1467708818"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="section" id="installation">
+<span id="id1"></span><h1>インストール<a class="headerlink" href="#installation" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="do-i-need-to-install-pip">
+<h2>pipをインストールする必要はありますか？<a class="headerlink" href="#do-i-need-to-install-pip" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://www.python.org">python.org</a> からダウンロードしたPython 2&gt;= 2.7.9またはPython 3&gt;= 3.4バイナリを使用している場合、pipを <a class="reference internal" href="#upgrading-pip"><span class="std std-ref">upgrade pip</span></a> する必要があります。</p>
+<p><a class="reference external" href="https://packaging.python.org/key_projects/#virtualenv" title="(in Python Packaging User Guide v)"><span>virtualenv</span></a> または <a class="reference external" href="https://packaging.python.org/key_projects/#venv" title="(in Python Packaging User Guide v)"><span class="xref std std-ref">pyvenv</span></a> によって作成された <a class="reference external" href="https://packaging.python.org/tutorials/installing-packages/#creating-and-using-virtual-environments" title="(in Python Packaging User Guide v)"><span class="xref std std-ref">Virtual Environment</span></a> で作業している場合、pipはすでにインストールされています。</p>
+</div>
+<div class="section" id="installing-with-get-pip-py">
+<span id="get-pip"></span><h2>get-pip.pyでインストールする方法<a class="headerlink" href="#installing-with-get-pip-py" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>pipをインストールするために、 <a class="reference external" href="https://bootstrap.pypa.io/get-pip.py">get-pip.py</a>. <a class="footnote-reference" href="#id8" id="id2">[2]</a> を安全にダウンロードして下さい。</p>
+<p>次に以下を実行して下さい。</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">get</span><span class="o">-</span><span class="n">pip</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">OSまたは別のパッケージマネージャによって管理されているPythonを使用している場合は注意してください。get-pip.pyはこれらのツールと連携しないため、システムが不整合状態になる可能性があります。</p>
+</div>
+<p>get-pip.pyは <a class="reference external" href="https://packaging.python.org/key_projects/#setuptools" title="(in Python Packaging User Guide v)"><span>setuptools</span></a> <a class="footnote-reference" href="#id9" id="id3">[3]</a> と <a class="reference external" href="https://packaging.python.org/key_projects/#wheel" title="(in Python Packaging User Guide v)"><span>wheel</span></a> もインストールします。<a class="reference external" href="https://packaging.python.org/glossary/#term-source-distribution-or-sdist" title="(in Python Packaging User Guide v)"><span class="xref std std-term">source distributions</span></a> をインストールするには、<a class="reference external" href="https://packaging.python.org/key_projects/#setuptools" title="(in Python Packaging User Guide v)"><span>setuptools</span></a> が必要です。どちらも <a class="reference internal" href="reference/pip_install.html#wheel-cache"><span class="std std-ref">Wheel キャッシュ</span></a> （インストール速度を向上させる）を構築できることが求められていますが、あらかじめ構築された <a class="reference external" href="https://packaging.python.org/glossary/#term-wheel" title="(in Python Packaging User Guide v)"><span class="xref std std-term">wheels</span></a> をインストールする必要はありません。</p>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">get-pip.pyはpipと同じpythonバージョンでサポートされています。現在サポートされていないPython 3.2は、代わりのスクリプトが <a class="reference external" href="https://bootstrap.pypa.io/3.2/get-pip.py">ここ</a> にあります。pip 10.0でサポートされていないPython 2.6は、代わりのスクリプトが <a class="reference external" href="https://bootstrap.pypa.io/2.6/get-pip.py">ここ</a> にあります。</p>
+</div>
+<div class="section" id="get-pip-py-options">
+<h3>get-pip.pyオプション<a class="headerlink" href="#get-pip-py-options" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<dl class="option">
+<dt id="cmdoption-no-setuptools">
+<code class="descname">--no-setuptools</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-no-setuptools" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>設定すると <a class="reference external" href="https://packaging.python.org/key_projects/#setuptools" title="(in Python Packaging User Guide v)"><span>setuptools</span></a> をインストールしません</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-no-wheel">
+<code class="descname">--no-wheel</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-no-wheel" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>設定すると、<a class="reference external" href="https://packaging.python.org/key_projects/#wheel" title="(in Python Packaging User Guide v)"><span>wheel</span></a> をインストールしません</p>
+</dd></dl>
+
+<p>さらに、<code class="docutils literal"><span class="pre">get-pip.py</span></code> は <a class="reference internal" href="reference/pip_install.html#pip-install-options"><span class="std std-ref">pip install options</span></a> と <a class="reference internal" href="reference/pip.html#general-options"><span class="std std-ref">general options</span></a> もサポートしています。以下はいくつかの例です:</p>
+<p>pipとsetuptoolsのローカルコピーからインストールする:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">get</span><span class="o">-</span><span class="n">pip</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">index</span> <span class="o">--</span><span class="n">find</span><span class="o">-</span><span class="n">links</span><span class="o">=/</span><span class="n">local</span><span class="o">/</span><span class="n">copies</span>
+</pre></div>
+</div>
+<p>ユーザーサイト <a class="footnote-reference" href="#id10" id="id4">[4]</a> へインストールする:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">get</span><span class="o">-</span><span class="n">pip</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">user</span>
+</pre></div>
+</div>
+<p>プロキシ経由でインストールする:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">get</span><span class="o">-</span><span class="n">pip</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">proxy</span><span class="o">=</span><span class="s2">&quot;[user:passwd@]proxy.server:port&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="using-linux-package-managers">
+<h2>Linuxパッケージマネージャを使用する<a class="headerlink" href="#using-linux-package-managers" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://packaging.python.org/en/latest/current/">Python Packaging User Guide</a> の <a class="reference external" href="https://packaging.python.org/guides/installing-using-linux-tools/#installing-pip-setuptools-wheel-with-linux-package-managers" title="(in Python Packaging User Guide v)"><span>Installing pip/setuptools/wheel with Linux Package Managers</span></a> を参照してください。</p>
+</div>
+<div class="section" id="upgrading-pip">
+<span id="id5"></span><h2>pipをアップグレードする<a class="headerlink" href="#upgrading-pip" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>LinuxまたはmacOSの場合:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">pip</span>
+</pre></div>
+</div>
+<p>Windowsの場合 <a class="footnote-reference" href="#id11" id="id6">[5]</a>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">pip</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="python-and-os-compatibility">
+<h2>PythonとOSの互換性<a class="headerlink" href="#python-and-os-compatibility" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>pipは、CPythonのバージョン2.6,2.7,3.3,3.4,3.5、さらにはpypyで動作します。</p>
+<p>これはマイナーバージョン（2.6の2.6.9など）の最新のパッチバージョンでpipが動作することを意味します。以前のパッチ・バージョンは、ベスト・エフォート・アプローチでサポートされています。</p>
+<p>pipはUnix/Linux、macOS、Windowsで動作します。</p>
+<hr class="docutils" />
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td>For Python 2, see <a class="reference external" href="https://docs.python.org/2/installing">https://docs.python.org/2/installing</a>, and for Python3,
+see <a class="reference external" href="https://docs.python.org/3/installing">https://docs.python.org/3/installing</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>&quot;Secure&quot; in this context means using a modern browser or a
+tool like <cite>curl</cite> that verifies SSL certificates when downloading from
+https URLs.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>Beginning with pip v1.5.1, <code class="docutils literal"><span class="pre">get-pip.py</span></code> stopped requiring setuptools to
+be installed first.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[4]</a></td><td>The pip developers are considering making <code class="docutils literal"><span class="pre">--user</span></code> the default for all
+installs, including <code class="docutils literal"><span class="pre">get-pip.py</span></code> installs of pip, but at this time,
+<code class="docutils literal"><span class="pre">--user</span></code> installs for pip itself, should not be considered to be fully
+tested or endorsed. For discussion, see <a class="reference external" href="https://github.com/pypa/pip/issues/1668">Issue 1668</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[5]</a></td><td><a class="reference external" href="https://github.com/pypa/pip/issues/1299">https://github.com/pypa/pip/issues/1299</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="user_guide.html" class="btn btn-neutral float-right" title="ユーザーガイド" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral" title="クイックスタート" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2008-2016, PyPA.
+      最終更新: 11月 04, 2017
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+ 
+
+<div role="contentinfo">
+<p>このサイトは<a href="http://a-zumi.net">あずみ.net</a>が翻訳しております。</p>
+<p>サイトを利用したことによる直接的、付随的、結果的、間接的、あるいは懲罰的な損害、経費、損失、または
+債務について、いかなる責任も負いかねます。</p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'9.1.0.dev0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23705195-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23705195-42');
+</script>
+
+
+</body>
+</html>

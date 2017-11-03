@@ -1,0 +1,734 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ユーザーガイド &mdash; pip 9.1.0.dev0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="search" title="検索" href="search.html"/>
+    <link rel="top" title="pip 9.1.0.dev0 ドキュメント" href="index.html"/>
+        <link rel="next" title="リファレンスガイド" href="reference/index.html"/>
+        <link rel="prev" title="インストール" href="installing.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pip
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                9.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">クイックスタート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">インストール</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ユーザーガイド</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installing-packages">パッケージのインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements-files">Requirementsファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#constraints-files">Constraintsファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-from-wheels">Wheelsからインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uninstalling-packages">パッケージのアンインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#listing-packages">パッケージの一覧表示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#searching-for-packages">パッケージの検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">コンフィグレーション</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#config-file">設定ファイル</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#environment-variables">環境変数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#config-precedence">設定の優先順位</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#command-completion">コマンドの完了</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-from-local-packages">ローカルパッケージからのインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#only-if-needed-recursive-upgrade">&quot;必要な場合のみ&quot;再帰的アップグレード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-installs">ユーザーインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ensuring-repeatability">繰り返し性の確保</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pinned-version-numbers">固定されたバージョン番号</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hash-checking-mode">ハッシュチェックモード</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-bundles">インストールバンドル</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">リファレンスガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pip</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>ユーザーガイド</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<div class="note" style="text-align:center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- microbit -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6843356127740583"
+     data-ad-slot="1467708818"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="section" id="user-guide">
+<h1><a class="toc-backref" href="#id8">ユーザーガイド</a><a class="headerlink" href="#user-guide" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目次</p>
+<ul class="simple">
+<li><a class="reference internal" href="#user-guide" id="id8">ユーザーガイド</a><ul>
+<li><a class="reference internal" href="#installing-packages" id="id9">パッケージのインストール</a></li>
+<li><a class="reference internal" href="#requirements-files" id="id10">Requirementsファイル</a></li>
+<li><a class="reference internal" href="#constraints-files" id="id11">Constraintsファイル</a></li>
+<li><a class="reference internal" href="#installing-from-wheels" id="id12">Wheelsからインストール</a></li>
+<li><a class="reference internal" href="#uninstalling-packages" id="id13">パッケージのアンインストール</a></li>
+<li><a class="reference internal" href="#listing-packages" id="id14">パッケージの一覧表示</a></li>
+<li><a class="reference internal" href="#searching-for-packages" id="id15">パッケージの検索</a></li>
+<li><a class="reference internal" href="#configuration" id="id16">コンフィグレーション</a><ul>
+<li><a class="reference internal" href="#config-file" id="id17">設定ファイル</a></li>
+<li><a class="reference internal" href="#environment-variables" id="id18">環境変数</a></li>
+<li><a class="reference internal" href="#config-precedence" id="id19">設定の優先順位</a></li>
+<li><a class="reference internal" href="#command-completion" id="id20">コマンドの完了</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#installing-from-local-packages" id="id21">ローカルパッケージからのインストール</a></li>
+<li><a class="reference internal" href="#only-if-needed-recursive-upgrade" id="id22">&quot;必要な場合のみ&quot;再帰的アップグレード</a></li>
+<li><a class="reference internal" href="#user-installs" id="id23">ユーザーインストール</a></li>
+<li><a class="reference internal" href="#ensuring-repeatability" id="id24">繰り返し性の確保</a><ul>
+<li><a class="reference internal" href="#pinned-version-numbers" id="id25">固定されたバージョン番号</a></li>
+<li><a class="reference internal" href="#hash-checking-mode" id="id26">ハッシュチェックモード</a></li>
+<li><a class="reference internal" href="#installation-bundles" id="id27">インストールバンドル</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="installing-packages">
+<h2><a class="toc-backref" href="#id9">パッケージのインストール</a><a class="headerlink" href="#installing-packages" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>pipは <a class="reference external" href="http://pypi.python.org/pypi">PyPI</a> からのインストール、バージョン管理からのインストール、ローカルプロジェクトからインストール、配布ファイルからのインストールをサポートしています。</p>
+<p>最も一般的なシナリオは、<a class="reference external" href="http://pypi.python.org/pypi">PyPI</a> から <a class="reference internal" href="reference/pip_install.html#requirement-specifiers"><span class="std std-ref">要件指定子</span></a> を使用してインストールすることです。</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install SomePackage            # latest version
+$ pip install SomePackage==1.0.4     # specific version
+$ pip install &#39;SomePackage&gt;=1.0.4&#39;     # minimum version
+</pre></div>
+</div>
+</div></blockquote>
+<p>詳細および例については、<a class="reference internal" href="reference/pip_install.html#pip-install"><span class="std std-ref">pip install</span></a> のリファレンスを参照してください。</p>
+</div>
+<div class="section" id="requirements-files">
+<span id="id2"></span><h2><a class="toc-backref" href="#id10">Requirementsファイル</a><a class="headerlink" href="#requirements-files" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>&quot;Requirementsファイル&quot;は、<a class="reference internal" href="reference/pip_install.html#pip-install"><span class="std std-ref">pip install</span></a> でインストールするためのパッケージリストが記載されているファイルです。</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>ファイル形式に関する詳細は、ここにあります: <a class="reference internal" href="reference/pip_install.html#requirements-file-format"><span class="std std-ref">Requirementsファイル形式</span></a></p>
+<p>論理的に言うと、Requirementsファイルはファイルに書かれた <a class="reference internal" href="reference/pip_install.html#pip-install"><span class="std std-ref">pip install</span></a> 引数のリストに過ぎません。特定の順序でpipによってインストールされているファイル内のパッケージに頼るべきではないことに注意してください。</p>
+<p>実際には、Requirementsファイルには4つの一般的な用途があります。</p>
+<ol class="arabic">
+<li><p class="first">Requirementsファイルは、<a class="reference internal" href="#repeatability"><span class="std std-ref">repeatable installations</span></a> を実現するため、<a class="reference internal" href="reference/pip_freeze.html#pip-freeze"><span class="std std-ref">pip freeze</span></a> からの結果を保持するために使用されます。この場合、<cite>pip freeze</cite> が実行されたとき、requirementファイルにはインストールされたすべての固定バージョンのリストが記載されています。</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">freeze</span> <span class="o">&gt;</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Requirementsファイルは、依存関係を適切に解決させるためにpipを使用します。pipは <a class="reference external" href="https://github.com/pypa/pip/issues/988">正しい依存性解決方法を持っていません</a> 。代わりにシンプルにプロジェクトで見つけた最初の仕様を使用します。例えば、<cite>pkg1</cite> は <cite>pkg3&gt;=1.0</cite> が必要で、<cite>pkg2</cite> に <cite>pkg3&gt;=1.0,&lt;=2.0</cite> が必要で、<cite>pkg1</cite> が最初に解決された場合、pipは <cite>pkg3&gt;=1.0</cite> のみを使用し、　<cite>pkg2</cite> で必要だけどコンフリクトする <cite>pkg3</cite> のバージョンをインストールします。この問題を解決するには、<cite>pkg3&gt;=1.0,&lt;=2.0</cite> （つまり、正しい仕様）をrequirementsファイルに他の最上位要件とともに直接配置できます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pkg1</span>
+<span class="n">pkg2</span>
+<span class="n">pkg3</span><span class="o">&gt;=</span><span class="mf">1.0</span><span class="p">,</span><span class="o">&lt;=</span><span class="mf">2.0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Requirementsファイルは、pipにサブ依存関係の代替バージョンをインストールさせるために使用されます。たとえば、最新バージョン（v1.3）にバグがあるが <cite>ProjectB</cite> を必須とするRequirementsファイル内の`ProjectA` を仮定した場合、pipに以前のバージョンのを受け入れるよう強制することができます。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ProjectA</span>
+<span class="n">ProjectB</span><span class="o">&lt;</span><span class="mf">1.3</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Requirementsファイルは、バージョン管理に存在するローカルパッチとの依存関係を上書きするために使用されます。たとえば、依存関係、PyPIの <cite>SomeDependency</cite> にバグがあり、上流の修正を待つことができないとします。ソースコードをクローン/コピーして修正を加え、いくつかのタグを付けてバージョン管理システムに配置することができます。以下のようなコマンドでrequirementsファイルで参照したいと思います。:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">myvcs</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">some_dependency</span><span class="nd">@sometag</span><span class="c1">#egg=SomeDependency</span>
+</pre></div>
+</div>
+<p>前もって <cite>SomeDependency</cite> がrequirementファイルにトップレベルの要件であった場合は、その行を新しい行に <strong>置き換え</strong> ます。<cite>SomeDependency</cite> が従属依存である場合、新しい行を <strong>追加</strong> します。</p>
+</li>
+</ol>
+<p>pipは、プロジェクトに埋め込まれた <cite>requirements.txt</cite> ファイルを検出するのではなく、 <a class="reference external" href="https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-dependencies">install_requires metadata</a> を使用してパッケージの依存関係を判断することが重要です。</p>
+<p>こちらも参照下さい:</p>
+<ul class="simple">
+<li><a class="reference internal" href="reference/pip_install.html#requirements-file-format"><span class="std std-ref">Requirementsファイル形式</span></a></li>
+<li><a class="reference internal" href="reference/pip_freeze.html#pip-freeze"><span class="std std-ref">pip freeze</span></a></li>
+<li><a class="reference external" href="https://caremad.io/2013/07/setup-vs-requirement/">&quot;setup.py vs requirements.txt&quot; (an article by Donald Stufft)</a></li>
+</ul>
+</div>
+<div class="section" id="constraints-files">
+<span id="id3"></span><h2><a class="toc-backref" href="#id11">Constraintsファイル</a><a class="headerlink" href="#constraints-files" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Constraintsファイルは、インストールされているかどうかではなく、インストールされている要件のバージョンのみを制御するrequirementsファイルです。その構文と内容は <a class="reference internal" href="#requirements-files"><span class="std std-ref">Requirementsファイル</span></a> とほぼ同じです。重要な違いが1つあります:constraintsファイルにパッケージを組み込んでも、パッケージのインストールが開始されません。</p>
+<p>以下のように制約ファイルを使用して下さい:</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">constraints</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Constraintsファイルは、インストールするものが正確にわからないときに、requirementsファイルとまったく同じ理由で使用されます。例えば、あなたの環境では&quot;helloworld&quot;パッケージが動作しないので、あなたはローカルパッチバージョンを持っているとします。あなたがインストールするものは&quot;helloworld&quot;に依存しているものもあれば、そうでないものもあります。</p>
+<p>パッチバージョンが一貫して使用されることを保証する1つの方法は、インストールするすべての依存関係を手動で監査することです。そして&quot;helloworld&quot;が存在する場合は、そのものをインストールするときに使用するrequirementsファイルを書きます。</p>
+<p>Constraintsファイルはより良い方法を提供します:組織のための単一のconstraintsファイルを作成し、あらゆる場所で使用します。インストールするものに&quot;helloworld&quot;をインストールする必要がある場合、あなたのconstraintsファイルで指定された固定バージョンが使用されます。</p>
+<p>Constraintsファイルのサポートはpip7.1で追加されました。</p>
+</div>
+<div class="section" id="installing-from-wheels">
+<span id="id4"></span><h2><a class="toc-backref" href="#id12">Wheelsからインストール</a><a class="headerlink" href="#installing-from-wheels" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>&quot;Wheel&quot;は、ソースアーカイブからのビルドやインストールと比較して、インストールを大幅に高速化できるビルドされたアーカイブ形式です。詳細は、<a class="reference external" href="https://wheel.readthedocs.io">Wheel docs</a> 、<a class="reference external" href="http://www.python.org/dev/peps/pep-0427">PEP427</a>、および <a class="reference external" href="http://www.python.org/dev/peps/pep-0425">PEP425</a> を参照してください。</p>
+<p>pipはWheelsが利用可能な環境を好みます。これを無効にするには、<a class="reference internal" href="reference/pip_install.html#pip-install"><span class="std std-ref">pip install</span></a> に <a class="reference internal" href="reference/pip_install.html#install-no-binary"><span class="std std-ref">--no-binary</span></a> フラグを使用して下さい。</p>
+<p>満足できるwheelsが見つからない場合、pipはデフォルトでソースアーカイブを検索します。</p>
+<p>wheelアーカイブから直接インストールするには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">SomePackage</span><span class="o">-</span><span class="mf">1.0</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span>
+</pre></div>
+</div>
+<p>wheelsが利用できない場合、pipは利便性を高めるため <a class="reference internal" href="reference/pip_wheel.html#pip-wheel"><span class="std std-ref">pip wheel</span></a> を勧め、すべての要件と依存関係に対応するwheelsを構築します。</p>
+<p><a class="reference internal" href="reference/pip_wheel.html#pip-wheel"><span class="std std-ref">pip wheel</span></a> は <a class="reference external" href="https://pypi.python.org/pypi/wheel">wheel package</a> がインストールされている必要があります。これはwheel packageが使用する &quot;bdist_wheel&quot; setuptoolsの拡張機能を提供します。</p>
+<p>要件とそのすべての依存関係のwheelsをローカルディレクトリに構築するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">wheel</span>
+<span class="n">pip</span> <span class="n">wheel</span> <span class="o">--</span><span class="n">wheel</span><span class="o">-</span><span class="nb">dir</span><span class="o">=/</span><span class="n">local</span><span class="o">/</span><span class="n">wheels</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p><em>then</em>、wheelsのローカルディレクトリ（PyPIからではなく）を使用してこれらの要件をインストールします。</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">index</span> <span class="o">--</span><span class="n">find</span><span class="o">-</span><span class="n">links</span><span class="o">=/</span><span class="n">local</span><span class="o">/</span><span class="n">wheels</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="uninstalling-packages">
+<h2><a class="toc-backref" href="#id13">パッケージのアンインストール</a><a class="headerlink" href="#uninstalling-packages" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>pipは以下のようにほとんどのパッケージをアンインストールできます:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip uninstall SomePackage
+</pre></div>
+</div>
+<p>pipは、新しいバージョンにアップグレードする前に、古いバージョンのパッケージを自動的にアンインストールします。</p>
+<p>詳細と例については、<a class="reference internal" href="reference/pip_uninstall.html#pip-uninstall"><span class="std std-ref">pip uninstall</span></a> のリファレンスを参照してください。</p>
+</div>
+<div class="section" id="listing-packages">
+<h2><a class="toc-backref" href="#id14">パッケージの一覧表示</a><a class="headerlink" href="#listing-packages" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>インストールされたパッケージを一覧表示するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list
+docutils (0.9.1)
+Jinja2 (2.6)
+Pygments (1.5)
+Sphinx (1.1.2)
+</pre></div>
+</div>
+<p>古いパッケージを一覧表示し、最新のバージョンを表示するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --outdated
+docutils (Current: 0.9.1 Latest: 0.10)
+Sphinx (Current: 1.1.2 Latest: 1.1.3)
+</pre></div>
+</div>
+<p>インストールされたパッケージの詳細を表示するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip show sphinx
+---
+Name: Sphinx
+Version: 1.1.3
+Location: /my/env/lib/pythonx.x/site-packages
+Requires: Pygments, Jinja2, docutils
+</pre></div>
+</div>
+<p>詳細および例については、<a class="reference internal" href="reference/pip_list.html#pip-list"><span class="std std-ref">pip list</span></a> および <a class="reference internal" href="reference/pip_show.html#pip-show"><span class="std std-ref">pip show</span></a> のリファレンスページを参照してください。</p>
+</div>
+<div class="section" id="searching-for-packages">
+<h2><a class="toc-backref" href="#id15">パッケージの検索</a><a class="headerlink" href="#searching-for-packages" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>pipは、<code class="docutils literal"><span class="pre">pip</span> <span class="pre">search</span></code> コマンドを使用してパッケージの <a class="reference external" href="http://pypi.python.org/pypi">PyPI</a> を検索できます:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip search &quot;query&quot;
+</pre></div>
+</div>
+<p>queryは、すべてのパッケージの名前とサマリーを検索するために使用されます。</p>
+<p>詳細および例については、<a class="reference internal" href="reference/pip_search.html#pip-search"><span class="std std-ref">pip search</span></a> のリファレンスを参照してください。</p>
+</div>
+<div class="section" id="configuration">
+<span id="id5"></span><h2><a class="toc-backref" href="#id16">コンフィグレーション</a><a class="headerlink" href="#configuration" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="config-file">
+<span id="id6"></span><h3><a class="toc-backref" href="#id17">設定ファイル</a><a class="headerlink" href="#config-file" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>pipでは標準のiniスタイルの設定ファイルにすべてのコマンドラインオプションのデフォルトを設定することができます。</p>
+<p>設定ファイルの名前と場所は、プラットフォームによって多少異なります。ユーザー単位、vertualenv単位、またはサイト全体（すべてのユーザーで共有）の設定が可能です。</p>
+<p><strong>ユーザー単位</strong></p>
+<ul class="simple">
+<li>Unixでは、デフォルトの設定ファイルは、<code class="docutils literal"><span class="pre">XDG_CONFIG_HOME</span></code> 環境変数を重んじる <code class="file docutils literal"><span class="pre">$HOME/.config/pip/pip.conf</span></code> です。</li>
+<li>macOSでは、設定ファイルは <code class="file docutils literal"><span class="pre">$HOME/Library/Application</span> <span class="pre">Support/pip/pip.conf</span></code> です。</li>
+<li>Windowsでは、設定ファイルは <code class="file docutils literal"><span class="pre">%APPDATA%\pip\pip.ini</span></code> です。</li>
+</ul>
+<p>また、従来のユーザーごとの設定ファイルもありますがこれも尊重されています。これらは以下の場所に位置します。</p>
+<ul class="simple">
+<li>UnixやmacOSでは、設定ファイルは <code class="file docutils literal"><span class="pre">$HOME/.pip/pip.conf</span></code> です。</li>
+<li>Windowsでは、設定ファイルは <code class="file docutils literal"><span class="pre">%HOME%\pip\pip.ini</span></code> です。</li>
+</ul>
+<p>環境変数 <code class="docutils literal"><span class="pre">PIP_CONFIG_FILE</span></code> を使用して、この設定ファイルのカスタムパスの場所を設定できます。</p>
+<p><strong>virtualenv内</strong></p>
+<ul class="simple">
+<li>UnixとmacOSのファイルは <code class="file docutils literal"><span class="pre">$VIRTUAL_ENV/pip.conf</span></code> です。</li>
+<li>Windowsではファイルは <code class="file docutils literal"><span class="pre">%VIRTUAL_ENV%\pip.ini</span></code> です。</li>
+</ul>
+<p><strong>サイト全体</strong></p>
+<ul class="simple">
+<li>Unixでは、ファイルは <code class="file docutils literal"><span class="pre">/etc/pip.conf</span></code> にあります。代わりに、<code class="file docutils literal"><span class="pre">/etc/xdg/pip/pip.conf</span></code> のように、環境変数 <code class="docutils literal"><span class="pre">XDG_CONFIG_DIRS</span></code> （存在する場合）に設定されているパスのいずれかの &quot;pip&quot;サブディレクトリに存在する可能性があります。</li>
+<li>macOSではファイルは <code class="file docutils literal"><span class="pre">/Library/Application</span> <span class="pre">Support/pip/pip.conf</span></code> です。</li>
+<li>Windows XPの場合、ファイルは <code class="file docutils literal"><span class="pre">C:\Documents</span> <span class="pre">and</span> <span class="pre">Settings\All</span> <span class="pre">Users\Application</span> <span class="pre">Data\pip\pip.ini</span></code> です。</li>
+<li>Windows7以降では、ファイルは非表示になっていますが、<code class="file docutils literal"><span class="pre">C:\ProgramData\pip\pip.ini</span></code> に書き込むことができます</li>
+<li>サイト全体の設定はWindows Vistaではサポートされていません</li>
+</ul>
+<p>複数の設定ファイルがpipによって見つかった場合、それらは次の順序で結合されます</p>
+<ol class="arabic simple">
+<li>まずサイト全体のファイルを読み込み、次に</li>
+<li>ユーザーごとのファイルが読み込まれ、最後に</li>
+<li>virtualenv固有のファイルが読み込まれます。</li>
+</ol>
+<p>以前のファイルから読み取られた値は、読み込まれた各ファイルを上書きするので、サイト全体のファイルとユーザー単位のファイルの両方でグローバルタイムアウトが指定されている場合は、後者の値が使用されます。</p>
+<p>設定の名前は長いコマンドラインのオプションから導かれます。例えば、別のパッケージインデックス(<code class="docutils literal"><span class="pre">--index-url</span></code>)を使用し、HTTPタイムアウト(<code class="docutils literal"><span class="pre">--default-timeout</span></code>)を60秒に設定すると、設定ファイルは次のようになります</p>
+<div class="highlight-ini"><div class="highlight"><pre><span></span><span class="k">[global]</span>
+<span class="na">timeout</span> <span class="o">=</span> <span class="s">60</span>
+<span class="na">index-url</span> <span class="o">=</span> <span class="s">http://download.zope.org/ppix</span>
+</pre></div>
+</div>
+<p>各サブコマンドは、同じ名前ですべてのグローバル設定が上書きされるように、オプションで独自のセクションで設定できます。例えば、<cite>freeze</cite> (<a class="reference external" href="./#freezing-requirements">Freezing Requirements</a>) コマンドを実行しているときの <code class="docutils literal"><span class="pre">timeout</span></code> を <code class="docutils literal"><span class="pre">10</span></code> 秒に減らし、他のすべてのコマンドは <code class="docutils literal"><span class="pre">60</span></code> 秒にすることも可能です:</p>
+<div class="highlight-ini"><div class="highlight"><pre><span></span><span class="k">[global]</span>
+<span class="na">timeout</span> <span class="o">=</span> <span class="s">60</span>
+
+<span class="k">[freeze]</span>
+<span class="na">timeout</span> <span class="o">=</span> <span class="s">10</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">--ignore-installed</span></code> や <code class="docutils literal"><span class="pre">--no-dependencies</span></code> などのBooleanオプションは次のように設定できます:</p>
+<div class="highlight-ini"><div class="highlight"><pre><span></span><span class="k">[install]</span>
+<span class="na">ignore-installed</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">no-dependencies</span> <span class="o">=</span> <span class="s">yes</span>
+</pre></div>
+</div>
+<p>booleanオプション <code class="docutils literal"><span class="pre">--no-compile</span></code> と <code class="docutils literal"><span class="pre">--no-cache-dir</span></code> を有効にするには、falsy値を使用する必要があります:</p>
+<div class="highlight-ini"><div class="highlight"><pre><span></span><span class="k">[global]</span>
+<span class="na">no-cache-dir</span> <span class="o">=</span> <span class="s">false</span>
+
+<span class="k">[install]</span>
+<span class="na">no-compile</span> <span class="o">=</span> <span class="s">no</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">--find-links</span></code> のようなオプションを複数行に書くことができます:</p>
+<div class="highlight-ini"><div class="highlight"><pre><span></span><span class="k">[global]</span>
+<span class="na">find-links</span> <span class="o">=</span><span class="s"></span>
+<span class="s">    http://download.example.com</span>
+
+<span class="k">[install]</span>
+<span class="na">find-links</span> <span class="o">=</span><span class="s"></span>
+<span class="s">    http://mirror1.example.com</span>
+<span class="s">    http://mirror2.example.com</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="environment-variables">
+<h3><a class="toc-backref" href="#id18">環境変数</a><a class="headerlink" href="#environment-variables" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>pipのコマンドラインオプションは、<code class="docutils literal"><span class="pre">PIP_&lt;UPPER_LONG_NAME&gt;</span></code> の形式で環境変数を設定することができます。ダッシュ(<code class="docutils literal"><span class="pre">-</span></code>)はアンダースコア(<code class="docutils literal"><span class="pre">_</span></code>)で置き換える必要があります。</p>
+<p>例えば、デフォルトのタイムアウトを設定するには、次のようにします:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">PIP_DEFAULT_TIMEOUT</span><span class="o">=</span><span class="mi">60</span>
+</pre></div>
+</div>
+<p>これはpipに直接オプションを渡すのと同じです:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="o">--</span><span class="n">default</span><span class="o">-</span><span class="n">timeout</span><span class="o">=</span><span class="mi">60</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>コマンドラインで複数回設定できるオプションを設定するには、値の間にスペースを追加します。例えば:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">PIP_FIND_LINKS</span><span class="o">=</span><span class="s2">&quot;http://mirror1.example.com http://mirror2.example.com&quot;</span>
+</pre></div>
+</div>
+<p>呼び出しと同じです:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">find</span><span class="o">-</span><span class="n">links</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirror1</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span> <span class="o">--</span><span class="n">find</span><span class="o">-</span><span class="n">links</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">mirror2</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="config-precedence">
+<h3><a class="toc-backref" href="#id19">設定の優先順位</a><a class="headerlink" href="#config-precedence" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>コマンドラインオプションは環境変数よりも優先されます。環境変数は設定ファイルよりも優先されます。</p>
+<p>設定ファイル内では、コマンド固有セクションがグローバルセクションよりも優先されます。</p>
+<p>例:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">--host=foo</span></code> は <code class="docutils literal"><span class="pre">PIP_HOST=foo</span></code> を上書きします。</li>
+<li><code class="docutils literal"><span class="pre">PIP_HOST=foo</span></code> は <code class="docutils literal"><span class="pre">[global]</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">foo</span></code> で設定ファイルを上書きします。</li>
+<li>設定ファイル <code class="docutils literal"><span class="pre">[&lt;command&gt;]</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">bar</span></code> のコマンド固有のセクションは、<code class="docutils literal"><span class="pre">[global]</span></code> 設定ファイルセクションに同じ名前のオプションを上書きします。</li>
+</ul>
+</div>
+<div class="section" id="command-completion">
+<h3><a class="toc-backref" href="#id20">コマンドの完了</a><a class="headerlink" href="#command-completion" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>pipは、bash、zsh、およびfishのコマンドライン補完をサポートしています。</p>
+<p>bashを設定するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip completion --bash &gt;&gt; ~/.profile
+</pre></div>
+</div>
+<p>zshを設定するには:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip completion --zsh &gt;&gt; ~/.zprofile
+</pre></div>
+</div>
+<p>fishの設定</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip completion --fish &gt; ~/.config/fish/completions/pip.fish
+</pre></div>
+</div>
+<p>あるいは、<code class="docutils literal"><span class="pre">completion</span></code> コマンドの結果をシェルのeval関数で直接使用することもできます。例えば、スタートアップファイルに以下を追加します:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">eval</span> <span class="s2">&quot;`pip completion --bash`&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="installing-from-local-packages">
+<span id="id7"></span><h2><a class="toc-backref" href="#id21">ローカルパッケージからのインストール</a><a class="headerlink" href="#installing-from-local-packages" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>場合によっては、PyPIへアクセスせず、ローカルパッケージからのみインストールすることもできます。</p>
+<p>まず、要件を満たすアーカイブをダウンロードします:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install --download DIR -r requirements.txt
+</pre></div>
+</div>
+<p>PyPIからダウンロードしようとする前に、まず <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--download</span></code> がwheelキャッシュを見に行くことに注意してください。前もって要件をインストールしていない場合は、それらのwheelキャッシュはありません。その場合、PyPIからwheelsを取得していない要件がいくつかあり、wheelsが必要な場合は代わりに次のように実行します:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip wheel --wheel-dir DIR -r requirements.txt
+</pre></div>
+</div>
+<p>次に、ローカルからのみインストールするには、<a class="reference internal" href="reference/pip_wheel.html#find-links"><span class="std std-ref">--find-links</span></a> と <a class="reference internal" href="reference/pip_wheel.html#no-index"><span class="std std-ref">--no-index</span></a> を使用します:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install --no-index --find-links=DIR -r requirements.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="only-if-needed-recursive-upgrade">
+<h2><a class="toc-backref" href="#id22">&quot;必要な場合のみ&quot;再帰的アップグレード</a><a class="headerlink" href="#only-if-needed-recursive-upgrade" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span></code> は現在、熱心な再帰的なアップグレードを実行するために書かれています。つまり、新しい親の要件を満たしているかどうかにかかわらず、すべての依存関係をアップグレードします。</p>
+<p>例えば、仮定すると</p>
+<ul class="simple">
+<li><cite>SomePackage-1.0</cite> は <cite>AnotherPackage&gt;=1.0</cite> が必要</li>
+<li><cite>SomePackage-2.0</cite> は <cite>AnotherPackage&gt;=1.0</cite> と <cite>OneMorePackage==1.0</cite> が必要</li>
+<li><cite>SomePackage-1.0</cite> と <cite>AnotherPackage-1.0</cite> は現在インストールされている</li>
+<li><cite>SomePackage-2.0</cite> と <cite>AnotherPackage-2.0</cite> PyPIで利用できる最新バージョン</li>
+</ul>
+<p><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">SomePackage</span></code> を実行することは、<cite>AnotherPackage</cite> がすでに満たされているにもかかわらず、<cite>SomePackage</cite> <strong>と</strong> <cite>AnotherPackage</cite> をアップグレードします。</p>
+<p>pipには現在のところ、&quot;必要な場合のみ&quot;再帰的なアップグレードを行うオプションはありませんが、次の2つの手順で実現できます:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">deps</span> <span class="n">SomePackage</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">SomePackage</span>
+</pre></div>
+</div>
+<p>最初の行は <cite>SomePackage</cite> をアップグレードしますが、<cite>AnotherPackage</cite> のような依存関係はアップグレードしません。2行目は <cite>OneMorePackage</cite> のような新しい依存関係を埋めます。</p>
+<p>&quot;必要な場合のみ&quot;再帰的に新しい <code class="docutils literal"><span class="pre">pip</span> <span class="pre">upgrade</span></code> コマンドのデフォルトの動作を行う計画については:issue:<cite>59</cite> を参照してください。</p>
+</div>
+<div class="section" id="user-installs">
+<h2><a class="toc-backref" href="#id23">ユーザーインストール</a><a class="headerlink" href="#user-installs" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Python 2.6では、インストールのための <a class="reference external" href="http://docs.python.org/install/index.html#alternate-installation-the-user-scheme">&quot;user scheme&quot; for installation</a> が提供されました。つまり、すべてのPythonディストリビューションは、ユーザーに固有の代替インストール場所をサポートしています。各OSのデフォルトの場所は、<a class="reference external" href="http://docs.python.org/library/site.html#site.USER_BASE">site.USER_BASE</a> variable.  のpythonのドキュメントで説明しています。このインストールモードは、<code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span></code> に <a class="reference internal" href="reference/pip_install.html#install-user"><span class="std std-ref">--user</span></a> オプションを指定することで有効にすることができます。</p>
+<p>さらに、 &quot;user scheme&quot;は、<code class="docutils literal"><span class="pre">site.USER_BASE</span></code> の値を更新する``PYTHONUSERBASE`` 環境変数を設定することでカスタマイズできます。</p>
+<p>'/ myappenv'にカスタマイズされたsite.USER_BASEを持つ環境に&quot;SomePackage&quot;をインストールするには、次のようにします:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">PYTHONUSERBASE</span><span class="o">=/</span><span class="n">myappenv</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">SomePackage</span>
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span></code> は次の4つのルールに従います:</p>
+<ol class="arabic simple">
+<li>グローバルにインストールされたパッケージがpythonパス上にあり、インストール要件と <strong>コンフリクト</strong> する場合、パッケージは無視され、アンインストール <em>されません。</em></li>
+<li>グローバルにインストールされたパッケージがpythonパス上にあり、インストール要件を <em>満たしている</em> 時、pipは何もせず、要件が満たされているとレポートします。(<code class="docutils literal"><span class="pre">--system-site-packages</span></code> virtualenvにパッケージをインストールする際にグローバルパッケージがどのように要件を満たすかと同様)</li>
+<li>pipは、ユーザサイトがpythonパス上にないため、<code class="docutils literal"><span class="pre">--no-site-packages</span></code> virtualenv（つまり、デフォルトのvirtualenv）に <code class="docutils literal"><span class="pre">--user</span></code> installを実行しません。</li>
+<li><code class="docutils literal"><span class="pre">--system-site-packages</span></code> virtualenvでは、pipはvirtualenv site-packages内のパッケージとコンフリクトするパッケージをインストールしません。--userのインストールにはsys.pathの優先順位がなく、無意味です。</li>
+</ol>
+<p>ルールをより明確にするために、ここにいくつかの例があります:</p>
+<p><code class="docutils literal"><span class="pre">--no-site-packages</span></code> virtualenv（デフォルトの種類）内から:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install --user SomePackage
+Can not perform a &#39;--user&#39; install. User site-packages are not visible in this virtualenv.
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">SomePackage==0.3</span></code> が既にvirtualenvにインストールされている``--system-site-packages`` virtualenv内から:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install --user SomePackage==0.4
+Will not install to the user site because it will lack sys.path precedence
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">SomePackage</span></code> がグローバルにインストール <em>されていない</em> 実際のPythonの中から:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install --user SomePackage
+[...]
+Successfully installed SomePackage
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">SomePackage</span></code> がグローバルにインストール <em>されている</em> が、最新バージョン <em>ではない</em> 実際のPython内から</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install --user SomePackage
+[...]
+Requirement already satisfied (use --upgrade to upgrade)
+
+$ pip install --user --upgrade SomePackage
+[...]
+Successfully installed SomePackage
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">SomePackage</span></code> がグローバルにインストールされていて、最新のバージョンの実際のPythonの中から:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install --user SomePackage
+[...]
+Requirement already satisfied (use --upgrade to upgrade)
+
+$ pip install --user --upgrade SomePackage
+[...]
+Requirement already up-to-date: SomePackage
+
+# force the install
+$ pip install --user --ignore-installed SomePackage
+[...]
+Successfully installed SomePackage
+</pre></div>
+</div>
+</div>
+<div class="section" id="ensuring-repeatability">
+<span id="repeatability"></span><h2><a class="toc-backref" href="#id24">繰り返し性の確保</a><a class="headerlink" href="#ensuring-repeatability" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>pipは様々なレベルの再現性を達成することができます</p>
+<div class="section" id="pinned-version-numbers">
+<h3><a class="toc-backref" href="#id25">固定されたバージョン番号</a><a class="headerlink" href="#pinned-version-numbers" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>requirementsファイル内の依存関係のバージョンを固定することで、新しくリリースされたバージョンのバグや非互換性から守ることができます:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SomePackage</span> <span class="o">==</span> <span class="mf">1.2</span><span class="o">.</span><span class="mi">3</span>
+<span class="n">DependencyOfSomePackage</span> <span class="o">==</span> <span class="mf">4.5</span><span class="o">.</span><span class="mi">6</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="reference/pip_freeze.html#pip-freeze"><span class="std std-ref">pip freeze</span></a> をrequirementsファイルを生成すると、トップレベルの依存関係だけでなくそのサブ依存関係も確実に含まれます。明示的に記載されていないものをインストールしないようにするには、<a class="reference internal" href="reference/pip_install.html#install-no-deps"><span class="std std-ref">--no-deps</span></a> を使用してインストールを実行します。</p>
+<p>この戦略は実装が容易で、OSやアーキテクチャ全体で機能します。ただし、PyPIと認証局チェーンを信頼します。また、バージョンを増やすことなくパッケージを変更できないインデックスや検索リンクの場所にも依存しています。(PyPIはこれを防ぎます。)</p>
+</div>
+<div class="section" id="hash-checking-mode">
+<h3><a class="toc-backref" href="#id26">ハッシュチェックモード</a><a class="headerlink" href="#hash-checking-mode" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>バージョン番号を固定する以外に、ダウンロードされたパッケージを検証するためのハッシュを追加することができます:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">FooProject</span> <span class="o">==</span> <span class="mf">1.2</span> <span class="o">--</span><span class="nb">hash</span><span class="o">=</span><span class="n">sha256</span><span class="p">:</span><span class="mi">2</span><span class="n">cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</span>
+</pre></div>
+</div>
+<p>これにより、PyPIまたはHTTPS証明書チェーンの侵害から保護されます。また、バージョン番号を変更することなくパッケージを変更することもできます（これを可能にするインデックス上で）。このアプローチは、自動化されたサーバーの配置に適しています。</p>
+<p>ハッシュチェックモードは、承認されたパッケージを含むプライベートインデックスサーバーを実行するための省力化の代替方法です:パッケージのアップロード、ACLの管理、監査証跡（VCSが要件ファイルに無料で提供する）を保持する必要がなくなります。また、ベンダーライブラリを代用することもできます。これにより、アップグレードが容易になり、VCSノイズが少なくなりますもちろん、プライベートインデックスやベンダーライブラリの可用性のメリットはありません。</p>
+<p>詳細については、<a class="reference internal" href="reference/pip_install.html#hash-checking-mode"><span class="std std-ref">pip install's discussion of hash-checking mode</span></a> を参照してください。</p>
+</div>
+<div class="section" id="installation-bundles">
+<span id="installation-bundle"></span><h3><a class="toc-backref" href="#id27">インストールバンドル</a><a class="headerlink" href="#installation-bundles" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><a class="reference internal" href="reference/pip_wheel.html#pip-wheel"><span class="std std-ref">pip wheel</span></a> を使用すると、コンパイルが完了したすべてのプロジェクトの依存関係を1つのアーカイブにまとめることができます。これにより、インデックスサーバーが使用できなくなり、時間のかかる再コンパイルが行われない場合のインストールが可能になります。次のようなアーカイブを作成します:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ tempdir=$(mktemp -d /tmp/wheelhouse-XXXXX)
+$ pip wheel -r requirements.txt --wheel-dir=$tempdir
+$ cwd=`pwd`
+$ (cd &quot;$tempdir&quot;; tar -cjvf &quot;$cwd/bundled.tar.bz2&quot; *)
+</pre></div>
+</div>
+<p>このようにアーカイブからインストールすることができます:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ tempdir=$(mktemp -d /tmp/wheelhouse-XXXXX)
+$ (cd $tempdir; tar -xvf /path/to/bundled.tar.bz2)
+$ pip install --force-reinstall --ignore-installed --upgrade --no-index --no-deps $tempdir/*
+</pre></div>
+</div>
+<p>コンパイルされたパッケージは、通常、OS固有およびアーキテクチャ固有であるため、これらのアーカイブは必ずしもマシン間で移植可能であるとは限りません。</p>
+<p>この方法と一緒に、ハッシュチェックモードを使用して、将来のアーカイブが同一のパッケージで構築されるようにすることができます。</p>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">最後に、<code class="file docutils literal"><span class="pre">setup.py</span></code> の <code class="docutils literal"><span class="pre">setup_requires</span></code> キーワード引数に注意してください。それを使用する（まれな）パッケージは、その依存関係をsetuptoolsによって直接ダウンロードし、pipの保護をスキップします。このようなパッケージを使用する必要がある場合は、<a class="reference internal" href="reference/pip_install.html#controlling-setup-requires"><span class="std std-ref">Controlling setup_requires</span></a> を参照してください。</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="reference/index.html" class="btn btn-neutral float-right" title="リファレンスガイド" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installing.html" class="btn btn-neutral" title="インストール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2008-2016, PyPA.
+      最終更新: 11月 04, 2017
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+ 
+
+<div role="contentinfo">
+<p>このサイトは<a href="http://a-zumi.net">あずみ.net</a>が翻訳しております。</p>
+<p>サイトを利用したことによる直接的、付随的、結果的、間接的、あるいは懲罰的な損害、経費、損失、または
+債務について、いかなる責任も負いかねます。</p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'9.1.0.dev0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23705195-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23705195-42');
+</script>
+
+
+</body>
+</html>
