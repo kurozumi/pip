@@ -35,3 +35,5 @@ coverage.xml
 
 # Scratch Pad for experiments
 .scratch/
+
+_build
