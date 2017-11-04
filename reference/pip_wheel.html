@@ -235,13 +235,11 @@ package to build individual wheels.</p>
 </p>
 <div class="section" id="build-system-interface">
 <h3><a class="toc-backref" href="#id6">ビルドシステムインターフェイス</a><a class="headerlink" href="#build-system-interface" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>In order for pip to build a wheel, <code class="docutils literal"><span class="pre">setup.py</span></code> must implement the
-<code class="docutils literal"><span class="pre">bdist_wheel</span></code> command with the following syntax:</p>
+<p>pipのwheelを構築するために、 <code class="docutils literal"><span class="pre">setup.py</span></code> は次の構文で <cite>bdist_wheel</cite> コマンドを実装する必要があります。</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">bdist_wheel</span> <span class="o">-</span><span class="n">d</span> <span class="n">TARGET</span>
 </pre></div>
 </div>
-<p>This command must create a wheel compatible with the invoking Python
-interpreter, and save that wheel in the directory TARGET.</p>
+<p>このコマンドは呼び出しのPythonインタプリタと互換性があるwheelを作成し、TARGETディレクトリにwheelを保存します。</p>
 <p>No other build system commands are invoked by the <code class="docutils literal"><span class="pre">pip</span> <span class="pre">wheel</span></code> command.</p>
 <div class="section" id="customising-the-build">
 <h4><a class="toc-backref" href="#id7">ビルドのカスタマイズ</a><a class="headerlink" href="#customising-the-build" title="このヘッドラインへのパーマリンク">¶</a></h4>
@@ -431,7 +429,7 @@ $ pip install --no-index --find-links=/tmp/wheelhouse SomePackage
   <div role="contentinfo">
     <p>
         &copy; Copyright 2008-2016, PyPA.
-      最終更新: 11月 04, 2017
+      最終更新: 11月 05, 2017
 
     </p>
   </div>
