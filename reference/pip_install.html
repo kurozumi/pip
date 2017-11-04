@@ -324,14 +324,8 @@ the chosen version is available, it is assumed that any source is acceptable
 </div>
 <div class="section" id="installation-order">
 <h3><a class="toc-backref" href="#id24">インストール順序</a><a class="headerlink" href="#installation-order" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>As of v6.1.0, pip installs dependencies before their dependents, i.e. in
-&quot;topological order&quot;.  This is the only commitment pip currently makes related
-to order.  While it may be coincidentally true that pip will install things in
-the order of the install arguments or in the order of the items in a
-requirements file, this is not a promise.</p>
-<p>In the event of a dependency cycle (aka &quot;circular dependency&quot;), the current
-implementation (which might possibly change later) has it such that the first
-encountered member of the cycle is installed last.</p>
+<p>v6.1.0から、pipは依存関係の前、すなわち &quot;トポロジカルな順序&quot;で依存関係をインストールします。これは現在、順序に関連する唯一のコミットメントです。 pipがインストール引数の順に、または要件ファイルの項目の順にパッケージをインストールすることは偶然であるかもしれませんが、これは約束ではありません。</p>
+<p>依存関係のサイクル (別名 “循環依存関係”) が発生した場合、現在の実装(おそらく後で変更の可能性があります) では、サイクルの最初の遭遇したメンバーは最後にインストールするようにします。</p>
 <p>For instance, if quux depends on foo which depends on bar which depends on baz,
 which depends on foo:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">quux</span>
