@@ -281,13 +281,12 @@ an easy way to specify a whole environment to be installed.</p>
 </p>
 <div class="section" id="overview">
 <h3><a class="toc-backref" href="#id20">概要</a><a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Pip install has several stages:</p>
+<p>pipのインストールにはいくつかの段階があります:</p>
 <ol class="arabic simple">
-<li>Identify the base requirements. The user supplied arguments are processed
-here.</li>
-<li>Resolve dependencies. What will be installed is determined here.</li>
-<li>Build wheels. All the dependencies that can be are built into wheels.</li>
-<li>Install the packages (and uninstall anything being upgraded/replaced).</li>
+<li>基本要件を特定します。ユーザーが指定した引数はここで処理されます。</li>
+<li>依存関係を解決します。インストールされるものはここで決まります。</li>
+<li>wheelを構築します。すべての依存関係はwheelに組み込まれています。</li>
+<li>パッケージをインストールします(アップグレードや置き換えられたパッケージはアンインストールします)。</li>
 </ol>
 </div>
 <div class="section" id="argument-handling">
@@ -393,16 +392,16 @@ and the newline following it is effectively ignored.</p>
 <p>The following options are supported:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="pip_wheel.html#index-url"><span class="std std-ref">-i, --index-url</span></a></li>
-<li><a class="reference internal" href="pip_wheel.html#extra-index-url"><span class="std std-ref">--extra-index-url</span></a></li>
-<li><a class="reference internal" href="pip_wheel.html#no-index"><span class="std std-ref">--no-index</span></a></li>
-<li><a class="reference internal" href="pip_wheel.html#find-links"><span class="std std-ref">-f, --find-links</span></a></li>
+<li><a class="reference internal" href="#index-url"><span class="std std-ref">-i, --index-url</span></a></li>
+<li><a class="reference internal" href="#extra-index-url"><span class="std std-ref">--extra-index-url</span></a></li>
+<li><a class="reference internal" href="#no-index"><span class="std std-ref">--no-index</span></a></li>
+<li><a class="reference internal" href="#find-links"><span class="std std-ref">-f, --find-links</span></a></li>
 <li><a class="reference internal" href="#install-no-binary"><span class="std std-ref">--no-binary</span></a></li>
 <li><a class="reference internal" href="#install-only-binary"><span class="std std-ref">--only-binary</span></a></li>
 <li><a class="reference internal" href="#require-hashes"><span class="std std-ref">--require-hashes</span></a></li>
 </ul>
 </div></blockquote>
-<p>For example, to specify <a class="reference internal" href="pip_wheel.html#no-index"><span class="std std-ref">--no-index</span></a> and 2 <a class="reference internal" href="pip_wheel.html#find-links"><span class="std std-ref">--find-links</span></a> locations:</p>
+<p>For example, to specify <a class="reference internal" href="#no-index"><span class="std std-ref">--no-index</span></a> and 2 <a class="reference internal" href="#find-links"><span class="std std-ref">--find-links</span></a> locations:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">index</span>
 <span class="o">--</span><span class="n">find</span><span class="o">-</span><span class="n">links</span> <span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">archives</span>
 <span class="o">--</span><span class="n">find</span><span class="o">-</span><span class="n">links</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">some</span><span class="o">.</span><span class="n">archives</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">archives</span>
