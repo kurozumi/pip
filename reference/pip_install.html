@@ -291,15 +291,12 @@ an easy way to specify a whole environment to be installed.</p>
 </div>
 <div class="section" id="argument-handling">
 <h3><a class="toc-backref" href="#id21">引数の処理</a><a class="headerlink" href="#argument-handling" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>When looking at the items to be installed, pip checks what type of item
-each is, in the following order:</p>
+<p>インストールされる項目を確認して、pipはそれぞれの項目のタイプを次の順序でチェックします:</p>
 <ol class="arabic simple">
-<li>Project or archive URL.</li>
-<li>Local directory (which must contain a <code class="docutils literal"><span class="pre">setup.py</span></code>, or pip will report
-an error).</li>
-<li>Local file (a sdist or wheel format archive, following the naming
-conventions for those formats).</li>
-<li>A requirement, as specified in PEP 440.</li>
+<li>プロジェクトまたはアーカイブのURL。</li>
+<li>ローカルディレクトリ( <code class="docutils literal"><span class="pre">setup.py</span></code> を含んでいる必要があります。なければpipはエラーを報告します)。</li>
+<li>ローカルファイル (sdistまたはwheel形式のアーカイブ。これらの形式の命名規則に従って下さい)。</li>
+<li>PEP440で規定されている要件。</li>
 </ol>
 <p>Each item identified is added to the set of requirements to be satisfied by
 the install.</p>
