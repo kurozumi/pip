@@ -11,3 +11,6 @@ MANIFEST
 coverage.xml
 .*.sw?
 .idea/
+locale/
+_build/
+_templates/
