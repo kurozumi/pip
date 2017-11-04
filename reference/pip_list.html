@@ -302,7 +302,7 @@
 <div class="section" id="examples">
 <h2><a class="toc-backref" href="#id7">例</a><a class="headerlink" href="#examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">List installed packages.</p>
+<li><p class="first">インストールされているパッケージを一覧表示します。</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list
 docutils (0.10)
@@ -314,7 +314,7 @@ Sphinx (1.2.1)
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">List outdated packages (excluding editables), and the latest version available.</p>
+<li><p class="first">古いパッケージ(編集可能なパッケージは除く)と利用可能な最新バージョンを一覧表示します。</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --outdated
 docutils (Current: 0.10 Latest: 0.11)
@@ -323,7 +323,7 @@ Sphinx (Current: 1.2.1 Latest: 1.2.2)
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">List installed packages with column formatting.</p>
+<li><p class="first">列のフォーマットでインストールされているパッケージを一覧表示します。</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format columns
 Package Version
@@ -335,7 +335,7 @@ jedi    0.9.0
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">List outdated packages with column formatting.</p>
+<li><p class="first">列のフォーマットで古いパッケージを一覧表示します。</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list -o --format columns
 Package    Version Latest Type
@@ -346,8 +346,7 @@ setuptools 20.6.7  21.0.0 wheel
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">List packages that are not dependencies of other packages. Can be combined with
-other options.</p>
+<li><p class="first">他のパッケージと依存関係がないパッケージを一覧表示します。他のオプションと組み合わせることができます。</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --outdated --not-required
 docutils (Current: 0.10 Latest: 0.11)
@@ -355,7 +354,7 @@ docutils (Current: 0.10 Latest: 0.11)
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Use legacy formatting</p>
+<li><p class="first">古いフォーマットを使う。</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format=legacy
 colorama (0.3.7)
@@ -366,7 +365,7 @@ jedi (0.9.0)
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Use json formatting</p>
+<li><p class="first">JSONフォーマットを使う</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format=json
 [{&#39;name&#39;: &#39;colorama&#39;, &#39;version&#39;: &#39;0.3.7&#39;}, {&#39;name&#39;: &#39;docopt&#39;, &#39;version&#39;: &#39;0.6.2&#39;}, ...
@@ -374,7 +373,7 @@ jedi (0.9.0)
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Use freeze formatting</p>
+<li><p class="first">freezeフォーマットを使う</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip list --format=freeze
 colorama==0.3.7
