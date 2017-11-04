@@ -243,18 +243,15 @@ package to build individual wheels.</p>
 <p><code class="docutils literal"><span class="pre">pip</span> <span class="pre">wheel</span></code> コマンドでは他のビルドシステムコマンドは起動されません。</p>
 <div class="section" id="customising-the-build">
 <h4><a class="toc-backref" href="#id7">ビルドのカスタマイズ</a><a class="headerlink" href="#customising-the-build" title="このヘッドラインへのパーマリンク">¶</a></h4>
-<p>It is possible using <code class="docutils literal"><span class="pre">--global-option</span></code> to include additional build commands
-with their arguments in the <code class="docutils literal"><span class="pre">setup.py</span></code> command. This is currently the only
-way to influence the building of C extensions from the command line. For
-example:</p>
+<p><code class="docutils literal"><span class="pre">--global-option</span></code> を使用して、<code class="docutils literal"><span class="pre">setup.py</span></code> コマンドに引数とともに追加のビルドコマンドを組み込むことは可能です。これは現在、コマンドラインからC拡張のビルドに影響を与える唯一の方法です。例えば:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">wheel</span> <span class="o">--</span><span class="k">global</span><span class="o">-</span><span class="n">option</span> <span class="n">bdist_ext</span> <span class="o">--</span><span class="k">global</span><span class="o">-</span><span class="n">option</span> <span class="o">-</span><span class="n">DFOO</span> <span class="n">wheel</span>
 </pre></div>
 </div>
-<p>will result in a build command of</p>
+<p>ビルドコマンドは次のようになります</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">bdist_ext</span> <span class="o">-</span><span class="n">DFOO</span> <span class="n">bdist_wheel</span> <span class="o">-</span><span class="n">d</span> <span class="n">TARGET</span>
 </pre></div>
 </div>
-<p>which passes a preprocessor symbol to the extension build.</p>
+<p>プリプロセッサシンボルを拡張ビルドに渡します。</p>
 <p>Such usage is considered highly build-system specific and more an accident of
 the current implementation than a supported interface.</p>
 </div>
@@ -394,7 +391,7 @@ the current implementation than a supported interface.</p>
 <div class="section" id="examples">
 <h2><a class="toc-backref" href="#id9">例</a><a class="headerlink" href="#examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Build wheels for a requirement (and all its dependencies), and then install</p>
+<li><p class="first">要件(およびそのすべての依存関係)のwheelを構築してからインストールします</p>
 <blockquote>
 <div><div class="highlight-default"><div class="highlight"><pre><span></span>$ pip wheel --wheel-dir=/tmp/wheelhouse SomePackage
 $ pip install --no-index --find-links=/tmp/wheelhouse SomePackage
