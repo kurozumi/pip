@@ -223,13 +223,7 @@ installs.</p>
 </p>
 <div class="section" id="overview">
 <h3><a class="toc-backref" href="#id6">概要</a><a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">pip</span> <span class="pre">hash</span></code> is a convenient way to get a hash digest for use with
-<a class="reference internal" href="pip_install.html#hash-checking-mode"><span class="std std-ref">ハッシュチェックモード</span></a>, especially for packages with multiple archives. The
-error message from <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--require-hashes</span> <span class="pre">...</span></code> will give you one
-hash, but, if there are multiple archives (like source and binary ones), you
-will need to manually download and compute a hash for the others. Otherwise, a
-spurious hash mismatch could occur when <a class="reference internal" href="pip_install.html#pip-install"><span class="std std-ref">pip install</span></a> is passed a
-different set of options, like <a class="reference internal" href="pip_install.html#install-no-binary"><span class="std std-ref">--no-binary</span></a>.</p>
+<p><code class="docutils literal"><span class="pre">pip</span> <span class="pre">hash</span></code> は特に複数のアーカイブを持つパッケージの <a class="reference internal" href="pip_install.html#hash-checking-mode"><span class="std std-ref">ハッシュチェックモード</span></a> で使うためにハッシュダイジェストを取得する便利な方法です。<code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">—require-hashes</span> <span class="pre">…</span></code> からのエラーメッセージはあなたに一つのハッシュを与えますが、複数のアーカイブ(ソースとバイナリのアーカイブなど)ある場合は、他のハッシュを手動でダウンロードして計算する必要があります。そうしないと、 <a class="reference internal" href="pip_install.html#pip-install"><span class="std std-ref">pip install</span></a> に <a class="reference internal" href="pip_install.html#install-no-binary"><span class="std std-ref">--no-binary</span></a> のような別のオプションが渡された時に偽のハッシュの不一致が発生する可能性があります。</p>
 </div>
 </div>
 <div class="section" id="options">
@@ -244,7 +238,7 @@ different set of options, like <a class="reference internal" href="pip_install.h
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id8">例</a><a class="headerlink" href="#example" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Compute the hash of a downloaded archive:</p>
+<p>ダウンロードしたアーカイブのハッシュを計算します:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ pip download SomePackage
     Collecting SomePackage
       Downloading SomePackage-2.2.tar.gz
@@ -281,7 +275,7 @@ $ pip hash ./pip_downloads/SomePackage-2.2.tar.gz
   <div role="contentinfo">
     <p>
         &copy; Copyright 2008-2016, PyPA.
-      最終更新: 11月 04, 2017
+      最終更新: 11月 05, 2017
 
     </p>
   </div>
