@@ -8,68 +8,58 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pip 9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"POT-Creation-Date: 2017-11-04 10:31+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../user_guide.rst:3
 msgid "User Guide"
-msgstr ""
-"ユーザーガイド"
-
-#: ../../user_guide.rst
-msgid "Contents"
-msgstr ""
-"コンテンツ"
+msgstr "ユーザーガイド"
 
 #: ../../user_guide.rst:8
 msgid "Installing Packages"
-msgstr ""
-"パッケージのインストール"
+msgstr "パッケージのインストール"
 
 #: ../../user_guide.rst:10
 msgid ""
 "pip supports installing from `PyPI`_, version control, local projects, "
 "and directly from distribution files."
 msgstr ""
-"pipは `PyPI`_ からのインストール、バージョン管理からのインストール、"
-"ローカルプロジェクトからインストール、配布ファイルからのインストールをサポートしています。"
+"pipは `PyPI`_ "
+"からのインストール、バージョン管理からのインストール、ローカルプロジェクトからインストール、配布ファイルからのインストールをサポートしています。"
 
 #: ../../user_guide.rst:14
 msgid ""
 "The most common scenario is to install from `PyPI`_ using "
 ":ref:`Requirement Specifiers`"
-msgstr ""
-"最も一般的なシナリオは、`PyPI`_ から :ref:`Requirement Specifiers` を使用してインストールすることです。"
+msgstr "最も一般的なシナリオは、`PyPI`_ から :ref:`Requirement Specifiers` を使用してインストールすることです。"
 
 #: ../../user_guide.rst:24
 msgid "For more information and examples, see the :ref:`pip install` reference."
-msgstr ""
-"詳細および例については、:ref:`pip install` のリファレンスを参照してください。"
+msgstr "詳細および例については、:ref:`pip install` のリファレンスを参照してください。"
 
 #: ../../user_guide.rst:32
 msgid "Requirements Files"
-msgstr ""
-"Requirementsファイル"
+msgstr "Requirementsファイル"
 
 #: ../../user_guide.rst:34
 msgid ""
 "\"Requirements files\" are files containing a list of items to be "
 "installed using :ref:`pip install` like so:"
 msgstr ""
-"\"Requirementsファイル\"は、:ref:`pip install` でインストールするためのパッケージリストが記載されているファイルです。"
+"\"Requirementsファイル\"は、:ref:`pip install` "
+"でインストールするためのパッケージリストが記載されているファイルです。"
 
 #: ../../user_guide.rst:42
 msgid ""
 "Details on the format of the files are here: :ref:`Requirements File "
 "Format`."
-msgstr ""
-"ファイル形式に関する詳細は、ここにあります: :ref:`Requirements File Format`"
+msgstr "ファイル形式に関する詳細は、ここにあります: :ref:`Requirements File Format`"
 
 #: ../../user_guide.rst:44
 msgid ""
@@ -77,13 +67,12 @@ msgid ""
 "arguments placed in a file. Note that you should not rely on the items in"
 " the file being installed by pip in any particular order."
 msgstr ""
-"論理的に言うと、Requirementsファイルはファイルに書かれた :ref:`pip install` 引数のリストに過ぎません。"
-"特定の順序でpipによってインストールされているファイル内のパッケージに頼るべきではないことに注意してください。"
+"論理的に言うと、Requirementsファイルはファイルに書かれた :ref:`pip install` "
+"引数のリストに過ぎません。特定の順序でpipによってインストールされているファイル内のパッケージに頼るべきではないことに注意してください。"
 
 #: ../../user_guide.rst:48
 msgid "In practice, there are 4 common uses of Requirements files:"
-msgstr ""
-"実際には、Requirementsファイルには4つの一般的な用途があります。"
+msgstr "実際には、Requirementsファイルには4つの一般的な用途があります。"
 
 #: ../../user_guide.rst:50
 msgid ""
@@ -92,11 +81,9 @@ msgid ""
 "<Repeatability>`.  In this case, your requirement file contains a pinned "
 "version of everything that was installed when `pip freeze` was run."
 msgstr ""
-"Requirementsファイルは、:ref:`repeatable installations <Repeatability>` を実現するため、"
-":ref:`pip freeze` からの結果を保持するために使用されます。"
-"この場合、`pip freeze` が実行されたとき、requirementファイルには"
-"インストールされたすべての固定バージョンのリストが記載されています。"
-
+"Requirementsファイルは、:ref:`repeatable installations <Repeatability>` "
+"を実現するため、:ref:`pip freeze` からの結果を保持するために使用されます。この場合、`pip freeze` "
+"が実行されたとき、requirementファイルにはインストールされたすべての固定バージョンのリストが記載されています。"
 
 #: ../../user_guide.rst:60
 msgid ""
@@ -111,14 +98,12 @@ msgid ""
 "specification) into your requirements file directly along with the other "
 "top level requirements. Like so:"
 msgstr ""
-"Requirementsファイルは、依存関係を適切に解決させるためにpipを使用します。"
-"pipは `正しい依存性解決方法を持っていません <https://github.com/pypa/pip/issues/988>`_ 。"
-"代わりにシンプルにプロジェクトで見つけた最初の仕様を使用します。"
-"例えば、`pkg1` は `pkg3>=1.0` が必要で、`pkg2` に `pkg3>=1.0,<=2.0` が必要で、"
-"`pkg1` が最初に解決された場合、pipは `pkg3>=1.0` のみを使用し、　"
-"`pkg2` で必要だけどコンフリクトする `pkg3` のバージョンをインストールします。"
-"この問題を解決するには、`pkg3>=1.0,<=2.0` （つまり、正しい仕様）を"
-"requirementsファイルに他の最上位要件とともに直接配置できます。:"
+"Requirementsファイルは、依存関係を適切に解決させるためにpipを使用します。pipは `正しい依存性解決方法を持っていません "
+"<https://github.com/pypa/pip/issues/988>`_ "
+"。代わりにシンプルにプロジェクトで見つけた最初の仕様を使用します。例えば、`pkg1` は `pkg3>=1.0` が必要で、`pkg2` に "
+"`pkg3>=1.0,<=2.0` が必要で、`pkg1` が最初に解決された場合、pipは `pkg3>=1.0` のみを使用し、　`pkg2`"
+" で必要だけどコンフリクトする `pkg3` のバージョンをインストールします。この問題を解決するには、`pkg3>=1.0,<=2.0` "
+"（つまり、正しい仕様）をrequirementsファイルに他の最上位要件とともに直接配置できます。:"
 
 #: ../../user_guide.rst:77
 msgid ""
@@ -127,9 +112,9 @@ msgid ""
 "requirements file requires `ProjectB`, but the latest version (v1.3) has "
 "a bug, you can force pip to accept earlier versions like so:"
 msgstr ""
-"Requirementsファイルは、pipにサブ依存関係の代替バージョンをインストールさせるために使用されます。"
-"たとえば、最新バージョン（v1.3）にバグがあるが `ProjectB` を必須とするRequirementsファイル内の"
-"`ProjectA` を仮定した場合、pipに以前のバージョンのを受け入れるよう強制することができます。:"
+"Requirementsファイルは、pipにサブ依存関係の代替バージョンをインストールさせるために使用されます。たとえば、最新バージョン（v1.3）にバグがあるが"
+" `ProjectB` を必須とするRequirementsファイル内の`ProjectA` "
+"を仮定した場合、pipに以前のバージョンのを受け入れるよう強制することができます。:"
 
 #: ../../user_guide.rst:87
 msgid ""
@@ -140,10 +125,9 @@ msgid ""
 " the tag `sometag`.  You'd reference it in your requirements file with a "
 "line like so:"
 msgstr ""
-"Requirementsファイルは、バージョン管理に存在するローカルパッチとの依存関係を上書きするために使用されます。"
-"たとえば、依存関係、PyPIの `SomeDependency` にバグがあり、上流の修正を待つことができないとします。"
-"ソースコードをクローン/コピーして修正を加え、いくつかのタグを付けてバージョン管理システムに配置することができます。"
-"以下のようなコマンドでrequirementsファイルで参照したいと思います。:"
+"Requirementsファイルは、バージョン管理に存在するローカルパッチとの依存関係を上書きするために使用されます。たとえば、依存関係、PyPIの"
+" `SomeDependency` "
+"にバグがあり、上流の修正を待つことができないとします。ソースコードをクローン/コピーして修正を加え、いくつかのタグを付けてバージョン管理システムに配置することができます。以下のようなコマンドでrequirementsファイルで参照したいと思います。:"
 
 #: ../../user_guide.rst:97
 msgid ""
@@ -151,9 +135,8 @@ msgid ""
 "requirements file, then **replace** that line with the new line. If "
 "`SomeDependency` is a sub-dependency, then **add** the new line."
 msgstr ""
-"前もって `SomeDependency` がrequirementファイルにトップレベルの要件であった場合は、"
-"その行を新しい行に **置き換え** ます。"
-"`SomeDependency` が従属依存である場合、新しい行を **追加** します。"
+"前もって `SomeDependency` がrequirementファイルにトップレベルの要件であった場合は、その行を新しい行に "
+"**置き換え** ます。`SomeDependency` が従属依存である場合、新しい行を **追加** します。"
 
 #: ../../user_guide.rst:102
 msgid ""
@@ -163,14 +146,13 @@ msgid ""
 "dependencies>`_, not by discovering `requirements.txt` files embedded in "
 "projects."
 msgstr ""
-"pipは、プロジェクトに埋め込まれた `requirements.txt` ファイルを検出するのではなく、"
-" `install_requires metadata <https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-dependencies>`_ "
-"を使用してパッケージの依存関係を判断することが重要です。"
+"pipは、プロジェクトに埋め込まれた `requirements.txt` ファイルを検出するのではなく、 `install_requires "
+"metadata <https://setuptools.readthedocs.io/en/latest/setuptools.html"
+"#declaring-dependencies>`_ を使用してパッケージの依存関係を判断することが重要です。"
 
 #: ../../user_guide.rst:107
 msgid "See also:"
-msgstr ""
-"こちらも参照下さい:"
+msgstr "こちらも参照下さい:"
 
 #: ../../user_guide.rst:109
 msgid ":ref:`Requirements File Format`"
@@ -188,8 +170,7 @@ msgstr ""
 
 #: ../../user_guide.rst:118
 msgid "Constraints Files"
-msgstr ""
-"Constraintsファイル"
+msgstr "Constraintsファイル"
 
 #: ../../user_guide.rst:120
 msgid ""
@@ -199,16 +180,13 @@ msgid ""
 "There is one key difference: Including a package in a constraints file "
 "does not trigger installation of the package."
 msgstr ""
-"Constraintsファイルは、インストールされているかどうかではなく、"
-"インストールされている要件のバージョンのみを制御するrequirementsファイルです。"
-"その構文と内容は :ref:`Requirements Files` とほぼ同じです。"
-"重要な違いが1つあります:constraintsファイルにパッケージを組み込んでも、"
-"パッケージのインストールが開始されません。"
+"Constraintsファイルは、インストールされているかどうかではなく、インストールされている要件のバージョンのみを制御するrequirementsファイルです。その構文と内容は"
+" :ref:`Requirements Files` "
+"とほぼ同じです。重要な違いが1つあります:constraintsファイルにパッケージを組み込んでも、パッケージのインストールが開始されません。"
 
 #: ../../user_guide.rst:126
 msgid "Use a constraints file like so:"
-msgstr ""
-"以下のように制約ファイルを使用して下さい:"
+msgstr "以下のように制約ファイルを使用して下さい:"
 
 #: ../../user_guide.rst:132
 msgid ""
@@ -217,12 +195,7 @@ msgid ""
 "instance, say that the \"helloworld\" package doesn't work in your "
 "environment, so you have a local patched version. Some things you install"
 " depend on \"helloworld\", and some don't."
-msgstr ""
-"Constraintsファイルは、インストールするものが正確にわからないときに、"
-"requirementsファイルとまったく同じ理由で使用されます。"
-"例えば、あなたの環境では\"helloworld\"パッケージが動作しないので、"
-"あなたはローカルパッチバージョンを持っているとします。"
-"あなたがインストールするものは\"helloworld\"に依存しているものもあれば、そうでないものもあります。"
+msgstr "Constraintsファイルは、インストールするものが正確にわからないときに、requirementsファイルとまったく同じ理由で使用されます。例えば、あなたの環境では\"helloworld\"パッケージが動作しないので、あなたはローカルパッチバージョンを持っているとします。あなたがインストールするものは\"helloworld\"に依存しているものもあれば、そうでないものもあります。"
 
 #: ../../user_guide.rst:138
 msgid ""
@@ -230,10 +203,7 @@ msgid ""
 "manually audit the dependencies of everything you install, and if "
 "\"helloworld\" is present, write a requirements file to use when "
 "installing that thing."
-msgstr ""
-"パッチバージョンが一貫して使用されることを保証する1つの方法は、"
-"インストールするすべての依存関係を手動で監査することです。"
-"そして\"helloworld\"が存在する場合は、そのものをインストールするときに使用するrequirementsファイルを書きます。"
+msgstr "パッチバージョンが一貫して使用されることを保証する1つの方法は、インストールするすべての依存関係を手動で監査することです。そして\"helloworld\"が存在する場合は、そのものをインストールするときに使用するrequirementsファイルを書きます。"
 
 #: ../../user_guide.rst:142
 msgid ""
@@ -241,21 +211,15 @@ msgid ""
 " your organisation and use that everywhere. If the thing being installed "
 "requires \"helloworld\" to be installed, your fixed version specified in "
 "your constraints file will be used."
-msgstr ""
-"Constraintsファイルはより良い方法を提供します:"
-"組織のための単一のconstraintsファイルを作成し、あらゆる場所で使用します。"
-"インストールするものに\"helloworld\"をインストールする必要がある場合、"
-"あなたのconstraintsファイルで指定された固定バージョンが使用されます。"
+msgstr "Constraintsファイルはより良い方法を提供します:組織のための単一のconstraintsファイルを作成し、あらゆる場所で使用します。インストールするものに\"helloworld\"をインストールする必要がある場合、あなたのconstraintsファイルで指定された固定バージョンが使用されます。"
 
 #: ../../user_guide.rst:147
 msgid "Constraints file support was added in pip 7.1."
-msgstr ""
-"Constraintsファイルのサポートはpip7.1で追加されました。"
+msgstr "Constraintsファイルのサポートはpip7.1で追加されました。"
 
 #: ../../user_guide.rst:152
 msgid "Installing from Wheels"
-msgstr ""
-"Wheelsからインストール"
+msgstr "Wheelsからインストール"
 
 #: ../../user_guide.rst:154
 msgid ""
@@ -265,30 +229,28 @@ msgid ""
 "`PEP427 <http://www.python.org/dev/peps/pep-0427>`_, and `PEP425 "
 "<http://www.python.org/dev/peps/pep-0425>`_"
 msgstr ""
-"\"Wheel\"は、ソースアーカイブからのビルドやインストールと比較して、"
-"インストールを大幅に高速化できるビルドされたアーカイブ形式です。"
-"詳細は、`Wheel docs <https://wheel.readthedocs.io>`_ 、`PEP427 <http://www.python.org/dev/peps/pep-0427>`_、"
-"および `PEP425 <http://www.python.org/dev/peps/pep-0425>`_ を参照してください。"
+"\"Wheel\"は、ソースアーカイブからのビルドやインストールと比較して、インストールを大幅に高速化できるビルドされたアーカイブ形式です。詳細は、`Wheel"
+" docs <https://wheel.readthedocs.io>`_ 、`PEP427 "
+"<http://www.python.org/dev/peps/pep-0427>`_、および `PEP425 "
+"<http://www.python.org/dev/peps/pep-0425>`_ を参照してください。"
 
 #: ../../user_guide.rst:160
 msgid ""
 "Pip prefers Wheels where they are available. To disable this, use the "
 ":ref:`--no-binary <install_--no-binary>` flag for :ref:`pip install`."
 msgstr ""
-"pipはWheelsが利用可能な環境を好みます。"
-"これを無効にするには、:ref:`pip install` に :ref:`--no-binary <install_--no-binary>` フラグを使用して下さい。"
+"pipはWheelsが利用可能な環境を好みます。これを無効にするには、:ref:`pip install` に :ref:`--no-binary"
+" <install_--no-binary>` フラグを使用して下さい。"
 
 #: ../../user_guide.rst:163
 msgid ""
 "If no satisfactory wheels are found, pip will default to finding source "
 "archives."
-msgstr ""
-"満足できるwheelsが見つからない場合、pipはデフォルトでソースアーカイブを検索します。"
+msgstr "満足できるwheelsが見つからない場合、pipはデフォルトでソースアーカイブを検索します。"
 
 #: ../../user_guide.rst:166
 msgid "To install directly from a wheel archive:"
-msgstr ""
-"wheelアーカイブから直接インストールするには:"
+msgstr "wheelアーカイブから直接インストールするには:"
 
 #: ../../user_guide.rst:173
 msgid ""
@@ -296,8 +258,8 @@ msgid ""
 " as a convenience, to build wheels for all your requirements and "
 "dependencies."
 msgstr ""
-"wheelsが利用できない場合、pipは利便性を高めるため :ref:`pip wheel` を勧め、"
-"すべての要件と依存関係に対応するwheelsを構築します。"
+"wheelsが利用できない場合、pipは利便性を高めるため :ref:`pip wheel` "
+"を勧め、すべての要件と依存関係に対応するwheelsを構築します。"
 
 #: ../../user_guide.rst:176
 msgid ""
@@ -305,123 +267,102 @@ msgid ""
 "<https://pypi.python.org/pypi/wheel>`_ to be installed, which provides "
 "the \"bdist_wheel\" setuptools extension that it uses."
 msgstr ""
-":ref:`pip wheel` は `wheel package <https://pypi.python.org/pypi/wheel>`_ が"
-"インストールされている必要があります。"
-"これはwheel packageが使用する \"bdist_wheel\" setuptoolsの拡張機能を提供します。"
+":ref:`pip wheel` は `wheel package <https://pypi.python.org/pypi/wheel>`_ "
+"がインストールされている必要があります。これはwheel packageが使用する \"bdist_wheel\" "
+"setuptoolsの拡張機能を提供します。"
 
 #: ../../user_guide.rst:180
 msgid ""
 "To build wheels for your requirements and all their dependencies to a "
 "local directory:"
-msgstr ""
-"要件とそのすべての依存関係のwheelsをローカルディレクトリに構築するには:"
+msgstr "要件とそのすべての依存関係のwheelsをローカルディレクトリに構築するには:"
 
 #: ../../user_guide.rst:188
 msgid ""
 "And *then* to install those requirements just using your local directory "
 "of wheels (and not from PyPI):"
-msgstr ""
-"*then*、wheelsのローカルディレクトリ（PyPIからではなく）を使用してこれらの要件をインストールします。"
+msgstr "*then*、wheelsのローカルディレクトリ（PyPIからではなく）を使用してこれらの要件をインストールします。"
 
 #: ../../user_guide.rst:196
 msgid "Uninstalling Packages"
-msgstr ""
-"パッケージのアンインストール"
+msgstr "パッケージのアンインストール"
 
 #: ../../user_guide.rst:198
 msgid "pip is able to uninstall most packages like so:"
-msgstr ""
-"pipは以下のようにほとんどのパッケージをアンインストールできます:"
+msgstr "pipは以下のようにほとんどのパッケージをアンインストールできます:"
 
 #: ../../user_guide.rst:204
 msgid ""
 "pip also performs an automatic uninstall of an old version of a package "
 "before upgrading to a newer version."
-msgstr ""
-"pipは、新しいバージョンにアップグレードする前に、古いバージョンのパッケージを自動的にアンインストールします。"
+msgstr "pipは、新しいバージョンにアップグレードする前に、古いバージョンのパッケージを自動的にアンインストールします。"
 
 #: ../../user_guide.rst:207
 msgid "For more information and examples, see the :ref:`pip uninstall` reference."
-msgstr ""
-"詳細と例については、:ref:`pip uninstall` のリファレンスを参照してください。"
+msgstr "詳細と例については、:ref:`pip uninstall` のリファレンスを参照してください。"
 
 #: ../../user_guide.rst:211
 msgid "Listing Packages"
-msgstr ""
-"パッケージの一覧表示"
+msgstr "パッケージの一覧表示"
 
 #: ../../user_guide.rst:213
 msgid "To list installed packages:"
-msgstr ""
-"インストールされたパッケージを一覧表示するには:"
+msgstr "インストールされたパッケージを一覧表示するには:"
 
 #: ../../user_guide.rst:223
 msgid "To list outdated packages, and show the latest version available:"
-msgstr ""
-"古いパッケージを一覧表示し、最新のバージョンを表示するには:"
+msgstr "古いパッケージを一覧表示し、最新のバージョンを表示するには:"
 
 #: ../../user_guide.rst:232
 msgid "To show details about an installed package:"
-msgstr ""
-"インストールされたパッケージの詳細を表示するには:"
+msgstr "インストールされたパッケージの詳細を表示するには:"
 
 #: ../../user_guide.rst:244
 msgid ""
 "For more information and examples, see the :ref:`pip list` and :ref:`pip "
 "show` reference pages."
-msgstr ""
-"詳細および例については、:ref:`pip list` および :ref:`pip show` のリファレンスページを参照してください。"
+msgstr "詳細および例については、:ref:`pip list` および :ref:`pip show` のリファレンスページを参照してください。"
 
 #: ../../user_guide.rst:249
 msgid "Searching for Packages"
-msgstr ""
-"パッケージの検索"
+msgstr "パッケージの検索"
 
 #: ../../user_guide.rst:251
 msgid "pip can search `PyPI`_ for packages using the ``pip search`` command::"
-msgstr ""
-"pipは、``pip search`` コマンドを使用してパッケージの `PyPI`_ を検索できます:"
+msgstr "pipは、``pip search`` コマンドを使用してパッケージの `PyPI`_ を検索できます:"
 
 #: ../../user_guide.rst:256
 msgid "The query will be used to search the names and summaries of all packages."
-msgstr ""
-"queryは、すべてのパッケージの名前とサマリーを検索するために使用されます。"
+msgstr "queryは、すべてのパッケージの名前とサマリーを検索するために使用されます。"
 
 #: ../../user_guide.rst:259
 msgid "For more information and examples, see the :ref:`pip search` reference."
-msgstr ""
-"詳細および例については、:ref:`pip search` のリファレンスを参照してください。"
+msgstr "詳細および例については、:ref:`pip search` のリファレンスを参照してください。"
 
 #: ../../user_guide.rst:264
 msgid "Configuration"
-msgstr ""
-"コンフィグレーション"
+msgstr "コンフィグレーション"
 
 #: ../../user_guide.rst:269
 msgid "Config file"
-msgstr ""
-"設定ファイル"
+msgstr "設定ファイル"
 
 #: ../../user_guide.rst:271
 msgid ""
 "pip allows you to set all command line option defaults in a standard ini "
 "style config file."
-msgstr ""
-"pipでは標準のiniスタイルの設定ファイルにすべてのコマンドラインオプションのデフォルトを設定することができます。"
+msgstr "pipでは標準のiniスタイルの設定ファイルにすべてのコマンドラインオプションのデフォルトを設定することができます。"
 
 #: ../../user_guide.rst:274
 msgid ""
 "The names and locations of the configuration files vary slightly across "
 "platforms. You may have per-user, per-virtualenv or site-wide (shared "
 "amongst all users) configuration:"
-msgstr ""
-"設定ファイルの名前と場所は、プラットフォームによって多少異なります。"
-"ユーザー単位、vertualenv単位、またはサイト全体（すべてのユーザーで共有）の設定が可能です。"
+msgstr "設定ファイルの名前と場所は、プラットフォームによって多少異なります。ユーザー単位、vertualenv単位、またはサイト全体（すべてのユーザーで共有）の設定が可能です。"
 
 #: ../../user_guide.rst:278
 msgid "**Per-user**:"
-msgstr ""
-"**ユーザー単位**"
+msgstr "**ユーザー単位**"
 
 #: ../../user_guide.rst:280
 msgid ""
@@ -429,64 +370,54 @@ msgid ""
 ":file:`$HOME/.config/pip/pip.conf` which respects the ``XDG_CONFIG_HOME``"
 " environment variable."
 msgstr ""
-"Unixでは、デフォルトの設定ファイルは、``XDG_CONFIG_HOME`` 環境変数を重んじる :file:`$HOME/.config/pip/pip.conf` です。"
+"Unixでは、デフォルトの設定ファイルは、``XDG_CONFIG_HOME`` 環境変数を重んじる "
+":file:`$HOME/.config/pip/pip.conf` です。"
 
 #: ../../user_guide.rst:282
 msgid ""
 "On macOS the configuration file is :file:`$HOME/Library/Application "
 "Support/pip/pip.conf`."
-msgstr ""
-"macOSでは、設定ファイルは :file:`$HOME/Library/Application Support/pip/pip.conf` です。"
+msgstr "macOSでは、設定ファイルは :file:`$HOME/Library/Application Support/pip/pip.conf` です。"
 
 #: ../../user_guide.rst:284
 msgid "On Windows the configuration file is :file:`%APPDATA%\\\\pip\\\\pip.ini`."
-msgstr ""
-"Windowsでは、設定ファイルは :file:`%APPDATA%\\\\pip\\\\pip.ini` です。"
+msgstr "Windowsでは、設定ファイルは :file:`%APPDATA%\\\\pip\\\\pip.ini` です。"
 
 #: ../../user_guide.rst:286
 msgid ""
 "There are also a legacy per-user configuration file which is also "
 "respected, these are located at:"
-msgstr ""
-"また、従来のユーザーごとの設定ファイルもありますがこれも尊重されています。"
-"これらは以下の場所に位置します。"
+msgstr "また、従来のユーザーごとの設定ファイルもありますがこれも尊重されています。これらは以下の場所に位置します。"
 
 #: ../../user_guide.rst:289
 msgid "On Unix and macOS the configuration file is: :file:`$HOME/.pip/pip.conf`"
-msgstr ""
-"UnixやmacOSでは、設定ファイルは :file:`$HOME/.pip/pip.conf` です。"
+msgstr "UnixやmacOSでは、設定ファイルは :file:`$HOME/.pip/pip.conf` です。"
 
 #: ../../user_guide.rst:290
 msgid "On Windows the configuration file is: :file:`%HOME%\\\\pip\\\\pip.ini`"
-msgstr ""
-"Windowsでは、設定ファイルは :file:`%HOME%\\\\pip\\\\pip.ini` です。"
+msgstr "Windowsでは、設定ファイルは :file:`%HOME%\\\\pip\\\\pip.ini` です。"
 
 #: ../../user_guide.rst:292
 msgid ""
 "You can set a custom path location for this config file using the "
 "environment variable ``PIP_CONFIG_FILE``."
-msgstr ""
-"環境変数 ``PIP_CONFIG_FILE`` を使用して、この設定ファイルのカスタムパスの場所を設定できます。"
+msgstr "環境変数 ``PIP_CONFIG_FILE`` を使用して、この設定ファイルのカスタムパスの場所を設定できます。"
 
 #: ../../user_guide.rst:295
 msgid "**Inside a virtualenv**:"
-msgstr ""
-"**virtualenv内**"
+msgstr "**virtualenv内**"
 
 #: ../../user_guide.rst:297
 msgid "On Unix and macOS the file is :file:`$VIRTUAL_ENV/pip.conf`"
-msgstr ""
-"UnixとmacOSのファイルは :file:`$VIRTUAL_ENV/pip.conf` です。"
+msgstr "UnixとmacOSのファイルは :file:`$VIRTUAL_ENV/pip.conf` です。"
 
 #: ../../user_guide.rst:298
 msgid "On Windows the file is: :file:`%VIRTUAL_ENV%\\\\pip.ini`"
-msgstr ""
-"Windowsではファイルは :file:`%VIRTUAL_ENV%\\\\pip.ini` です。"
+msgstr "Windowsではファイルは :file:`%VIRTUAL_ENV%\\\\pip.ini` です。"
 
 #: ../../user_guide.rst:300
 msgid "**Site-wide**:"
-msgstr ""
-"**サイト全体**"
+msgstr "**サイト全体**"
 
 #: ../../user_guide.rst:302
 msgid ""
@@ -495,14 +426,13 @@ msgid ""
 "environment variable ``XDG_CONFIG_DIRS`` (if it exists), for example "
 ":file:`/etc/xdg/pip/pip.conf`."
 msgstr ""
-"Unixでは、ファイルは :file:`/etc/pip.conf` にあります。"
-"代わりに、:file:`/etc/xdg/pip/pip.conf` のように、環境変数 ``XDG_CONFIG_DIRS`` （存在する場合）に"
-"設定されているパスのいずれかの \"pip\"サブディレクトリに存在する可能性があります。"
+"Unixでは、ファイルは :file:`/etc/pip.conf` "
+"にあります。代わりに、:file:`/etc/xdg/pip/pip.conf` のように、環境変数 ``XDG_CONFIG_DIRS`` "
+"（存在する場合）に設定されているパスのいずれかの \"pip\"サブディレクトリに存在する可能性があります。"
 
 #: ../../user_guide.rst:306
 msgid "On macOS the file is: :file:`/Library/Application Support/pip/pip.conf`"
-msgstr ""
-"macOSではファイルは :file:`/Library/Application Support/pip/pip.conf` です。"
+msgstr "macOSではファイルは :file:`/Library/Application Support/pip/pip.conf` です。"
 
 #: ../../user_guide.rst:307
 msgid ""
@@ -517,46 +447,37 @@ msgid ""
 "On Windows 7 and later the file is hidden, but writeable at "
 ":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini`"
 msgstr ""
-"Windows7以降では、ファイルは非表示になっていますが、"
-":file:`C:\\\\ProgramData\\\\pip\\\\pip.ini` "
-"に書き込むことができます"
+"Windows7以降では、ファイルは非表示になっていますが、:file:`C:\\\\ProgramData\\\\pip\\\\pip.ini`"
+" に書き込むことができます"
 
 #: ../../user_guide.rst:311
 msgid "Site-wide configuration is not supported on Windows Vista"
-msgstr ""
-"サイト全体の設定はWindows Vistaではサポートされていません"
+msgstr "サイト全体の設定はWindows Vistaではサポートされていません"
 
 #: ../../user_guide.rst:313
 msgid ""
 "If multiple configuration files are found by pip then they are combined "
 "in the following order:"
-msgstr ""
-"複数の設定ファイルがpipによって見つかった場合、それらは次の順序で結合されます"
+msgstr "複数の設定ファイルがpipによって見つかった場合、それらは次の順序で結合されます"
 
 #: ../../user_guide.rst:316
 msgid "Firstly the site-wide file is read, then"
-msgstr ""
-"まずサイト全体のファイルを読み込み、次に"
+msgstr "まずサイト全体のファイルを読み込み、次に"
 
 #: ../../user_guide.rst:317
 msgid "The per-user file is read, and finally"
-msgstr ""
-"ユーザーごとのファイルが読み込まれ、最後に"
+msgstr "ユーザーごとのファイルが読み込まれ、最後に"
 
 #: ../../user_guide.rst:318
 msgid "The virtualenv-specific file is read."
-msgstr ""
-"virtualenv固有のファイルが読み込まれます。"
+msgstr "virtualenv固有のファイルが読み込まれます。"
 
 #: ../../user_guide.rst:320
 msgid ""
 "Each file read overrides any values read from previous files, so if the "
 "global timeout is specified in both the site-wide file and the per-user "
 "file then the latter value is the one that will be used."
-msgstr ""
-"以前のファイルから読み取られた値は、読み込まれた各ファイルを上書きするので、"
-"サイト全体のファイルとユーザー単位のファイルの両方でグローバルタイムアウトが指定されている場合は、"
-"後者の値が使用されます。"
+msgstr "以前のファイルから読み取られた値は、読み込まれた各ファイルを上書きするので、サイト全体のファイルとユーザー単位のファイルの両方でグローバルタイムアウトが指定されている場合は、後者の値が使用されます。"
 
 #: ../../user_guide.rst:324
 msgid ""
@@ -565,10 +486,8 @@ msgid ""
 "set the HTTP timeout (``--default-timeout``) to 60 seconds your config "
 "file would look like this:"
 msgstr ""
-"設定の名前は長いコマンドラインのオプションから導かれます。"
-"例えば、別のパッケージインデックス(``--index-url``)を使用し、"
-"HTTPタイムアウト(``--default-timeout``)を60秒に設定すると、"
-"設定ファイルは次のようになります"
+"設定の名前は長いコマンドラインのオプションから導かれます。例えば、別のパッケージインデックス(``--index-"
+"url``)を使用し、HTTPタイムアウト(``--default-timeout``)を60秒に設定すると、設定ファイルは次のようになります"
 
 #: ../../user_guide.rst:335
 msgid ""
@@ -578,36 +497,33 @@ msgid ""
 "(`Freezing Requirements <./#freezing-requirements>`_) command and using "
 "``60`` seconds for all other commands is possible with:"
 msgstr ""
-"各サブコマンドは、同じ名前ですべてのグローバル設定が上書きされるように、"
-"オプションで独自のセクションで設定できます。"
-"例えば、`freeze` (`Freezing Requirements <./#freezing-requirements>`_) コマンドを"
-"実行しているときの ``timeout`` を ``10`` 秒に減らし、"
-"他のすべてのコマンドは ``60`` 秒にすることも可能です:"
+"各サブコマンドは、同じ名前ですべてのグローバル設定が上書きされるように、オプションで独自のセクションで設定できます。例えば、`freeze` "
+"(`Freezing Requirements <./#freezing-requirements>`_) コマンドを実行しているときの "
+"``timeout`` を ``10`` 秒に減らし、他のすべてのコマンドは ``60`` 秒にすることも可能です:"
 
 #: ../../user_guide.rst:350
 msgid ""
 "Boolean options like ``--ignore-installed`` or ``--no-dependencies`` can "
 "be set like this:"
 msgstr ""
-"``--ignore-installed`` や ``--no-dependencies`` などのBooleanオプションは次のように設定できます:"
+"``--ignore-installed`` や ``--no-dependencies`` "
+"などのBooleanオプションは次のように設定できます:"
 
 #: ../../user_guide.rst:359
 msgid ""
 "To enable the boolean options ``--no-compile`` and ``--no-cache-dir``, "
 "falsy values have to be used:"
 msgstr ""
-"booleanオプション ``--no-compile`` と ``--no-cache-dir`` を有効にするには、"
-"falsy値を使用する必要があります:"
+"booleanオプション ``--no-compile`` と ``--no-cache-dir`` "
+"を有効にするには、falsy値を使用する必要があります:"
 
 #: ../../user_guide.rst:370
 msgid "Appending options like ``--find-links`` can be written on multiple lines:"
-msgstr ""
-"``--find-links`` のようなオプションを複数行に書くことができます:"
+msgstr "``--find-links`` のようなオプションを複数行に書くことができます:"
 
 #: ../../user_guide.rst:385
 msgid "Environment Variables"
-msgstr ""
-"環境変数"
+msgstr "環境変数"
 
 #: ../../user_guide.rst:387
 msgid ""
@@ -615,64 +531,54 @@ msgid ""
 "the format ``PIP_<UPPER_LONG_NAME>`` . Dashes (``-``) have to be replaced"
 " with underscores (``_``)."
 msgstr ""
-"pipのコマンドラインオプションは、``PIP_<UPPER_LONG_NAME>`` の形式で環境変数を設定することができます。"
-"ダッシュ(``-``)はアンダースコア(``_``)で置き換える必要があります。"
+"pipのコマンドラインオプションは、``PIP_<UPPER_LONG_NAME>`` "
+"の形式で環境変数を設定することができます。ダッシュ(``-``)はアンダースコア(``_``)で置き換える必要があります。"
 
 #: ../../user_guide.rst:391
 msgid "For example, to set the default timeout::"
-msgstr ""
-"例えば、デフォルトのタイムアウトを設定するには、次のようにします::"
+msgstr "例えば、デフォルトのタイムアウトを設定するには、次のようにします::"
 
 #: ../../user_guide.rst:395
 msgid "This is the same as passing the option to pip directly::"
-msgstr ""
-"これはpipに直接オプションを渡すのと同じです::"
+msgstr "これはpipに直接オプションを渡すのと同じです::"
 
 #: ../../user_guide.rst:399
 msgid ""
 "To set options that can be set multiple times on the command line, just "
 "add spaces in between values. For example::"
-msgstr ""
-"コマンドラインで複数回設定できるオプションを設定するには、値の間にスペースを追加します。例えば::"
+msgstr "コマンドラインで複数回設定できるオプションを設定するには、値の間にスペースを追加します。例えば::"
 
 #: ../../user_guide.rst:404
 msgid "is the same as calling::"
-msgstr ""
-"呼び出しと同じです::"
+msgstr "呼び出しと同じです::"
 
 #: ../../user_guide.rst:410
 msgid "Config Precedence"
-msgstr ""
-"設定の優先順位"
+msgstr "設定の優先順位"
 
 #: ../../user_guide.rst:412
 msgid ""
 "Command line options have precedence over environment variables, which "
 "have precedence over the config file."
-msgstr ""
-"コマンドラインオプションは環境変数よりも優先されます。環境変数は設定ファイルよりも優先されます。"
+msgstr "コマンドラインオプションは環境変数よりも優先されます。環境変数は設定ファイルよりも優先されます。"
 
 #: ../../user_guide.rst:414
 msgid ""
 "Within the config file, command specific sections have precedence over "
 "the global section."
-msgstr ""
-"設定ファイル内では、コマンド固有セクションがグローバルセクションよりも優先されます。"
+msgstr "設定ファイル内では、コマンド固有セクションがグローバルセクションよりも優先されます。"
 
 #: ../../user_guide.rst:416
 msgid "Examples:"
-msgstr ""
-"例:"
+msgstr "例:"
 
 #: ../../user_guide.rst:418
 msgid "``--host=foo`` overrides ``PIP_HOST=foo``"
-msgstr ""
-"``--host=foo`` は ``PIP_HOST=foo`` を上書きします。"
+msgstr "``--host=foo`` は ``PIP_HOST=foo`` を上書きします。"
 
 #: ../../user_guide.rst:419
 msgid "``PIP_HOST=foo`` overrides a config file with ``[global] host = foo``"
-msgstr ""
-"``PIP_HOST=foo`` は ``[global] host = foo`` で設定ファイルを上書きします。"
+msgstr "``PIP_HOST=foo`` は ``[global] host = foo`` で設定ファイルを上書きします。"
 
 #: ../../user_guide.rst:420
 msgid ""
@@ -680,33 +586,28 @@ msgid ""
 "overrides the option with same name in the ``[global]`` config file "
 "section"
 msgstr ""
-"設定ファイル ``[<command>] host = bar`` のコマンド固有のセクションは、"
-"``[global]`` 設定ファイルセクションに同じ名前のオプションを上書きします。"
+"設定ファイル ``[<command>] host = bar`` のコマンド固有のセクションは、``[global]`` "
+"設定ファイルセクションに同じ名前のオプションを上書きします。"
 
 #: ../../user_guide.rst:425
 msgid "Command Completion"
-msgstr ""
-"コマンドの完了"
+msgstr "コマンドの完了"
 
 #: ../../user_guide.rst:427
 msgid "pip comes with support for command line completion in bash, zsh and fish."
-msgstr ""
-"pipは、bash、zsh、およびfishのコマンドライン補完をサポートしています。"
+msgstr "pipは、bash、zsh、およびfishのコマンドライン補完をサポートしています。"
 
 #: ../../user_guide.rst:429
 msgid "To setup for bash::"
-msgstr ""
-"bashを設定するには::"
+msgstr "bashを設定するには::"
 
 #: ../../user_guide.rst:433
 msgid "To setup for zsh::"
-msgstr ""
-"zshを設定するには::"
+msgstr "zshを設定するには::"
 
 #: ../../user_guide.rst:437
 msgid "To setup for fish::"
-msgstr ""
-"fishの設定"
+msgstr "fishの設定"
 
 #: ../../user_guide.rst:441
 msgid ""
@@ -714,25 +615,22 @@ msgid ""
 "directly with the eval function of your shell, e.g. by adding the "
 "following to your startup file::"
 msgstr ""
-"あるいは、``completion`` コマンドの結果をシェルのeval関数で直接使用することもできます。"
-"例えば、スタートアップファイルに以下を追加します::"
+"あるいは、``completion`` "
+"コマンドの結果をシェルのeval関数で直接使用することもできます。例えば、スタートアップファイルに以下を追加します::"
 
 #: ../../user_guide.rst:451
 msgid "Installing from local packages"
-msgstr ""
-"ローカルパッケージからのインストール"
+msgstr "ローカルパッケージからのインストール"
 
 #: ../../user_guide.rst:453
 msgid ""
 "In some cases, you may want to install from local packages only, with no "
 "traffic to PyPI."
-msgstr ""
-"場合によっては、PyPIへアクセスせず、ローカルパッケージからのみインストールすることもできます。"
+msgstr "場合によっては、PyPIへアクセスせず、ローカルパッケージからのみインストールすることもできます。"
 
 #: ../../user_guide.rst:456
 msgid "First, download the archives that fulfill your requirements::"
-msgstr ""
-"まず、要件を満たすアーカイブをダウンロードします::"
+msgstr "まず、要件を満たすアーカイブをダウンロードします::"
 
 #: ../../user_guide.rst:461
 msgid ""
@@ -742,22 +640,20 @@ msgid ""
 "that case, if some of your requirements don't come as wheels from PyPI, "
 "and you want wheels, then run this instead::"
 msgstr ""
-"PyPIからダウンロードしようとする前に、まず ``pip install --download`` がwheelキャッシュを見に行くことに注意してください。"
-"前もって要件をインストールしていない場合は、それらのwheelキャッシュはありません。"
-"その場合、PyPIからwheelsを取得していない要件がいくつかあり、wheelsが必要な場合は代わりに次のように実行します::"
+"PyPIからダウンロードしようとする前に、まず ``pip install --download`` "
+"がwheelキャッシュを見に行くことに注意してください。前もって要件をインストールしていない場合は、それらのwheelキャッシュはありません。その場合、PyPIからwheelsを取得していない要件がいくつかあり、wheelsが必要な場合は代わりに次のように実行します::"
 
 #: ../../user_guide.rst:470
 msgid ""
 "Then, to install from local only, you'll be using :ref:`--find-links "
 "<--find-links>` and :ref:`--no-index <--no-index>` like so::"
 msgstr ""
-"次に、ローカルからのみインストールするには、:ref:`--find-links <--find-links>` と"
-" :ref:`--no-index <--no-index>` を使用します::"
+"次に、ローカルからのみインストールするには、:ref:`--find-links <--find-links>` と :ref:`--no-"
+"index <--no-index>` を使用します::"
 
 #: ../../user_guide.rst:477
 msgid "\"Only if needed\" Recursive Upgrade"
-msgstr ""
-"\"必要な場合のみ\"再帰的アップグレード"
+msgstr "\"必要な場合のみ\"再帰的アップグレード"
 
 #: ../../user_guide.rst:479
 msgid ""
@@ -765,52 +661,44 @@ msgid ""
 "recursive upgrade, i.e. it upgrades all dependencies regardless of "
 "whether they still satisfy the new parent requirements."
 msgstr ""
-"``pip install --upgrade`` は現在、熱心な再帰的なアップグレードを実行するために書かれています。"
-"つまり、新しい親の要件を満たしているかどうかにかかわらず、すべての依存関係をアップグレードします。"
+"``pip install --upgrade`` "
+"は現在、熱心な再帰的なアップグレードを実行するために書かれています。つまり、新しい親の要件を満たしているかどうかにかかわらず、すべての依存関係をアップグレードします。"
 
 #: ../../user_guide.rst:483
 msgid "E.g. supposing:"
-msgstr ""
-"例えば、仮定すると"
+msgstr "例えば、仮定すると"
 
 #: ../../user_guide.rst:485
 msgid "`SomePackage-1.0` requires `AnotherPackage>=1.0`"
-msgstr ""
-"`SomePackage-1.0` は `AnotherPackage>=1.0` が必要"
+msgstr "`SomePackage-1.0` は `AnotherPackage>=1.0` が必要"
 
 #: ../../user_guide.rst:486
 msgid "`SomePackage-2.0` requires `AnotherPackage>=1.0` and `OneMorePackage==1.0`"
-msgstr ""
-"`SomePackage-2.0` は `AnotherPackage>=1.0` と `OneMorePackage==1.0` が必要"
+msgstr "`SomePackage-2.0` は `AnotherPackage>=1.0` と `OneMorePackage==1.0` が必要"
 
 #: ../../user_guide.rst:487
 msgid "`SomePackage-1.0` and `AnotherPackage-1.0` are currently installed"
-msgstr ""
-"`SomePackage-1.0` と `AnotherPackage-1.0` は現在インストールされている"
+msgstr "`SomePackage-1.0` と `AnotherPackage-1.0` は現在インストールされている"
 
 #: ../../user_guide.rst:488
 msgid ""
 "`SomePackage-2.0` and `AnotherPackage-2.0` are the latest versions "
 "available on PyPI."
-msgstr ""
-"`SomePackage-2.0` と `AnotherPackage-2.0` PyPIで利用できる最新バージョン"
+msgstr "`SomePackage-2.0` と `AnotherPackage-2.0` PyPIで利用できる最新バージョン"
 
 #: ../../user_guide.rst:490
 msgid ""
 "Running ``pip install --upgrade SomePackage`` would upgrade `SomePackage`"
 " *and* `AnotherPackage` despite `AnotherPackage` already being satisfied."
 msgstr ""
-"``pip install --upgrade SomePackage`` を実行することは、"
-"`AnotherPackage` がすでに満たされているにもかかわらず、"
-"`SomePackage` **と** `AnotherPackage` をアップグレードします。"
+"``pip install --upgrade SomePackage`` を実行することは、`AnotherPackage` "
+"がすでに満たされているにもかかわらず、`SomePackage` **と** `AnotherPackage` をアップグレードします。"
 
 #: ../../user_guide.rst:493
 msgid ""
 "pip doesn't currently have an option to do an \"only if needed\" "
 "recursive upgrade, but you can achieve it using these 2 steps::"
-msgstr ""
-"pipには現在のところ、\"必要な場合のみ\"再帰的なアップグレードを行うオプションはありませんが、"
-"次の2つの手順で実現できます::"
+msgstr "pipには現在のところ、\"必要な場合のみ\"再帰的なアップグレードを行うオプションはありませんが、次の2つの手順で実現できます::"
 
 #: ../../user_guide.rst:499
 msgid ""
@@ -818,21 +706,20 @@ msgid ""
 "`AnotherPackage`.  The 2nd line will fill in new dependencies like "
 "`OneMorePackage`."
 msgstr ""
-"最初の行は `SomePackage` をアップグレードしますが、`AnotherPackage` のような依存関係はアップグレードしません。"
-"2行目は `OneMorePackage` のような新しい依存関係を埋めます。"
+"最初の行は `SomePackage` をアップグレードしますが、`AnotherPackage` "
+"のような依存関係はアップグレードしません。2行目は `OneMorePackage` のような新しい依存関係を埋めます。"
 
 #: ../../user_guide.rst:503
 msgid ""
 "See :issue:`59` for a plan of making \"only if needed\" recursive the "
 "default behavior for a new ``pip upgrade`` command."
 msgstr ""
-"\"必要な場合のみ\"再帰的に新しい ``pip upgrade`` コマンドのデフォルトの動作を行う計画については"
-":issue:`59` を参照してください。"
+"\"必要な場合のみ\"再帰的に新しい ``pip upgrade`` コマンドのデフォルトの動作を行う計画については:issue:`59` "
+"を参照してください。"
 
 #: ../../user_guide.rst:508
 msgid "User Installs"
-msgstr ""
-"ユーザーインストール"
+msgstr "ユーザーインストール"
 
 #: ../../user_guide.rst:510
 msgid ""
@@ -848,13 +735,11 @@ msgid ""
 msgstr ""
 "Python 2.6では、インストールのための `\"user scheme\" for installation "
 "<http://docs.python.org/install/index.html#alternate-installation-the-"
-"user-scheme>`_ が提供されました。"
-"つまり、すべてのPythonディストリビューションは、ユーザーに固有の代替インストール場所をサポートしています。"
-"各OSのデフォルトの場所は、`site.USER_BASE "
-"<http://docs.python.org/library/site.html#site.USER_BASE>`_ variable.  "
-"のpythonのドキュメントで説明しています。"
-"このインストールモードは、``pip install`` に :ref:`--user"
-" <install_--user>` オプションを指定することで有効にすることができます。"
+"user-scheme>`_ "
+"が提供されました。つまり、すべてのPythonディストリビューションは、ユーザーに固有の代替インストール場所をサポートしています。各OSのデフォルトの場所は、`site.USER_BASE"
+" <http://docs.python.org/library/site.html#site.USER_BASE>`_ variable.  "
+"のpythonのドキュメントで説明しています。このインストールモードは、``pip install`` に :ref:`--user "
+"<install_--user>` オプションを指定することで有効にすることができます。"
 
 #: ../../user_guide.rst:519
 msgid ""
@@ -862,21 +747,20 @@ msgid ""
 "``PYTHONUSERBASE`` environment variable, which updates the value of "
 "``site.USER_BASE``."
 msgstr ""
-"さらに、 \"user scheme\"は、``site.USER_BASE`` の値を更新する"
-"``PYTHONUSERBASE`` 環境変数を設定することでカスタマイズできます。"
+"さらに、 \"user scheme\"は、``site.USER_BASE`` の値を更新する``PYTHONUSERBASE`` "
+"環境変数を設定することでカスタマイズできます。"
 
 #: ../../user_guide.rst:522
 msgid ""
 "To install \"SomePackage\" into an environment with site.USER_BASE "
 "customized to '/myappenv', do the following::"
 msgstr ""
-"'/ myappenv'にカスタマイズされたsite.USER_BASEを持つ環境に"
-"\"SomePackage\"をインストールするには、次のようにします::"
+"'/ "
+"myappenv'にカスタマイズされたsite.USER_BASEを持つ環境に\"SomePackage\"をインストールするには、次のようにします::"
 
 #: ../../user_guide.rst:528
 msgid "``pip install --user`` follows four rules:"
-msgstr ""
-"``pip install --user`` は次の4つのルールに従います:"
+msgstr "``pip install --user`` は次の4つのルールに従います:"
 
 #: ../../user_guide.rst:530
 msgid ""
@@ -884,8 +768,8 @@ msgid ""
 "*conflict* with the installation requirements, they are ignored, and "
 "*not* uninstalled."
 msgstr ""
-"グローバルにインストールされたパッケージがpythonパス上にあり、"
-"インストール要件と **コンフリクト** する場合、パッケージは無視され、アンインストール *されません。*"
+"グローバルにインストールされたパッケージがpythonパス上にあり、インストール要件と **コンフリクト** "
+"する場合、パッケージは無視され、アンインストール *されません。*"
 
 #: ../../user_guide.rst:533
 msgid ""
@@ -895,10 +779,9 @@ msgid ""
 " requirements when installing packages in a ``--system-site-packages`` "
 "virtualenv)."
 msgstr ""
-"グローバルにインストールされたパッケージがpythonパス上にあり、インストール要件を *満たしている* 時、"
-"pipは何もせず、要件が満たされているとレポートします。"
-"(``--system-site-packages`` virtualenvにパッケージをインストールする際に"
-"グローバルパッケージがどのように要件を満たすかと同様)"
+"グローバルにインストールされたパッケージがpythonパス上にあり、インストール要件を *満たしている* "
+"時、pipは何もせず、要件が満たされているとレポートします。(``--system-site-packages`` "
+"virtualenvにパッケージをインストールする際にグローバルパッケージがどのように要件を満たすかと同様)"
 
 #: ../../user_guide.rst:538
 msgid ""
@@ -906,8 +789,8 @@ msgid ""
 "virtualenv (i.e. the default kind of virtualenv), due to the user site "
 "not being on the python path.  The installation would be pointless."
 msgstr ""
-"pipは、ユーザサイトがpythonパス上にないため、``--no-site-packages`` virtualenv"
-"（つまり、デフォルトのvirtualenv）に ``--user`` installを実行しません。"
+"pipは、ユーザサイトがpythonパス上にないため、``--no-site-packages`` "
+"virtualenv（つまり、デフォルトのvirtualenv）に ``--user`` installを実行しません。"
 
 #: ../../user_guide.rst:541
 msgid ""
@@ -915,71 +798,60 @@ msgid ""
 "package that conflicts with a package in the virtualenv site-packages.  "
 "The --user installation would lack sys.path precedence and be pointless."
 msgstr ""
-"``--system-site-packages`` virtualenvでは、"
-"pipはvirtualenv site-packages内のパッケージとコンフリクトするパッケージをインストールしません。"
-"--userのインストールにはsys.pathの優先順位がなく、無意味です。"
+"``--system-site-packages`` virtualenvでは、pipはvirtualenv site-"
+"packages内のパッケージとコンフリクトするパッケージをインストールしません。--userのインストールにはsys.pathの優先順位がなく、無意味です。"
 
 #: ../../user_guide.rst:546
 msgid "To make the rules clearer, here are some examples:"
-msgstr ""
-"ルールをより明確にするために、ここにいくつかの例があります:"
+msgstr "ルールをより明確にするために、ここにいくつかの例があります:"
 
 #: ../../user_guide.rst:549
 msgid "From within a ``--no-site-packages`` virtualenv (i.e. the default kind)::"
-msgstr ""
-"``--no-site-packages`` virtualenv（デフォルトの種類）内から::"
+msgstr "``--no-site-packages`` virtualenv（デフォルトの種類）内から::"
 
 #: ../../user_guide.rst:555
 msgid ""
 "From within a ``--system-site-packages`` virtualenv where "
 "``SomePackage==0.3`` is already installed in the virtualenv::"
 msgstr ""
-"``SomePackage==0.3`` が既にvirtualenvにインストールされている"
-"``--system-site-packages`` virtualenv内から::"
+"``SomePackage==0.3`` が既にvirtualenvにインストールされている``--system-site-packages`` "
+"virtualenv内から::"
 
 #: ../../user_guide.rst:561
 msgid ""
 "From within a real python, where ``SomePackage`` is *not* installed "
 "globally::"
-msgstr ""
-"``SomePackage`` がグローバルにインストール *されていない* 実際のPythonの中から::"
+msgstr "``SomePackage`` がグローバルにインストール *されていない* 実際のPythonの中から::"
 
 #: ../../user_guide.rst:568
 msgid ""
 "From within a real python, where ``SomePackage`` *is* installed globally,"
 " but is *not* the latest version::"
-msgstr ""
-"``SomePackage`` がグローバルにインストール *されている* が、最新バージョン *ではない* 実際のPython内から"
+msgstr "``SomePackage`` がグローバルにインストール *されている* が、最新バージョン *ではない* 実際のPython内から"
 
 #: ../../user_guide.rst:579
 msgid ""
 "From within a real python, where ``SomePackage`` *is* installed globally,"
 " and is the latest version::"
-msgstr ""
-"``SomePackage`` がグローバルにインストールされていて、最新のバージョンの実際のPythonの中から::"
+msgstr "``SomePackage`` がグローバルにインストールされていて、最新のバージョンの実際のPythonの中から::"
 
 #: ../../user_guide.rst:598
 msgid "Ensuring Repeatability"
-msgstr ""
-"繰り返し性の確保"
+msgstr "繰り返し性の確保"
 
 #: ../../user_guide.rst:600
 msgid "pip can achieve various levels of repeatability:"
-msgstr ""
-"pipは様々なレベルの再現性を達成することができます"
+msgstr "pipは様々なレベルの再現性を達成することができます"
 
 #: ../../user_guide.rst:603
 msgid "Pinned Version Numbers"
-msgstr ""
-"固定されたバージョン番号"
+msgstr "固定されたバージョン番号"
 
 #: ../../user_guide.rst:605
 msgid ""
 "Pinning the versions of your dependencies in the requirements file "
 "protects you from bugs or incompatibilities in newly released versions::"
-msgstr ""
-"requirementsファイル内の依存関係のバージョンを固定することで、"
-"新しくリリースされたバージョンのバグや非互換性から守ることができます::"
+msgstr "requirementsファイル内の依存関係のバージョンを固定することで、新しくリリースされたバージョンのバグや非互換性から守ることができます::"
 
 #: ../../user_guide.rst:611
 msgid ""
@@ -989,10 +861,9 @@ msgid ""
 ":`--no-deps <install_--no-deps>` for an extra dose of insurance against "
 "installing anything not explicitly listed."
 msgstr ""
-":ref:`pip freeze` をrequirementsファイルを生成すると、"
-"トップレベルの依存関係だけでなくそのサブ依存関係も確実に含まれます。"
-"明示的に記載されていないものをインストールしないようにするには、"
-":ref:`--no-deps <install_--no-deps>` を使用してインストールを実行します。"
+":ref:`pip freeze` "
+"をrequirementsファイルを生成すると、トップレベルの依存関係だけでなくそのサブ依存関係も確実に含まれます。明示的に記載されていないものをインストールしないようにするには、:ref"
+":`--no-deps <install_--no-deps>` を使用してインストールを実行します。"
 
 #: ../../user_guide.rst:617
 msgid ""
@@ -1001,22 +872,17 @@ msgid ""
 "chain. It also relies on indices and find-links locations not allowing "
 "packages to change without a version increase. (PyPI does protect against"
 " this.)"
-msgstr ""
-"この戦略は実装が容易で、OSやアーキテクチャ全体で機能します。"
-"ただし、PyPIと認証局チェーンを信頼します。"
-"また、バージョンを増やすことなくパッケージを変更できないインデックスや検索リンクの場所にも依存しています。(PyPIはこれを防ぎます。)"
+msgstr "この戦略は実装が容易で、OSやアーキテクチャ全体で機能します。ただし、PyPIと認証局チェーンを信頼します。また、バージョンを増やすことなくパッケージを変更できないインデックスや検索リンクの場所にも依存しています。(PyPIはこれを防ぎます。)"
 
 #: ../../user_guide.rst:624
 msgid "Hash-checking Mode"
-msgstr ""
-"ハッシュチェックモード"
+msgstr "ハッシュチェックモード"
 
 #: ../../user_guide.rst:626
 msgid ""
 "Beyond pinning version numbers, you can add hashes against which to "
 "verify downloaded packages::"
-msgstr ""
-"バージョン番号を固定する以外に、ダウンロードされたパッケージを検証するためのハッシュを追加することができます::"
+msgstr "バージョン番号を固定する以外に、ダウンロードされたパッケージを検証するためのハッシュを追加することができます::"
 
 #: ../../user_guide.rst:631
 msgid ""
@@ -1024,10 +890,7 @@ msgid ""
 "chain. It also guards against a package changing without its version "
 "number changing (on indexes that allow this). This approach is a good fit"
 " for automated server deployments."
-msgstr ""
-"これにより、PyPIまたはHTTPS証明書チェーンの侵害から保護されます。"
-"また、バージョン番号を変更することなくパッケージを変更することもできます（これを可能にするインデックス上で）。"
-"このアプローチは、自動化されたサーバーの配置に適しています。"
+msgstr "これにより、PyPIまたはHTTPS証明書チェーンの侵害から保護されます。また、バージョン番号を変更することなくパッケージを変更することもできます（これを可能にするインデックス上で）。このアプローチは、自動化されたサーバーの配置に適しています。"
 
 #: ../../user_guide.rst:636
 msgid ""
@@ -1038,25 +901,19 @@ msgid ""
 "library, providing easier upgrades and less VCS noise. It does not, of "
 "course, provide the availability benefits of a private index or a vendor "
 "library."
-msgstr ""
-"ハッシュチェックモードは、承認されたパッケージを含むプライベートインデックスサーバーを"
-"実行するための省力化の代替方法です:"
-"パッケージのアップロード、ACLの管理、監査証跡（VCSが要件ファイルに無料で提供する）を保持する必要がなくなります。"
-"また、ベンダーライブラリを代用することもできます。これにより、アップグレードが容易になり、VCSノイズが少なくなります"
-"もちろん、プライベートインデックスやベンダーライブラリの可用性のメリットはありません。"
+msgstr "ハッシュチェックモードは、承認されたパッケージを含むプライベートインデックスサーバーを実行するための省力化の代替方法です:パッケージのアップロード、ACLの管理、監査証跡（VCSが要件ファイルに無料で提供する）を保持する必要がなくなります。また、ベンダーライブラリを代用することもできます。これにより、アップグレードが容易になり、VCSノイズが少なくなりますもちろん、プライベートインデックスやベンダーライブラリの可用性のメリットはありません。"
 
 #: ../../user_guide.rst:643
 msgid ""
 "For more, see :ref:`pip install\\'s discussion of hash-checking mode "
 "<hash-checking mode>`."
 msgstr ""
-"詳細については、:ref:`pip install\\'s discussion of hash-checking mode "
-"<hash-checking mode>` を参照してください。"
+"詳細については、:ref:`pip install\\'s discussion of hash-checking mode <hash-"
+"checking mode>` を参照してください。"
 
 #: ../../user_guide.rst:648
 msgid "Installation Bundles"
-msgstr ""
-"インストールバンドル"
+msgstr "インストールバンドル"
 
 #: ../../user_guide.rst:650
 msgid ""
@@ -1065,32 +922,24 @@ msgid ""
 "allows installation when index servers are unavailable and avoids time-"
 "consuming recompilation. Create an archive like this::"
 msgstr ""
-":ref:`pip wheel` を使用すると、コンパイルが完了したすべてのプロジェクトの依存関係を"
-"1つのアーカイブにまとめることができます。"
-"これにより、インデックスサーバーが使用できなくなり、"
-"時間のかかる再コンパイルが行われない場合のインストールが可能になります。"
-"次のようなアーカイブを作成します::"
+":ref:`pip wheel` "
+"を使用すると、コンパイルが完了したすべてのプロジェクトの依存関係を1つのアーカイブにまとめることができます。これにより、インデックスサーバーが使用できなくなり、時間のかかる再コンパイルが行われない場合のインストールが可能になります。次のようなアーカイブを作成します::"
 
 #: ../../user_guide.rst:660
 msgid "You can then install from the archive like this::"
-msgstr ""
-"このようにアーカイブからインストールすることができます::"
+msgstr "このようにアーカイブからインストールすることができます::"
 
 #: ../../user_guide.rst:666
 msgid ""
 "Note that compiled packages are typically OS- and architecture-specific, "
 "so these archives are not necessarily portable across machines."
-msgstr ""
-"コンパイルされたパッケージは、通常、OS固有およびアーキテクチャ固有であるため、"
-"これらのアーカイブは必ずしもマシン間で移植可能であるとは限りません。"
+msgstr "コンパイルされたパッケージは、通常、OS固有およびアーキテクチャ固有であるため、これらのアーカイブは必ずしもマシン間で移植可能であるとは限りません。"
 
 #: ../../user_guide.rst:669
 msgid ""
 "Hash-checking mode can be used along with this method to ensure that "
 "future archives are built with identical packages."
-msgstr ""
-"この方法と一緒に、ハッシュチェックモードを使用して、"
-"将来のアーカイブが同一のパッケージで構築されるようにすることができます。"
+msgstr "この方法と一緒に、ハッシュチェックモードを使用して、将来のアーカイブが同一のパッケージで構築されるようにすることができます。"
 
 #: ../../user_guide.rst:673
 msgid ""
@@ -1100,9 +949,10 @@ msgid ""
 "protections. If you need to use such a package, see :ref:`Controlling "
 "setup_requires<controlling-setup-requires>`."
 msgstr ""
-"最後に、:file:`setup.py` の ``setup_requires`` キーワード引数に注意してください。"
-"それを使用する（まれな）パッケージは、その依存関係をsetuptoolsによって直接ダウンロードし、"
-"pipの保護をスキップします。"
-"このようなパッケージを使用する必要がある場合は、:ref:`Controlling "
-"setup_requires<controlling-setup-requires>` を参照してください。"
+"最後に、:file:`setup.py` の ``setup_requires`` "
+"キーワード引数に注意してください。それを使用する（まれな）パッケージは、その依存関係をsetuptoolsによって直接ダウンロードし、pipの保護をスキップします。このようなパッケージを使用する必要がある場合は、:ref:`Controlling"
+" setup_requires<controlling-setup-requires>` を参照してください。"
+
+#~ msgid "Contents"
+#~ msgstr "コンテンツ"
 

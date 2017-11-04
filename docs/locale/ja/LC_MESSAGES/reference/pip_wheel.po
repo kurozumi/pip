@@ -8,38 +8,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pip 9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"POT-Creation-Date: 2017-11-04 10:31+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../reference/pip_wheel.rst:5
 msgid "pip wheel"
 msgstr ""
 
-#: ../../reference/pip_wheel.rst
-msgid "Contents"
-msgstr ""
-"コンテンツ"
-
 #: ../../reference/pip_wheel.rst:10
 msgid "Usage"
-msgstr ""
-"使い方"
+msgstr "使い方"
 
 #: ../../reference/pip_wheel.rst:16
 msgid "Description"
-msgstr ""
-"説明"
+msgstr "説明"
 
 #: ../../reference/pip_wheel.rst:22
 msgid "Build System Interface"
-msgstr ""
-"ビルドシステムインターフェイス"
+msgstr "ビルドシステムインターフェイス"
 
 #: ../../reference/pip_wheel.rst:24
 msgid ""
@@ -59,8 +51,7 @@ msgstr ""
 
 #: ../../reference/pip_wheel.rst:35
 msgid "Customising the build"
-msgstr ""
-"ビルドのカスタマイズ"
+msgstr "ビルドのカスタマイズ"
 
 #: ../../reference/pip_wheel.rst:37
 msgid ""
@@ -86,17 +77,18 @@ msgstr ""
 
 #: ../../reference/pip_wheel.rst:58
 msgid "Options"
-msgstr ""
-"オプション"
+msgstr "オプション"
 
 #: ../../reference/pip_wheel.rst:66
 msgid "Examples"
-msgstr ""
-"例"
+msgstr "例"
 
 #: ../../reference/pip_wheel.rst:68
 msgid ""
 "Build wheels for a requirement (and all its dependencies), and then "
 "install"
 msgstr ""
+
+#~ msgid "Contents"
+#~ msgstr "コンテンツ"
 

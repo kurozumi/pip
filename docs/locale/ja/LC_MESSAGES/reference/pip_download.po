@@ -8,38 +8,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pip 9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"POT-Creation-Date: 2017-11-04 10:31+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../reference/pip_download.rst:5
 msgid "pip download"
 msgstr ""
 
-#: ../../reference/pip_download.rst
-msgid "Contents"
-msgstr ""
-"コンテンツ"
-
 #: ../../reference/pip_download.rst:10
 msgid "Usage"
-msgstr ""
-"使い方"
+msgstr "使い方"
 
 #: ../../reference/pip_download.rst:16
 msgid "Description"
-msgstr ""
-"説明"
+msgstr "説明"
 
 #: ../../reference/pip_download.rst:22
 msgid "Overview"
-msgstr ""
-"概要"
+msgstr "概要"
 
 #: ../../reference/pip_download.rst:23
 msgid ""
@@ -76,13 +68,11 @@ msgstr ""
 
 #: ../../reference/pip_download.rst:48
 msgid "Options"
-msgstr ""
-"オプション"
+msgstr "オプション"
 
 #: ../../reference/pip_download.rst:56
 msgid "Examples"
-msgstr ""
-"例"
+msgstr "例"
 
 #: ../../reference/pip_download.rst:58
 msgid "Download a package and all of its dependencies"
@@ -123,4 +113,7 @@ msgid ""
 "Even when overconstrained, this will still correctly fetch the pip "
 "universal wheel."
 msgstr ""
+
+#~ msgid "Contents"
+#~ msgstr "コンテンツ"
 
