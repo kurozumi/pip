@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008-2016, PyPA
+# This file is distributed under the same license as the pip package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pip 9.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"PO-Revision-Date: 2017-11-04 09:54+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: ../../reference/pip_show.rst:4
+msgid "pip show"
+msgstr ""
+
+#: ../../reference/pip_show.rst
+msgid "Contents"
+msgstr "コンテンツ"
+
+#: ../../reference/pip_show.rst:10
+msgid "Usage"
+msgstr "使い方"
+
+#: ../../reference/pip_show.rst:16
+msgid "Description"
+msgstr "説明"
+
+#: ../../reference/pip_show.rst:22
+msgid "Options"
+msgstr "オプション"
+
+#: ../../reference/pip_show.rst:28
+msgid "Examples"
+msgstr "例"
+
+#: ../../reference/pip_show.rst:30
+msgid "Show information about a package:"
+msgstr "パッケージに関する情報を表示:"
+
+#: ../../reference/pip_show.rst:45
+msgid "Show all information about a package"
+msgstr "パッケージに関する情報を全て表示S"

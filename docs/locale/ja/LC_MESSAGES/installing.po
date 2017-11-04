@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008-2016, PyPA
+# This file is distributed under the same license as the pip package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pip 9.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../installing.rst:4
+msgid "Installation"
+msgstr ""
+"インストール"
+
+#: ../../installing.rst:7
+msgid "Do I need to install pip?"
+msgstr ""
+"pipをインストールする必要はありますか？"
+
+#: ../../installing.rst:9
+msgid ""
+"pip is already installed if you're using Python 2 >=2.7.9 or Python 3 "
+">=3.4 binaries downloaded from `python.org <https://www.python.org>`_, "
+"but you'll need to :ref:`upgrade pip <Upgrading pip>`."
+msgstr ""
+"`python.org <https://www.python.org>`_ からダウンロードしたPython 2>= 2.7.9またはPython 3>= 3.4バイナリを使用している場合、"
+"pipを :ref:`upgrade pip <Upgrading pip>` する必要があります。"
+
+#: ../../installing.rst:13
+msgid ""
+"Additionally, pip will already be installed if you're working in a "
+":ref:`Virtual Environment <pypug:Creating and using Virtual "
+"Environments>` created by :ref:`pypug:virtualenv` or :ref:`pyvenv "
+"<pypug:venv>`."
+msgstr ""
+":ref:`pypug:virtualenv` または :ref:`pyvenv <pypug:venv>` によって作成された "
+":ref:`Virtual Environment <pypug:Creating and using Virtual Environments>` "
+"で作業している場合、pipはすでにインストールされています。"
+
+#: ../../installing.rst:21
+msgid "Installing with get-pip.py"
+msgstr ""
+"get-pip.pyでインストールする方法"
+
+#: ../../installing.rst:23
+msgid ""
+"To install pip, securely download `get-pip.py <https://bootstrap.pypa.io"
+"/get-pip.py>`_. [2]_"
+msgstr ""
+"pipをインストールするために、 `get-pip.py <https://bootstrap.pypa.io/get-pip.py>`_. [2]_ を安全にダウンロードして下さい。"
+
+#: ../../installing.rst:26
+msgid "Then run the following:"
+msgstr ""
+"次に以下を実行して下さい。"
+
+#: ../../installing.rst:35
+msgid ""
+"Be cautious if you're using a Python install that's managed by your "
+"operating system or another package manager. get-pip.py does not "
+"coordinate with those tools, and may leave your system in an inconsistent"
+" state."
+msgstr ""
+"OSまたは別のパッケージマネージャによって管理されているPythonを使用している場合は注意してください。"
+"get-pip.pyはこれらのツールと連携しないため、システムが不整合状態になる可能性があります。"
+
+#: ../../installing.rst:39
+msgid ""
+"get-pip.py will also install :ref:`pypug:setuptools` [3]_ and "
+":ref:`pypug:wheel`, if they're not already. :ref:`pypug:setuptools` is "
+"required to install :term:`source distributions <pypug:Source "
+"Distribution (or \"sdist\")>`.  Both are required to be able to build a "
+":ref:`Wheel cache` (which improves installation speed), although neither "
+"are required to install pre-built :term:`wheels <pypug:Wheel>`."
+msgstr ""
+"get-pip.pyは :ref:`pypug:setuptools` [3]_ と :ref:`pypug:wheel` もインストールします。"
+":term:`source distributions <pypug:Source　Distribution (or \"sdist\")>` を"
+"インストールするには、:ref:`pypug:setuptools` が必要です。"
+"どちらも :ref:`Wheel cache` （インストール速度を向上させる）を構築できることが求められていますが、"
+"あらかじめ構築された :term:`wheels <pypug:Wheel>` をインストールする必要はありません。"
+
+#: ../../installing.rst:48
+msgid ""
+"The get-pip.py script is supported on the same python version as pip. For"
+" the now unsupported Python 3.2, an alternate script is available `here "
+"<https://bootstrap.pypa.io/3.2/get-pip.py>`__. For Python 2.6 which will "
+"be unsupported in pip 10.0, an alternative script is available `here "
+"<https://bootstrap.pypa.io/2.6/get-pip.py>`__."
+msgstr ""
+"get-pip.pyはpipと同じpythonバージョンでサポートされています。"
+"現在サポートされていないPython 3.2は、代わりのスクリプトが `ここ <https://bootstrap.pypa.io/3.2/get-pip.py>`__ にあります。"
+"pip 10.0でサポートされていないPython 2.6は、代わりのスクリプトが `ここ <https://bootstrap.pypa.io/2.6/get-pip.py>`__ にあります。"
+
+#: ../../installing.rst:56
+msgid "get-pip.py options"
+msgstr ""
+"get-pip.pyオプション"
+
+#: ../../installing.rst:60
+msgid "If set, don't attempt to install :ref:`pypug:setuptools`"
+msgstr ""
+"設定すると :ref:`pypug:setuptools` をインストールしません"
+
+#: ../../installing.rst:64
+msgid "If set, don't attempt to install :ref:`pypug:wheel`"
+msgstr ""
+"設定すると、:ref:`pypug:wheel` をインストールしません"
+
+#: ../../installing.rst:67
+msgid ""
+"Additionally, ``get-pip.py`` supports using the :ref:`pip install options"
+" <pip install Options>` and the :ref:`general options <General Options>`."
+" Below are some examples:"
+msgstr ""
+"さらに、``get-pip.py`` は :ref:`pip install options <pip install Options>` と"
+" :ref:`general options <General Options>` もサポートしています。"
+"以下はいくつかの例です:"
+
+#: ../../installing.rst:71
+msgid "Install from local copies of pip and setuptools::"
+msgstr ""
+"pipとsetuptoolsのローカルコピーからインストールする::"
+
+#: ../../installing.rst:75
+msgid "Install to the user site [4]_::"
+msgstr ""
+"ユーザーサイト [4]_ へインストールする::"
+
+#: ../../installing.rst:79
+msgid "Install behind a proxy::"
+msgstr ""
+"プロキシ経由でインストールする::"
+
+#: ../../installing.rst:85
+msgid "Using Linux Package Managers"
+msgstr ""
+"Linuxパッケージマネージャを使用する"
+
+#: ../../installing.rst:87
+msgid ""
+"See :ref:`pypug:Installing pip/setuptools/wheel with Linux Package "
+"Managers` in the `Python Packaging User Guide "
+"<https://packaging.python.org/en/latest/current/>`_."
+msgstr ""
+"`Python Packaging User Guide <https://packaging.python.org/en/latest/current/>`_ の"
+" :ref:`pypug:Installing pip/setuptools/wheel with Linux Package Managers` を参照してください。"
+
+#: ../../installing.rst:94
+msgid "Upgrading pip"
+msgstr ""
+"pipをアップグレードする"
+
+#: ../../installing.rst:96
+msgid "On Linux or macOS:"
+msgstr ""
+"LinuxまたはmacOSの場合:"
+
+#: ../../installing.rst:103
+msgid "On Windows [5]_:"
+msgstr ""
+"Windowsの場合 [5]_:"
+
+#: ../../installing.rst:111
+msgid "Python and OS Compatibility"
+msgstr ""
+"PythonとOSの互換性"
+
+#: ../../installing.rst:113
+msgid "pip works with CPython versions 2.6, 2.7, 3.3, 3.4, 3.5 and also pypy."
+msgstr ""
+"pipは、CPythonのバージョン2.6,2.7,3.3,3.4,3.5、さらにはpypyで動作します。"
+
+#: ../../installing.rst:115
+msgid ""
+"This means pip works on the latest patch version of each of these minor "
+"versions (i.e. 2.6.9 for 2.6, etc). Previous patch versions are supported"
+" on a best effort approach."
+msgstr ""
+"これはマイナーバージョン（2.6の2.6.9など）の最新のパッチバージョンでpipが動作することを意味します。"
+"以前のパッチ・バージョンは、ベスト・エフォート・アプローチでサポートされています。"
+
+#: ../../installing.rst:119
+msgid "pip works on Unix/Linux, macOS, and Windows."
+msgstr ""
+"pipはUnix/Linux、macOS、Windowsで動作します。"
+
+#: ../../installing.rst:124
+msgid ""
+"For Python 2, see https://docs.python.org/2/installing, and for Python3, "
+"see https://docs.python.org/3/installing."
+msgstr ""
+
+#: ../../installing.rst:127
+msgid ""
+"\"Secure\" in this context means using a modern browser or a tool like "
+"`curl` that verifies SSL certificates when downloading from https URLs."
+msgstr ""
+
+#: ../../installing.rst:131
+msgid ""
+"Beginning with pip v1.5.1, ``get-pip.py`` stopped requiring setuptools to"
+" be installed first."
+msgstr ""
+
+#: ../../installing.rst:134
+msgid ""
+"The pip developers are considering making ``--user`` the default for all "
+"installs, including ``get-pip.py`` installs of pip, but at this time, "
+"``--user`` installs for pip itself, should not be considered to be fully "
+"tested or endorsed. For discussion, see `Issue 1668 "
+"<https://github.com/pypa/pip/issues/1668>`_."
+msgstr ""
+
+#: ../../installing.rst:140
+msgid "https://github.com/pypa/pip/issues/1299"
+msgstr ""
+

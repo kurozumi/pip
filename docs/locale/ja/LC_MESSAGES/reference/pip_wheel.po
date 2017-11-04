@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008-2016, PyPA
+# This file is distributed under the same license as the pip package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pip 9.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../reference/pip_wheel.rst:5
+msgid "pip wheel"
+msgstr ""
+
+#: ../../reference/pip_wheel.rst
+msgid "Contents"
+msgstr ""
+"コンテンツ"
+
+#: ../../reference/pip_wheel.rst:10
+msgid "Usage"
+msgstr ""
+"使い方"
+
+#: ../../reference/pip_wheel.rst:16
+msgid "Description"
+msgstr ""
+"説明"
+
+#: ../../reference/pip_wheel.rst:22
+msgid "Build System Interface"
+msgstr ""
+"ビルドシステムインターフェイス"
+
+#: ../../reference/pip_wheel.rst:24
+msgid ""
+"In order for pip to build a wheel, ``setup.py`` must implement the "
+"``bdist_wheel`` command with the following syntax::"
+msgstr ""
+
+#: ../../reference/pip_wheel.rst:29
+msgid ""
+"This command must create a wheel compatible with the invoking Python "
+"interpreter, and save that wheel in the directory TARGET."
+msgstr ""
+
+#: ../../reference/pip_wheel.rst:32
+msgid "No other build system commands are invoked by the ``pip wheel`` command."
+msgstr ""
+
+#: ../../reference/pip_wheel.rst:35
+msgid "Customising the build"
+msgstr ""
+"ビルドのカスタマイズ"
+
+#: ../../reference/pip_wheel.rst:37
+msgid ""
+"It is possible using ``--global-option`` to include additional build "
+"commands with their arguments in the ``setup.py`` command. This is "
+"currently the only way to influence the building of C extensions from the"
+" command line. For example::"
+msgstr ""
+
+#: ../../reference/pip_wheel.rst:44
+msgid "will result in a build command of"
+msgstr ""
+
+#: ../../reference/pip_wheel.rst:50
+msgid "which passes a preprocessor symbol to the extension build."
+msgstr ""
+
+#: ../../reference/pip_wheel.rst:52
+msgid ""
+"Such usage is considered highly build-system specific and more an "
+"accident of the current implementation than a supported interface."
+msgstr ""
+
+#: ../../reference/pip_wheel.rst:58
+msgid "Options"
+msgstr ""
+"オプション"
+
+#: ../../reference/pip_wheel.rst:66
+msgid "Examples"
+msgstr ""
+"例"
+
+#: ../../reference/pip_wheel.rst:68
+msgid ""
+"Build wheels for a requirement (and all its dependencies), and then "
+"install"
+msgstr ""
+

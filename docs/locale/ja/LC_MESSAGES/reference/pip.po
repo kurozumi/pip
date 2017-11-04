@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2008-2016, PyPA
+# This file is distributed under the same license as the pip package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pip 9.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-14 15:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../reference/pip.rst:2
+msgid "pip"
+msgstr ""
+
+#: ../../reference/pip.rst
+msgid "Contents"
+msgstr ""
+"コンテンツ"
+
+#: ../../reference/pip.rst:7
+msgid "Usage"
+msgstr ""
+"使い方"
+
+#: ../../reference/pip.rst:15
+msgid "Description"
+msgstr ""
+"説明"
+
+#: ../../reference/pip.rst:21
+msgid "Logging"
+msgstr ""
+"ロギング"
+
+#: ../../reference/pip.rst:24
+msgid "Console logging"
+msgstr ""
+"コンソールロギング"
+
+#: ../../reference/pip.rst:26
+msgid ""
+"pip offers :ref:`-v, --verbose <--verbose>` and :ref:`-q, --quiet "
+"<--quiet>` to control the console log level."
+msgstr ""
+"pipはコンソールログレベルを制御する :ref:`-v, --verbose <--verbose>`、と :ref:`-q, --quiet "
+"<--quiet>` を提供します。"
+
+#: ../../reference/pip.rst:33
+msgid "File logging"
+msgstr ""
+"ファイルロギング"
+
+#: ../../reference/pip.rst:35
+msgid ""
+"pip offers the :ref:`--log <--log>` option for specifying a file where a "
+"maximum verbosity log will be kept.  This option is empty by default. "
+"This log appends to previous logging."
+msgstr ""
+"pipは冗長ログを最大限に保存するファイルを指定するための :ref:`--log <--log>` オプションを提供します。"
+"このオプションはデフォルトでは空です。このログは以前のログに追加されます。"
+
+#: ../../reference/pip.rst:39
+msgid ""
+"Like all pip options, ``--log`` can also be set as an environment "
+"variable, or placed into the pip config file.  See the "
+":ref:`Configuration` section."
+msgstr ""
+"すべてのpipオプションと同様に、``--log`` は環境変数として設定することも、"
+"pip設定ファイルに配置することもできます。"
+":ref:`Configuration` セクションを参照してください。"
+
+#: ../../reference/pip.rst:45
+msgid "--exists-action option"
+msgstr ""
+"--exists-actionオプション"
+
+#: ../../reference/pip.rst:47
+msgid ""
+"This option specifies default behavior when path already exists. Possible"
+" cases: downloading files or checking out repositories for installation, "
+"creating archives. If ``--exists-action`` is not defined, pip will prompt"
+" when decision is needed."
+msgstr ""
+"このオプションは、パスがすでに存在する場合のデフォルトの動作を指定します。"
+"可能な場合：ファイルをダウンロードするか、インストール用のリポジトリをチェックアウトしてアーカイブを作成します。"
+"``--exists-action`` が定義されていない場合、pipは決定が必要なときにプロンプトを表示します。"
+
+#: ../../reference/pip.rst:53
+msgid "*(s)witch*"
+msgstr ""
+
+#: ../../reference/pip.rst:53
+msgid ""
+"Only relevant to VCS checkout. Attempt to switch the checkout to the "
+"appropriate url and/or revision."
+msgstr ""
+"VCS（バージョン管理システム）のチェックアウトにのみ関連します。"
+"チェックアウトを適切なURLまたはリビジョンに切り替えようとしています。"
+
+#: ../../reference/pip.rst:56
+msgid "*(i)gnore*"
+msgstr ""
+
+#: ../../reference/pip.rst:56
+msgid ""
+"Abort current operation (e.g. don't copy file, don't create archive, "
+"don't modify a checkout)."
+msgstr ""
+"現在の操作を中止する（例：ファイルをコピーしない、アーカイブを作成しない、チェックアウトを変更しない）"
+
+#: ../../reference/pip.rst:58
+msgid "*(w)ipe*"
+msgstr ""
+
+#: ../../reference/pip.rst:59
+msgid ""
+"Delete the file or VCS checkout before trying to create, download, or "
+"checkout a new one."
+msgstr ""
+"新しいファイルを作成、ダウンロード、またはチェックアウトする前に、"
+"ファイルまたはVCS（バージョン管理システム）のチェックアウトを削除してください。"
+
+#: ../../reference/pip.rst:62
+msgid "*(b)ackup*"
+msgstr ""
+
+#: ../../reference/pip.rst:61
+msgid ""
+"Rename the file or checkout to ``{name}{'.bak' * n}``, where n is some "
+"number of ``.bak`` extensions, such that the file didn't exist at some "
+"point. So the most recent backup will be the one with the largest number "
+"after ``.bak``."
+msgstr ""
+"ファイルまたはチェックアウトを ``{name}{'.bak' * n}`` に変更します。"
+"nは、ファイルはある時点に存在しないような ``.bak`` 拡張子の数です。"
+"したがって、最新のバックアップは ``.bak`` の後で最大の番号になります。"
+
+#: ../../reference/pip.rst:65
+msgid "*(a)abort*"
+msgstr ""
+
+#: ../../reference/pip.rst:65
+msgid "Abort pip and return non-zero exit status."
+msgstr ""
+"pipを中止し、ゼロ以外の終了ステータスを返します。"
+
+#: ../../reference/pip.rst:70
+msgid "Build System Interface"
+msgstr ""
+"ビルドシステムインターフェイス"
+
+#: ../../reference/pip.rst:72
+msgid ""
+"Pip builds packages by invoking the build system. Presently, the only "
+"supported build system is ``setuptools``, but future developments to the "
+"Python packaging infrastructure are expected to include support for other"
+" build systems.  As well as package building, the build system is also "
+"invoked to install packages direct from source."
+msgstr ""
+"Pipはビルドシステムを起動してパッケージをビルドします。"
+"現在、唯一サポートされているビルドシステムは ``setuptools`` ですが、"
+"Pythonパッケージのインフラの今後の開発には、他のビルドシステムのサポートが含まれる予定です。"
+"パッケージビルドと同様に、ビルドシステムはソースから直接パッケージをインストールするときも呼び出されます。"
+
+#: ../../reference/pip.rst:78
+msgid ""
+"The interface to the build system is via the ``setup.py`` command line "
+"script - all build actions are defined in terms of the specific "
+"``setup.py`` command line that will be run to invoke the required action."
+msgstr ""
+"ビルドシステムへのインターフェイスは、``setup.py`` コマンドラインスクリプトを介して行われます。"
+"すべてのビルドアクションは、必要なアクションを呼び出すために実行される特定の ``setup.py`` コマンドラインによって定義されます。"
+
+#: ../../reference/pip.rst:83
+msgid "Setuptools Injection"
+msgstr ""
+"Setuptoolsインジェクション"
+
+#: ../../reference/pip.rst:85
+msgid ""
+"As noted above, the supported build system is ``setuptools``. However, "
+"not all packages use ``setuptools`` in their build scripts. To support "
+"projects that use \"pure ``distutils``\", pip injects ``setuptools`` into"
+" ``sys.modules`` before invoking ``setup.py``. The injection should be "
+"transparent to ``distutils``-based projects, but 3rd party build tools "
+"wishing to provide a ``setup.py`` emulating the commands pip requires may"
+" need to be aware that it takes place."
+msgstr ""
+"上記のように、サポートされているビルドシステムは ``setuptools`` です。"
+"ただし、すべてのパッケージがビルドスクリプトで ``setuptools`` を使用するわけではありません。"
+"\"pure ``distutils``\" を使用するプロジェクトをサポートするため、"
+"pipは ``setup.py`` を呼び出す前に ``setuptools`` を ``sys.modules`` に注入（インジェクション）します。"
+"インジェクションは ``distutils`` ベースのプロジェクトに対して透過的でなければなりませんが、"
+"pipが必要なコマンドをエミュレートする ``setup.py`` を提供したいサードパーティ製のビルドツールは、"
+"インジェクションを実行することを意識する必要があります。"
+
+#: ../../reference/pip.rst:94
+msgid "Future Developments"
+msgstr ""
+"今後の展開"
+
+#: ../../reference/pip.rst:96
+msgid ""
+"`PEP426`_ notes that the intention is to add hooks to project metadata in"
+" version 2.1 of the metadata spec, to explicitly define how to build a "
+"project from its source. Once this version of the metadata spec is final,"
+" pip will migrate to using that interface. At that point, the "
+"``setup.py`` interface documented here will be retained solely for legacy"
+" purposes, until projects have migrated."
+msgstr ""
+
+#: ../../reference/pip.rst:103
+msgid ""
+"Specifically, applications should *not* expect to rely on there being any"
+" form of backward compatibility guarantees around the ``setup.py`` "
+"interface."
+msgstr ""
+
+#: ../../reference/pip.rst:109
+msgid "Build Options"
+msgstr ""
+"ビルドオプション"
+
+#: ../../reference/pip.rst:111
+msgid ""
+"The ``--global-option`` and ``--build-option`` arguments to the ``pip "
+"install`` and ``pip wheel`` inject additional arguments into the "
+"``setup.py`` command (``--build-option`` is only available in ``pip "
+"wheel``).  These arguments are included in the command as follows::"
+msgstr ""
+"``pip install`` と ``pip wheel`` の ``--global-option`` 引数と ``--build-option`` 引数は、"
+"`setup.py`` コマンドに追加引数を挿入します。"
+"（``--build-option`` は ``pip wheel`` でのみ使用できます）"
+"これらの引数は、次のようにコマンドに含まれています。::"
+
+#: ../../reference/pip.rst:118
+msgid ""
+"The options are passed unmodified, and presently offer direct access to "
+"the distutils command line. Use of ``--global-option`` and ``--build-"
+"option`` should be considered as build system dependent, and may not be "
+"supported in the current form if support for alternative build systems is"
+" added to pip."
+msgstr ""
+"オプションは変更されずに渡され、現在はdistutilsのコマンドラインに直接アクセスできます。"
+"``--global-option`` と `--build-option`` の使用は、ビルドシステムに依存している必要があります。"
+"pipに別のビルドシステムのサポートが追加されていれば、現在の形式ではサポートされていない可能性があります。"
+
+#: ../../reference/pip.rst:127
+msgid "General Options"
+msgstr ""
+"一般オプション"
+
